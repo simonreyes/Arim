@@ -1,0 +1,338 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 201905 will be lost/reset.
+# Last config file used to build this data file was /home2/nikovald/tmp/awstats/ssl/awstats.aridosmoreno.cl.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2017                
+POS_TIME 2677                
+POS_VISITOR 6643                
+POS_DAY 8447                
+POS_DOMAIN 3307                
+POS_LOGIN 3615                
+POS_ROBOT 3770                
+POS_WORMS 4021                
+POS_EMAILSENDER 4152                
+POS_EMAILRECEIVER 4295                
+POS_SESSION 9135                
+POS_SIDER 9282                
+POS_FILETYPES 4430                
+POS_DOWNLOADS 4547                
+POS_OS 4595                
+POS_BROWSER 4719                
+POS_SCREENSIZE 4967                
+POS_UNKNOWNREFERER 5041                
+POS_UNKNOWNREFERERBROWSER 5247                
+POS_ORIGIN 5363                
+POS_SEREFERRALS 5495                
+POS_PAGEREFS 5639                
+POS_SEARCHWORDS 5787                
+POS_KEYWORDS 5939                
+POS_MISC 2341                
+POS_ERRORS 5998                
+POS_CLUSTER 3471                
+POS_SIDER_404 6107                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20190601054150 2 194 4577286030703
+FirstTime 0
+LastTime 20190531090110
+LastUpdate 20190601083429 2 0 1 0 0
+TotalVisits 59                  
+TotalUnique 46                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 46                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+RealPlayerSupport 0 0 0
+FlashSupport 0 0 0
+TotalMisc 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+DirectorSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+PDFSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 1 1 1070 7 12 30395
+1 2 2 0 3 5 15422
+2 1 1 0 4 7 29073
+3 0 0 0 1 1 7711
+4 2 2 7711 3 4 14816
+5 0 0 0 5 6 37626
+6 3 3 23133 2 2 47941
+7 2 2 15422 3 4 54400
+8 18 18 138798 5 8 38878
+9 3 3 23133 8 11 102438
+10 6 6 30844 1 2 7711
+11 6 6 24203 4 6 21720
+12 4 12 105976 3 10 23133
+13 3 3 23133 2 2 39907
+14 0 0 0 5 9 22660
+15 1 1 0 9 14 93423
+16 1 1 7711 8 10 55515
+17 3 3 23133 7 10 102151
+18 2 2 15422 1 2 7227
+19 1 1 0 0 0 0
+20 0 0 0 1 1 7711
+21 1 1 7711 3 3 7746
+22 0 0 0 10 15 28821
+23 0 0 0 3 4 6878
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 8
+us 39 39 277596
+cn 7 7 53977
+de 6 6 0
+fr 2 2 2140
+hr 2 2 0
+ru 2 10 98265
+ca 1 1 7711
+pl 1 1 7711
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 3
+AhrefsBot/ 54 405042 20190530112750 0
+bot[\s_+:,\.\;\/\\-] 5 38555 20190515055614 0
+no_user_agent 1 0 20190516163033 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 3
+js 8 82843 0 0
+Unknown 2 2140 0 0
+html 58 362417 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 5
+macosx10 3 3
+win10 41 33
+Unknown 7 7
+macosx11 9 9
+win7 8 8
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 10
+chrome52.0.2743.116 3 3
+Unknown 4 4
+chrome50.0.2661.102 2 2
+mozilla 3 3
+chrome71.0.3578.98 10 2
+chrome66.0.3359.181 30 30
+chrome64.0.3282.186 1 1
+msie7.0 2 2
+firefox47.0 7 7
+chrome40.0.2214.85 6 6
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 2
+Go-http-client/1.1 20190506101502
+Mozilla/5.0_(compatible;_NetcraftSurveyAgent/1.0;__info@netcraft.com) 20190506171859
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+Go-http-client/1.1 20190506101502
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 60 60
+From1 0 0
+From2 0 0
+From3 0 0
+From4 0 8
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 3
+404 61 0
+400 8 384
+401 19 359322
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 6
+/.well-known/assetlinks.json 10 -
+/js/cufon-replace.js 2 https://aridosmoreno.cl/
+/js/FF-cash.js 2 https://aridosmoreno.cl/
+/js/tms_presets.js 2 https://aridosmoreno.cl/
+//xmlrpc.php 1 http://www.google.com.hk
+/robots.txt 44 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 46
+60.191.38.77 7 7 53977 20190523064649
+138.246.253.5 6 6 0 20190524022201
+52.11.99.15 3 3 23133 20190506101502
+62.210.202.81 2 2 2140 20190527114638
+52.10.219.149 1 1 7711 20190506081934
+54.191.80.59 1 1 7711 20190522083930
+34.221.118.89 1 1 7711 20190501085917
+138.197.4.100 1 1 7711 20190506170620
+54.218.62.192 1 1 7711 20190527063109
+34.210.68.56 1 1 7711 20190514072053
+34.221.105.229 1 1 7711 20190518080115
+18.237.106.248 1 1 7711 20190524081217
+34.221.100.88 1 1 7711 20190511080323
+212.180.208.122 1 1 7711 20190526130927
+34.220.249.101 1 1 7711 20190525074659
+35.167.188.243 1 1 7711 20190519085239
+34.215.79.138 1 1 7711 20190515102701
+54.149.0.162 1 1 7711 20190516084937
+54.212.72.132 1 1 7711 20190521081534
+142.93.70.8 1 1 7711 20190506161803
+54.184.64.72 1 1 7711 20190526082217
+34.216.98.159 1 1 7711 20190520111951
+52.32.225.29 1 1 7711 20190508082244
+34.228.19.228 1 1 0 20190524113655
+52.41.75.196 1 1 7711 20190507041125
+77.74.177.114 1 1 7711 20190529123502
+34.221.223.2 1 1 7711 20190529085656
+34.220.128.216 1 1 7711 20190513131600
+68.183.51.58 1 1 7711 20190506171859
+34.216.54.31 1 1 7711 20190510080334
+34.221.171.191 1 1 7711 20190528111705
+185.98.12.13 1 1 0 20190508110507
+54.244.207.213 1 1 7711 20190501114120
+34.218.75.254 1 1 7711 20190504090812
+54.183.213.239 1 1 0 20190515044814
+34.209.189.169 1 1 7711 20190509133247
+18.237.25.252 1 1 7711 20190512084253
+34.217.98.106 1 1 7711 20190531090110
+77.74.177.113 1 9 90554 20190529123505
+54.187.149.228 1 1 7711 20190505092239
+52.43.174.238 1 1 7711 20190502081520
+35.162.242.71 1 1 7711 20190517081759
+188.252.198.87 1 1 0 20190508150155
+54.167.103.6 1 1 0 20190527102629
+54.187.185.214 1 1 7711 20190530085029
+54.189.178.15 1 1 7711 20190523083043
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20190501 3 3 23133 3
+20190502 1 1 7711 1
+20190503 2 2 15422 2
+20190504 1 1 7711 1
+20190505 1 1 7711 1
+20190506 6 6 46266 5
+20190507 1 1 7711 1
+20190508 6 6 7711 6
+20190509 1 1 7711 1
+20190510 1 1 7711 1
+20190511 1 1 7711 1
+20190512 2 2 15422 2
+20190513 1 1 7711 1
+20190514 1 1 7711 1
+20190515 2 2 7711 2
+20190516 3 3 23133 3
+20190517 1 1 7711 1
+20190518 1 1 7711 1
+20190519 2 2 15422 2
+20190520 1 1 7711 1
+20190521 1 1 7711 1
+20190522 2 2 7711 2
+20190523 2 2 15422 2
+20190524 4 4 7711 4
+20190525 1 1 7711 1
+20190526 2 2 15422 2
+20190527 4 4 9851 4
+20190528 1 1 7711 1
+20190529 3 11 105976 3
+20190530 1 1 7711 1
+20190531 1 1 7711 1
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 1
+0s-30s 59
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 2
+/ 58 362417 57 57
+/resetpass 2 2140 2 2
+END_SIDER

@@ -1,0 +1,11 @@
+[30-May-2017 14:45:09 America/Halifax] PHP Fatal error:  Call to undefined method selects::cargarPaises() in /home/nikovald/public_html/sistema/scripts9/cargar-paises.php on line 5
+[30-May-2017 14:45:20 America/Halifax] PHP Fatal error:  Call to undefined method selects::cargarPaises() in /home/nikovald/public_html/sistema/scripts9/cargar-paises.php on line 5
+[30-May-2017 14:45:42 America/Halifax] PHP Fatal error:  Call to undefined method selects::cargarPaises() in /home/nikovald/public_html/sistema/scripts9/cargar-paises.php on line 5
+[30-May-2017 14:46:39 America/Halifax] PHP Fatal error:  Call to undefined method selects::cargarPaises() in /home/nikovald/public_html/sistema/scripts9/cargar-paises.php on line 5
+[30-May-2017 14:52:32 America/Halifax] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts9/dependencia-estado.php on line 7
+[30-May-2017 14:52:36 America/Halifax] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts9/dependencia-estado.php on line 7
+[30-May-2017 14:52:41 America/Halifax] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts9/dependencia-estado.php on line 7
+[30-May-2017 14:55:33 America/Halifax] PHP Notice:  Undefined variable: paises in /home/nikovald/public_html/sistema/scripts9/clases/class.combos.php on line 10
+[30-May-2017 14:55:33 America/Halifax] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts9/cargar-paises.php on line 6
+[30-May-2017 14:56:39 America/Halifax] PHP Notice:  Undefined variable: paises in /home/nikovald/public_html/sistema/scripts9/clases/class.combos.php on line 10
+[30-May-2017 14:56:39 America/Halifax] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts9/cargar-paises.php on line 6

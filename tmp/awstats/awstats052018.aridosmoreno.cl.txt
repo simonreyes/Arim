@@ -1,0 +1,456 @@
+AWSTATS DATA FILE 7.6 (build 20161204)
+# If you remove this file, all statistics for date 201805 will be lost/reset.
+# Last config file used to build this data file was /home2/nikovald/tmp/awstats/awstats.aridosmoreno.cl.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2013                
+POS_TIME 2696                
+POS_VISITOR 8252                
+POS_DAY 11326               
+POS_DOMAIN 3446                
+POS_LOGIN 3721                
+POS_ROBOT 3876                
+POS_WORMS 4171                
+POS_EMAILSENDER 4302                
+POS_EMAILRECEIVER 4445                
+POS_SESSION 12042               
+POS_SIDER 12250               
+POS_FILETYPES 4580                
+POS_DOWNLOADS 4815                
+POS_OS 5734                
+POS_BROWSER 5928                
+POS_SCREENSIZE 6410                
+POS_UNKNOWNREFERER 6484                
+POS_UNKNOWNREFERERBROWSER 6638                
+POS_ORIGIN 6746                
+POS_SEREFERRALS 6886                
+POS_PAGEREFS 7076                
+POS_SEARCHWORDS 7224                
+POS_KEYWORDS 7376                
+POS_MISC 2359                
+POS_ERRORS 7435                
+POS_CLUSTER 3577                
+POS_SIDER_404 7535                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20180601054722 404 113030 9943296550450
+FirstTime 20180501020057
+LastTime 20180531170133
+LastUpdate 20180601084256 404 0 403 0 0
+TotalVisits 116                 
+TotalUnique 62                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 79                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+RealPlayerSupport 0 0 0
+JavascriptDisabled 0 0 0
+FlashSupport 0 0 0
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+AddToFavourites 0 35 0
+TotalMisc 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 1 28 9752 2 4 15502
+1 2 8 8213 1 8 19796
+2 2 2 7751 1 2 7751
+3 1 1 7751 3 6 14654
+4 2 2 15502 0 1 0
+5 0 0 0 1 1 7751
+6 0 0 0 2 9 45805
+7 365 365 1462170 68 76 148887
+8 513 546 2707274 99 120 296672
+9 963 1079 5231970 166 208 143501
+10 602 699 4605572 112 175 728358
+11 719 794 4211873 119 159 282056
+12 68 157 1667224 12 58 8059
+13 129 179 1586230 37 51 139944
+14 247 247 1740089 55 58 140419
+15 627 709 4447736 148 179 1403
+16 201 259 2932029 53 80 140020
+17 22 77 958604 5 22 8124
+18 3 3 15179 1 6 19266
+19 7 7 31004 12 182 1401722
+20 2 2 15502 0 0 0
+21 3 3 15502 2 2 0
+22 4 29 345630 3 30 128412
+23 1 1 7751 1 9 77810
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 4
+cl 4424 4898 28584159
+us 58 294 3430416
+ca 2 2 15502
+gb 0 3 231
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 4
+HubSpot[\x20]Webcrawler 148 1401464 20180526194734 0
+Googlebot/ 56 403289 20180529233429 0
+no_user_agent 14 1956892 20180530100427 0
+bingbot/ 1 0 20180507142817 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 9
+png 164 458913 0 0
+gif 82 17683 0 0
+css 78 324759 0 0
+jpg 163 6861492 0 0
+Unknown 4 135516 0 0
+js 193 2255822 0 0
+txt 33 2463 0 0
+php 4393 21388820 0 0
+html 87 584840 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 12
+/.well-known/pki-validation/A89C8DFAE991D73F152215BB3737A891.txt 12 0 924
+/.well-known/pki-validation/C5809C12CE5452D576DD7118AC80A8FA.txt 5 0 385
+/.well-known/pki-validation/9405A1A3D09FD7EB543AAA2C7E190067.txt 4 0 308
+/.well-known/pki-validation/F33211EF7215468DA648E22CE00232CD.txt 3 0 231
+/.well-known/pki-validation/6981B475967B031BDE3DC7FF5A6EB56B.txt 2 0 154
+/.well-known/pki-validation/8E32EC5E87FCAF863ECFDAAFB0650A8B.txt 1 0 77
+/.well-known/pki-validation/23688C4283A25F671214D5818C72860E.txt 1 0 64
+/.well-known/pki-validation/3F3FF5A6496C1D6C2F61760AF906C1BD.txt 1 0 64
+/.well-known/pki-validation/2C8F71D62458E8154C917F4FCB9DCEFB.txt 1 0 64
+/.well-known/pki-validation/074E2CD8FF0EC9975F1B76561E026E47.txt 1 0 64
+/.well-known/pki-validation/1CECEE8742AAA8887F8E9E7BBB257E11.txt 1 0 64
+/.well-known/pki-validation/C65E081CDF112CCD9BF830C8DF5FB240.txt 1 0 64
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 9
+Unknown 47 0
+linuxandroid 83 7
+linux 23 23
+win7 262 37
+win10 327 35
+macosx10 3 3
+ios_iphone 26 1
+macosx12 13 13
+win8.1 4413 4365
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 20
+msie9.0 26 1
+firefox59.0 2 2
+safari11.0 26 1
+chrome34.0.1847.137 1 1
+chrome62.0.3202.94 2 2
+mozilla 36 22
+Unknown 33 0
+chrome66.0.3359.170 31 2
+chrome57.0.2987.133 81 3
+chrome66.0.3359.139 2758 2612
+chrome65.0.3325.109 20 1
+firefox60.0 37 5
+chrome65.0.3325.181 95 94
+chrome40.0.2214.93 1 1
+msie8.0 52 2
+chrome66.0.3359.158 26 1
+chrome49.0.2623.75 1 1
+chrome61.0.3163.100 14 14
+chrome58.0.3029.83 37 5
+chrome66.0.3359.181 1918 1714
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 2
+COMODO_DCV 20180523011420
+Mozilla/4.0_(compatible;) 20180518093505
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 1
+COMODO_DCV 20180523011420
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 117 164
+From1 0 0
+From2 8 8
+From3 0 0
+From4 4359 5025
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 3
+live 1 1
+www_google_com 2 2
+www_google_cl 5 5
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+404 326 0
+302 866 12762
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 8
+/license.php 2 -
+/js/cufon-replace.js 105 http://www.aridosmoreno.cl/index.html
+/README.txt 2 http://www.aridosmoreno.cl/README.txt
+/readme.html 1 http://www.aridosmoreno.cl/readme.html
+/js/FF-cash.js 113 http://www.aridosmoreno.cl/index.html
+/robots.txt 14 -
+/sistema/jquery-1.7.1.min.js 19 http://www.aridosmoreno.cl/sistema/ReporteCotiFolio.php
+/js/tms_presets.js 70 http://www.aridosmoreno.cl/index.html
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 79
+191.126.128.75 482 482 1985937 20180525154756
+191.125.35.242 444 444 2292475 20180516153501
+191.126.23.23 369 369 1243966 20180517153415
+191.126.41.30 352 352 1258156 20180515151657
+191.126.63.126 330 377 2405078 20180530113847
+191.126.21.27 305 305 2413277 20180531164950
+191.125.185.84 263 263 1377112 20180514180313
+191.125.133.240 236 236 1373238 20180511155207
+191.126.23.0 216 216 1452804 20180503165920
+191.125.188.236 213 213 938959 20180504103702
+191.125.144.13 158 158 567487 20180508160247
+191.126.18.157 146 146 684095 20180528144311
+191.126.139.146 120 120 563920 20180524144608
+191.126.180.77 118 118 598581 20180509123157
+191.125.128.33 115 115 401618 20180518144742
+191.125.18.234 115 115 557570 20180522114415
+191.125.54.105 112 112 404927 20180507151731
+191.126.18.156 112 112 576822 20180510132821
+191.126.19.7 94 95 470395 20180502123927
+191.126.7.69 50 50 190151 20180523165927
+186.21.199.176 22 75 1342256 20180528111522
+191.126.166.221 14 14 47540 20180529132208
+13.56.232.243 10 10 77510 20180530215341
+191.114.67.195 5 37 551521 20180502164412
+64.116.194.9 5 37 551521 20180509113501
+40.107.218.74 0 4 21915 
+216.145.5.42 1 1 7751 20180507142621
+35.231.104.196 2 2 7751 20180529184321
+54.67.59.131 3 3 23253 20180507032854
+201.214.212.7 4 36 543770 20180509081430
+40.107.242.84 0 2 23959 
+34.209.175.187 2 52 660256 20180515154444
+190.107.229.11 2 27 337879 20180518093514
+200.63.96.10 0 30 2232 
+40.107.238.99 0 4 14436 
+186.103.221.162 5 37 551521 20180523103136
+40.107.238.64 0 4 24112 
+13.56.14.137 1 1 7751 20180508124741
+40.107.238.96 0 2 59581 
+40.107.242.37 0 2 8501 
+66.249.85.31 3 21 163471 20180516150404
+35.190.138.12 2 2 7751 20180529192551
+66.249.85.29 3 20 276242 20180516150406
+35.231.219.208 2 2 7751 20180525193817
+35.196.205.215 2 2 7751 20180516214828
+35.196.198.124 2 2 7751 20180520011936
+91.199.212.132 0 3 231 
+35.227.41.182 2 2 7751 20180501020057
+40.107.238.11 1 7 92094 20180531170133
+201.238.235.194 5 30 465644 20180530092543
+190.46.157.243 1 26 330128 20180503221408
+181.162.220.144 2 31 445901 20180517173210
+40.107.218.14 0 10 57567 
+35.229.105.232 2 2 7751 20180508192746
+186.9.59.139 1 26 330128 20180509095823
+191.126.179.88 2 31 445901 20180515113636
+35.231.6.92 2 2 7751 20180512223802
+40.107.242.64 0 5 31562 
+191.125.184.171 1 26 330128 20180531131802
+186.103.129.154 5 37 551521 20180518125540
+40.107.238.81 0 6 51580 
+66.249.83.91 1 1 7428 20180517151714
+35.229.118.209 2 2 7751 20180507152051
+64.246.161.42 1 1 7751 20180525125701
+13.230.214.186 1 1 7751 20180514160312
+40.107.218.79 0 2 59581 
+35.227.93.215 2 2 7751 20180517092241
+40.107.242.20 0 8 224253 
+40.107.242.18 0 2 343 
+40.107.238.85 0 4 88487 
+54.196.239.91 1 1 7751 20180512233035
+66.249.85.30 0 16 225721 
+190.101.172.93 5 37 551521 20180525120833
+40.107.242.88 1 8 41672 20180517162239
+35.227.36.47 2 2 7751 20180523102127
+192.99.9.147 2 2 15502 20180513003211
+34.209.182.200 1 26 330128 20180504131935
+40.107.218.54 1 7 100192 20180507104536
+40.107.218.11 0 4 91035 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 26
+20180501 3 3 15502 2
+20180502 100 152 1135829 4
+20180503 219 269 2146939 6
+20180504 215 240 1276838 3
+20180507 117 143 758470 8
+20180508 162 162 590740 6
+20180509 129 218 2031751 7
+20180510 112 112 576822 3
+20180511 237 237 1380989 5
+20180512 3 3 15502 2
+20180513 1 1 7751 1
+20180514 265 265 1392614 5
+20180515 358 437 2432071 6
+20180516 451 483 2851747 6
+20180517 385 454 2661901 9
+20180518 122 179 1291018 6
+20180520 3 3 15502 2
+20180522 116 116 565321 3
+20180523 57 122 751886 4
+20180524 121 121 571671 4
+20180525 490 522 2552960 5
+20180526 1 1 7751 1
+20180528 159 173 1085160 5
+20180529 18 18 63042 4
+20180530 333 405 2776836 4
+20180531 307 358 3073695 5
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+5mn-15mn 7
+30mn-1h 15
+0s-30s 60
+1h+ 18
+2mn-5mn 2
+30s-2mn 6
+15mn-30mn 8
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 53
+/sistema/scripts/cargar-paises.php 900 518400 0 1
+/sistema/GuiaDespacho.php 607 4683290 10 0
+/sistema/VistaGral.php 590 4382520 23 36
+/sistema/ActualizarGuiaDespacho.php 357 2350437 1 0
+/sistema/scripts/dependencia-estado.php 287 47196 0 0
+/sistema/scripts/dependencia-ciudades.php 283 15302 0 0
+/sistema/InsertarItemG.php 282 620639 0 0
+/sistema/GuiaDespacho2.php 282 2459496 0 0
+/sistema/insertaGD.php 270 435848 0 21
+/ 71 465060 51 44
+/sistema/Home.php 49 196588 24 0
+/sistema/VIstaMante.php 29 196765 2 0
+/sistema/EditaCotizacion.php 29 215149 1 0
+/sistema/EditaCotizacion2.php 27 266838 0 0
+/sistema/scripts5/cargar-paises.php 27 15552 0 0
+/sistema/scripts4/cargar-paises.php 24 13824 0 0
+/sistema/EditaTransporte.php 24 126380 0 0
+/sistema/scripts3/dependencia-sucursal.php 23 784 0 0
+/sistema/scripts3/dependencia-estado.php 21 1280 0 0
+/sistema/scripts3/cargar-paises.php 20 16300 0 0
+/sistema/ReporteCotiFolio.php 20 185535 0 0
+/sistema/scripts3/dependencia-ciudades.php 19 4751 0 0
+/sistema/ReporteGuiasFechas.php 19 1136930 0 0
+/sistema/EditarGuiaDespacho.php 17 109663 0 0
+/sistema/scripts4/dependencia-estado.php 15 2546 0 0
+/sistema/Cotizacion.php 14 99632 0 0
+/sistema/EditartemG.php 3 6636 0 0
+/sistema/AnulaGuiaDespacho.php 14 104226 0 0
+/sistema/ReporteProveedor.php 3 98898 0 2
+/sistema/NuevoTransporte.php 6 25812 0 0
+/sistema/scripts5/dependencia-estado.php 7 1064 0 0
+/sistema/ReporteTranspFechas.php 11 683115 0 0
+/sistema/add2.php 12 64356 0 0
+/sistema/EditarGuiaDespacho2.php 10 73700 0 0
+/sistema/scripts5/dependencia-ciudades.php 8 414 0 0
+/sistema/EditaGD.php 7 11420 0 0
+/quienes_somos.html 7 47474 0 1
+/sistema/InsertarItemCoti.php 5 17325 0 0
+/sistema/add.php 8 42856 0 0
+/sistema/EditaCliente.php 2 13429 0 0
+/sistema/actualizaguia.php 3 87 0 0
+/servicios.html 9 72306 1 2
+/sistema/Cliente.php 2 7392 0 0
+/sistema/Cotizacion2.php 13 110338 0 0
+/contacto.php 8 55224 1 5
+/whm 4 135516 2 3
+/sistema/pdf.php 4 537460 0 0
+/sistema/ObraCliente.php 4 27538 0 0
+/sistema/Transporte.php 1 5607 0 0
+/sistema/Aridos.php 1 4593 0 0
+/sistema/CancelaInserG.php 2 58 0 0
+/sistema/pdf2.php 10 1344904 0 1
+/sistema/InsertarItemCoti2.php 14 50723 0 0
+END_SIDER

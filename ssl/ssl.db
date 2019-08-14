@@ -1,0 +1,81 @@
+--- 
+files: 
+  certificate: 
+    aridosmoreno_cl_bc833_9d893_1561161599_a65ae61fe01b7211e467fb2fb9f7d2cb: 
+      created: '1553314982'
+      domains: 
+        - aridosmoreno.cl
+        - cpanel.aridosmoreno.cl
+        - mail.aridosmoreno.cl
+        - webdisk.aridosmoreno.cl
+        - webmail.aridosmoreno.cl
+        - www.aridosmoreno.cl
+      friendly_name: Cert for “aridosmoreno.cl” 1553314982.0
+      id: aridosmoreno_cl_bc833_9d893_1561161599_a65ae61fe01b7211e467fb2fb9f7d2cb
+      is_self_signed: 0
+      issuer.commonName: cPanel, Inc. Certification Authority
+      issuer.organizationName: cPanel, Inc.
+      modulus: bc83329aee8fff8c29eabcab023c87a6892d24fe870aa3ef336a9e16a2d3b4f15529632bee07bf948017c7166012e196feee45de9c73ddf9d96af198221473f173a224669d3097c4179e0df90721b4f280061b2d72c080d15f737de0e1ebbffadc120cd3cee4c1552fdf737f1e63869e5f6a28f212a8687b20dcbff8a6046caafcdfda4dad8e2c82a6ccad54c43c64e10b75258ec8432645a04f498e61690c74053b07c293802550518a2c729bf63df97178950ce745bda2843fe97feea787ebb99af8ab881f806d92b743048bf1dae2e80f351e2808b744208a883a52f6641900ae5c2c9703b88c379aa0c14872dbbf8f97ab1f66d118c2ddc694484d29d893
+      modulus_length: 2048
+      not_after: '1561161599'
+      not_before: '1553299200'
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: aridosmoreno.cl
+      validation_type: dv
+    aridosmoreno_cl_cc5d7_ec303_1567727999_df43363e738e7ddaeb8c8ae2df09ab03: 
+      created: '1559884683'
+      domains: 
+        - aridosmoreno.cl
+        - cpanel.aridosmoreno.cl
+        - mail.aridosmoreno.cl
+        - webdisk.aridosmoreno.cl
+        - webmail.aridosmoreno.cl
+        - www.aridosmoreno.cl
+      friendly_name: Cert for “aridosmoreno.cl” 1559884683.0
+      id: aridosmoreno_cl_cc5d7_ec303_1567727999_df43363e738e7ddaeb8c8ae2df09ab03
+      is_self_signed: 0
+      issuer.commonName: cPanel, Inc. Certification Authority
+      issuer.organizationName: cPanel, Inc.
+      modulus: cc5d70c83fcd1006395fe5c08f9231c06c36535b84555f59b19ce89b0f4204e8569b5001c72b0fab64785a137bce13807d91c6591eed0664a271d3828dff2a3a73da9248d426aad158da5911cbfb57394ec84e561f4afe64f40574bb1f1322132e156be32c9efef4e3d90fe43f4e047e5505b16cdaf13603b899aedb04abfe8b9c1ec2234ce48809afda72ea41110db0ddd3c41326ec512c7d147d2e40e2d561a996cefae22de1dbb86bf02de25088a046c4d25c48f9314406d11cc2b40def659f2f2f32605bc37ee091a0d1b46b89c48a033880047675846e2fdc291eb868ef9c3b355814699464bb65598443b8a58da3dbb1aab7c00b830de05ae3f6eec303
+      modulus_length: 2048
+      not_after: '1567727999'
+      not_before: '1559865600'
+      signature_algorithm: sha256WithRSAEncryption
+      subject.commonName: aridosmoreno.cl
+      validation_type: dv
+  key: 
+    bc833_9d893_9bc701be4fa8290eb0300b86ef9272a1: 
+      created: '1553314982'
+      friendly_name: Key for “aridosmoreno.cl”
+      id: bc833_9d893_9bc701be4fa8290eb0300b86ef9272a1
+      modulus: bc83329aee8fff8c29eabcab023c87a6892d24fe870aa3ef336a9e16a2d3b4f15529632bee07bf948017c7166012e196feee45de9c73ddf9d96af198221473f173a224669d3097c4179e0df90721b4f280061b2d72c080d15f737de0e1ebbffadc120cd3cee4c1552fdf737f1e63869e5f6a28f212a8687b20dcbff8a6046caafcdfda4dad8e2c82a6ccad54c43c64e10b75258ec8432645a04f498e61690c74053b07c293802550518a2c729bf63df97178950ce745bda2843fe97feea787ebb99af8ab881f806d92b743048bf1dae2e80f351e2808b744208a883a52f6641900ae5c2c9703b88c379aa0c14872dbbf8f97ab1f66d118c2ddc694484d29d893
+      modulus_length: 2048
+    cc5d7_ec303_0818735a7862b6fb354ba2e01978e996: 
+      created: '1559884683'
+      friendly_name: Key for “aridosmoreno.cl” 1559884683.0
+      id: cc5d7_ec303_0818735a7862b6fb354ba2e01978e996
+      modulus: cc5d70c83fcd1006395fe5c08f9231c06c36535b84555f59b19ce89b0f4204e8569b5001c72b0fab64785a137bce13807d91c6591eed0664a271d3828dff2a3a73da9248d426aad158da5911cbfb57394ec84e561f4afe64f40574bb1f1322132e156be32c9efef4e3d90fe43f4e047e5505b16cdaf13603b899aedb04abfe8b9c1ec2234ce48809afda72ea41110db0ddd3c41326ec512c7d147d2e40e2d561a996cefae22de1dbb86bf02de25088a046c4d25c48f9314406d11cc2b40def659f2f2f32605bc37ee091a0d1b46b89c48a033880047675846e2fdc291eb868ef9c3b355814699464bb65598443b8a58da3dbb1aab7c00b830de05ae3f6eec303
+      modulus_length: 2048
+indexes: 
+  certificate: 
+    modulus: 
+      bc83329aee8fff8c29eabcab023c87a6892d24fe870aa3ef336a9e16a2d3b4f15529632bee07bf948017c7166012e196feee45de9c73ddf9d96af198221473f173a224669d3097c4179e0df90721b4f280061b2d72c080d15f737de0e1ebbffadc120cd3cee4c1552fdf737f1e63869e5f6a28f212a8687b20dcbff8a6046caafcdfda4dad8e2c82a6ccad54c43c64e10b75258ec8432645a04f498e61690c74053b07c293802550518a2c729bf63df97178950ce745bda2843fe97feea787ebb99af8ab881f806d92b743048bf1dae2e80f351e2808b744208a883a52f6641900ae5c2c9703b88c379aa0c14872dbbf8f97ab1f66d118c2ddc694484d29d893: 
+        aridosmoreno_cl_bc833_9d893_1561161599_a65ae61fe01b7211e467fb2fb9f7d2cb: ~
+      cc5d70c83fcd1006395fe5c08f9231c06c36535b84555f59b19ce89b0f4204e8569b5001c72b0fab64785a137bce13807d91c6591eed0664a271d3828dff2a3a73da9248d426aad158da5911cbfb57394ec84e561f4afe64f40574bb1f1322132e156be32c9efef4e3d90fe43f4e047e5505b16cdaf13603b899aedb04abfe8b9c1ec2234ce48809afda72ea41110db0ddd3c41326ec512c7d147d2e40e2d561a996cefae22de1dbb86bf02de25088a046c4d25c48f9314406d11cc2b40def659f2f2f32605bc37ee091a0d1b46b89c48a033880047675846e2fdc291eb868ef9c3b355814699464bb65598443b8a58da3dbb1aab7c00b830de05ae3f6eec303: 
+        aridosmoreno_cl_cc5d7_ec303_1567727999_df43363e738e7ddaeb8c8ae2df09ab03: ~
+    subject.commonName: 
+      aridosmoreno.cl: 
+        aridosmoreno_cl_bc833_9d893_1561161599_a65ae61fe01b7211e467fb2fb9f7d2cb: ~
+        aridosmoreno_cl_cc5d7_ec303_1567727999_df43363e738e7ddaeb8c8ae2df09ab03: ~
+uniques: 
+  certificate: 
+    friendly_name: 
+      Cert for “aridosmoreno.cl” 1553314982.0: aridosmoreno_cl_bc833_9d893_1561161599_a65ae61fe01b7211e467fb2fb9f7d2cb
+      Cert for “aridosmoreno.cl” 1559884683.0: aridosmoreno_cl_cc5d7_ec303_1567727999_df43363e738e7ddaeb8c8ae2df09ab03
+  key: 
+    friendly_name: 
+      Key for “aridosmoreno.cl”: bc833_9d893_9bc701be4fa8290eb0300b86ef9272a1
+      Key for “aridosmoreno.cl” 1559884683.0: cc5d7_ec303_0818735a7862b6fb354ba2e01978e996
+    modulus: 
+      bc83329aee8fff8c29eabcab023c87a6892d24fe870aa3ef336a9e16a2d3b4f15529632bee07bf948017c7166012e196feee45de9c73ddf9d96af198221473f173a224669d3097c4179e0df90721b4f280061b2d72c080d15f737de0e1ebbffadc120cd3cee4c1552fdf737f1e63869e5f6a28f212a8687b20dcbff8a6046caafcdfda4dad8e2c82a6ccad54c43c64e10b75258ec8432645a04f498e61690c74053b07c293802550518a2c729bf63df97178950ce745bda2843fe97feea787ebb99af8ab881f806d92b743048bf1dae2e80f351e2808b744208a883a52f6641900ae5c2c9703b88c379aa0c14872dbbf8f97ab1f66d118c2ddc694484d29d893: bc833_9d893_9bc701be4fa8290eb0300b86ef9272a1
+      cc5d70c83fcd1006395fe5c08f9231c06c36535b84555f59b19ce89b0f4204e8569b5001c72b0fab64785a137bce13807d91c6591eed0664a271d3828dff2a3a73da9248d426aad158da5911cbfb57394ec84e561f4afe64f40574bb1f1322132e156be32c9efef4e3d90fe43f4e047e5505b16cdaf13603b899aedb04abfe8b9c1ec2234ce48809afda72ea41110db0ddd3c41326ec512c7d147d2e40e2d561a996cefae22de1dbb86bf02de25088a046c4d25c48f9314406d11cc2b40def659f2f2f32605bc37ee091a0d1b46b89c48a033880047675846e2fdc291eb868ef9c3b355814699464bb65598443b8a58da3dbb1aab7c00b830de05ae3f6eec303: cc5d7_ec303_0818735a7862b6fb354ba2e01978e996

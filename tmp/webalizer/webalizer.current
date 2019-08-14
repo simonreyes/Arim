@@ -1,0 +1,741 @@
+# Webalizer V2.23-08 Incremental Data - 08/09/2019 07:27:13
+2019 8 9 7 27 13
+1412 1203 86 109 46 28 13383415 60 48 0
+1 1 278 1 9
+444 378 3193783 13 11 7
+173 138 2795588 24 12 7
+22 15 115185 9 7 6
+5 4 30844 5 4 4
+146 123 1391707 8 6 5
+286 259 3302410 10 4 4
+232 192 1340324 8 4 4
+103 93 1205863 21 11 10
+1 1 7711 1 1 1
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0
+89 73 815406 7
+2 1 7711 1
+4 3 23133 3
+3 1 7711 2
+2 2 15422 2
+52 40 421430 2
+1 1 7711 1
+37 35 482196 1
+80 79 808160 3
+137 123 2150946 6
+114 98 511008 2
+197 164 1756485 2
+313 267 1620431 7
+22 22 388349 1
+87 78 425236 2
+66 56 1583833 2
+54 46 657050 3
+101 74 1122400 5
+44 36 547953 2
+0 0 0 0
+0 0 0 0
+2 1 7711 1
+5 3 23133 5
+0
+0
+0
+1203
+0
+0
+0
+0
+0
+0
+0
+0
+117
+0
+2
+0
+0
+0
+0
+0
+0
+90
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+# -urls- 
+/js/easyTooltip.js
+0 8 3328216407731036786 14528 0 0
+/sistema/InsertarItemG.php
+0 35 7074654956676788276 77048 0 0
+/sistema/scripts3/dependencia-estado.php
+0 23 499917926002 1530 0 0
+/images/social-icons.png
+0 7 119173235960180 55881 0 0
+/sistema/add.php
+0 21 7599383935954870626 112497 0 0
+/sistema/ReporteGuiasFechas.php
+0 10 3257289114846901553 444563 0 0
+/js/jquery.easing.1.3.js
+0 7 7378429357149020462 56679 0 0
+/sistema/ActualizarGuiaDespacho.php
+0 16 3472607610919792183 103573 0 0
+/images/pic-1.gif
+0 4 0 172 0 0
+/sistema/scripts2/cargar-paises.php
+0 1 0 1152 0 0
+/sistema/scripts/cargar-paises.php
+0 122 0 74908 0 0
+/images/q_3.jpg
+0 3 0 79449 0 0
+/sistema/images/1.jpg
+0 6 0 141306 0 0
+/sistema/FormatoC.png
+0 7 0 978446 0 0
+/sistema/resources/functions.js
+0 2 0 4740 0 0
+/sistema/css/style.css
+0 6 0 11946 0 0
+/sistema/GuiaDespacho2.php
+0 35 0 302798 0 0
+/sistema/Cotizacion.php
+0 10 0 95048 0 0
+/sistema/scripts5/cargar-paises.php
+0 13 0 7982 0 0
+/sistema/images/8.jpg
+0 6 0 100404 0 0
+/sistema/scripts3/cargar-paises.php
+0 21 0 24192 0 0
+/images/menu-spacer.gif
+0 7 0 2212 0 0
+/js/bgSlider.js
+0 9 0 51282 0 0
+/sistema/images/2.jpg
+0 6 0 197154 0 0
+/sistema/images/overlay.png
+0 6 0 42696 0 0
+/sistema/scripts2/dependencia-sucursal.php
+0 1 0 42 0 0
+/sistema/scripts3/dependencia-sucursal.php
+0 21 0 718 0 0
+/images/loader.gif
+0 6 0 1422 0 0
+/sistema/VistaGral.php
+0 92 0 683376 0 0
+/sistema/scripts/dependencia-ciudades.php
+0 36 0 1972 0 0
+/css/layout.css
+0 9 0 13833 0 0
+/sistema/images/11.jpg
+0 2 0 26522 0 0
+/sistema/bg.jpg
+0 6 0 80370 0 0
+/sistema/resources/jquery-1.7.1.min.js
+0 2 0 187734 0 0
+/js/tms-0.3.js
+0 7 0 82082 0 0
+/images/mov_tierra.jpg
+0 2 0 63458 0 0
+/js/Lobster_13_400.font.js
+0 8 3256446888181760000 169864 0 0
+/sistema/images/9.jpg
+0 6 85624679241429294 96342 0 0
+/sistema/images/4.jpg
+0 2 72057594037927936 81168 0 0
+/sistema/images/7.jpg
+0 2 7882194557481332016 36426 0 0
+/images/logo.png
+0 6 1548765495 50004 0 0
+/favicon.ico
+0 11 7103278 473 0 0
+/sistema/jquery.easing.1.3.js
+0 5 7958825012581069409 40485 0 0
+/js/script.js
+0 9 3602879701896396800 2259 0 0
+/sistema/FacturaRecibida.php
+0 3 0 19694 0 0
+/contacto.html
+0 2 0 14454 1 0
+/sistema/ConsultarGuiaDespacho.php
+0 17 0 108069 0 0
+/sistema/scripts5/dependencia-estado.php
+0 1 0 342 0 0
+/sistema/pdf2.php
+0 4 0 537384 0 0
+/sistema/insertaGD.php
+0 35 0 57350 0 0
+/sistema/js/jquery-1.3.2.min.js
+0 4 0 229016 0 0
+/images/q_2.jpg
+0 3 0 97005 0 0
+/sistema/scripts2/dependencia-ciudades.php
+0 1 0 33 0 0
+/images/aridos.jpg
+0 2 0 87258 0 0
+/images/fondo.jpg
+0 7 0 100268 0 0
+/sistema/FacturaEmitidas.php
+0 5 0 51227 0 0
+/css/style.css
+0 8 0 77080 0 0
+/sistema/VIstaMante.php
+0 9 0 61065 0 0
+/sistema/ObraCliente.php
+0 2 0 18496 0 0
+/sistema/ReporteComision.php
+0 3 0 14238 0 0
+/images/transporte.jpg
+0 2 0 64676 0 0
+/sistema/ModificaAridos.php
+0 1 0 5804 0 0
+/sistema/images/10.jpg
+0 6 0 161838 0 0
+/sistema/EditaProveedor.php
+0 13 0 87820 0 0
+/sistema/AnulaGuiaDespacho.php
+0 2 0 14860 0 0
+/js/jquery-1.6.3.min.js
+0 1 0 91626 0 0
+/images/content-tail.png
+0 6 0 1002 0 0
+/js/cufon-yui.js
+0 8 0 146064 0 0
+/css/reset.css
+0 9 0 7857 0 0
+/sistema/ReporteProveedor.php
+0 7 0 287144 0 0
+/sistema/Cotizacion2.php
+0 35 0 463906 0 0
+/servicios.html
+0 3 3330184541040226605 24102 1 1
+/sistema/scripts/dependencia-estado.php
+0 37 3329060818833125677 6688 0 0
+/sistema/EditartemG.php
+0 6 90 13272 0 0
+/sistema/images/5.jpg
+0 2 3543828446476906809 117434 0 0
+/sistema/ReporteCotiFolio.php
+0 6 1952919149 127214 0 0
+/sistema/Cliente.php
+0 2 4120008827626928177 7392 0 0
+/sistema/GuiaDespacho.php
+0 89 72057594037927936 674158 0 0
+/images/slider-img1.jpg
+0 5 0 333855 0 0
+/images/bg-tail.png
+0 7 33780480 1169 0 0
+/images/slider-img3.jpg
+0 5 0 341145 0 0
+/sistema/EliminaCoti.php
+0 1 0 5095 0 0
+/sistema/scripts5/dependencia-ciudades.php
+0 1 0 60 0 0
+/
+0 48 0 354706 43 4
+/sistema/InsertarItemCoti.php
+0 15 0 51868 0 0
+/images/pags.png
+0 5 0 5450 0 0
+/quienes_somos.html
+0 3 0 20346 0 0
+/sistema/EditarGuiaDespacho.php
+0 11 0 65947 0 0
+/sistema/EditaCotizacion.php
+0 7 0 42158 0 0
+/sistema/volver.png
+0 2 0 20938 0 0
+/contacto.php
+0 6 0 41490 0 0
+/sistema/InformeMensual.php
+0 11 0 726850 0 0
+/sistema/pdf.php
+0 3 0 403464 0 0
+/js/NewsGoth_BT_400.font.js
+0 8 0 126112 0 0
+/images/menu-row-tail.gif
+0 7 0 1232 0 0
+/images/header-tail.png
+0 7 0 1393 0 0
+/sistema/images/3.jpg
+0 6 0 192498 0 0
+/sistema/scripts2/dependencia-estado.php
+0 1 0 73 0 0
+/sistema/resources/style.css
+0 2 0 3406 0 0
+/sistema/ReporteTranspFechas.php
+0 31 0 1594676 0 0
+/images/footer-tail.png
+0 7 0 1162 0 0
+/whm
+0 2 0 67758 2 1
+/sistema/images/6.jpg
+0 2 0 164994 0 0
+/images/button2-tail.gif
+0 1 0 264 0 0
+/sistema/scripts3/dependencia-ciudades.php
+0 22 0 10517 0 0
+/images/slider-img2.jpg
+0 5 0 296650 0 0
+/sistema/resources/screen.css
+0 2 90 24428 0 0
+/sistema/EditarGuiaDespacho2.php
+0 4 89 29426 0 0
+/images/q_1.jpg
+0 3 3832058822628618553 76098 0 0
+# End Of Table - urls
+# -sites- (monthly)
+191.116.202.182
+0 3 3 152003 0 0
+-
+pc-134-77-104-200.cm.vtr.net
+0 39 31 421097 1 1565034790
+/quienes_somos.html
+36.99.136.131
+0 1 1 7711 1 1564977010
+/
+msnbot-40-77-189-216.search.msn.com
+0 1 0 0 0 0
+-
+msnbot-40-77-188-138.search.msn.com
+0 1 1 251 0 0
+-
+186.21.193.52
+0 151 147 2615965 0 0
+-
+google-proxy-66-249-85-22.google.com
+0 3 3 41599 0 0
+-
+ip-54-36-148-153.a.ahrefs.com
+0 1 1 7711 1 1564801867
+/
+191.116.140.246
+0 3 3 283379 0 0
+-
+181.215.83.139
+0 1 1 7711 1 1564789598
+/
+106.52.185.232
+0 1 0 0 1 1565239003
+-
+191.96.41.43
+0 1 1 7711 1 1565251330
+/
+ec2-35-167-206-124.us-west-2.compute.amazonaws.com
+0 1 1 7711 1 1564999201
+/
+ec2-34-220-75-84.us-west-2.compute.amazonaws.com
+0 1 1 7711 1 1564656216
+/
+209.17.97.58.rdns.cloudsystemnetworks.com
+0 1 1 7711 1 1564681467
+/
+45.86.246.216
+0 1 1 7711 1 1564911949
+/
+google-proxy-66-249-85-23.google.com
+0 4 4 80155 0 0
+-
+google-proxy-66-249-85-63.google.com
+0 1 0 0 0 0
+-
+ip-54-36-149-4.a.ahrefs.com
+0 1 0 0 0 0
+-
+msnbot-40-77-188-68.search.msn.com
+0 1 1 11726 0 0
+-
+60.191.38.77
+0 4 4 30844 4 1565242296
+/
+216.244.66.197
+0 6 3 22660 2 1564683008
+/
+crawl-66-249-66-153.googlebot.com
+0 4 3 25291 1 1564752225
+/
+pc-23-254-46-190.cm.vtr.net
+0 52 52 769768 0 0
+-
+msnbot-40-77-188-17.search.msn.com
+0 2 2 17301 0 0
+-
+msnbot-207-46-13-126.search.msn.com
+0 1 0 0 0 0
+-
+181.215.207.23
+0 1 1 7711 1 1564847928
+/
+181.215.50.204
+0 1 1 7711 1 1565335633
+/
+sv121142.bkns.vn
+0 1 0 0 0 0
+-
+191.116.77.183
+0 53 51 1325626 0 0
+-
+ip188.ip-87-98-145.eu
+0 1 1 7711 1 1565234108
+/
+ip-54-36-148-66.a.ahrefs.com
+0 1 0 0 0 0
+-
+42.pool85-59-15.dynamic.orange.es
+0 37 29 337089 1 1565073474
+/
+msnbot-40-77-167-155.search.msn.com
+0 1 1 7711 1 1564762314
+/
+ip-54-36-150-118.a.ahrefs.com
+0 1 1 7711 1 1564753651
+/
+191.116.121.242
+0 223 184 1019159 0 0
+-
+crawl-66-249-66-151.googlebot.com
+0 13 10 67124 2 1564814336
+/
+191-125-39-240.bam.movistar.cl
+0 13 13 193755 0 0
+-
+191.116.107.143
+0 81 66 419350 0 0
+-
+45.86.247.94
+0 1 1 7711 1 1565134017
+/
+ip-54-36-150-185.a.ahrefs.com
+0 1 1 7227 1 1565086443
+/contacto.html
+google-proxy-66-249-85-24.google.com
+0 4 4 64530 0 0
+-
+msnbot-40-77-189-178.search.msn.com
+0 1 1 18258 0 0
+-
+191.116.25.53
+0 3 3 112513 0 0
+-
+ip-54-36-148-122.a.ahrefs.com
+0 1 1 7711 1 1565144374
+/
+crawl-66-249-66-155.googlebot.com
+0 3 2 22770 0 0
+-
+ec2-54-184-105-225.us-west-2.compute.amazonaws.com
+0 1 1 7711 1 1564742634
+/
+msnbot-40-77-188-61.search.msn.com
+0 1 1 5698 0 0
+-
+msnbot-40-77-190-170.search.msn.com
+0 2 1 9635 0 0
+-
+240.130.226.35.bc.googleusercontent.com
+0 1 0 0 1 1564874360
+/
+14-116-229-181.cab.prima.com.ar
+0 1 1 6915 0 0
+-
+ec2-34-211-45-49.us-west-2.compute.amazonaws.com
+0 1 1 7711 1 1564826536
+/
+ip-54-36-148-68.a.ahrefs.com
+0 1 0 0 0 0
+-
+host2.190.107.178.static.wirenetchile.com
+0 2 2 67758 2 1565265560
+/whm
+ec2-54-187-4-201.us-west-2.compute.amazonaws.com
+0 1 1 7711 1 1565280147
+/
+191.116.48.90
+0 21 18 318925 0 0
+-
+191.119.187.62
+0 25 23 224683 0 0
+-
+ip-54-36-150-115.a.ahrefs.com
+0 1 1 7711 1 1564892371
+/
+ec2-34-208-19-36.us-west-2.compute.amazonaws.com
+0 1 1 7711 1 1565096832
+/
+ec2-52-38-34-195.us-west-2.compute.amazonaws.com
+0 1 1 7711 1 1565178480
+/
+msnbot-40-77-190-165.search.msn.com
+0 1 1 21233 0 0
+-
+181.214.181.65
+0 1 1 7711 1 1564983306
+/
+191.116.150.37
+0 1 1 7428 0 0
+-
+srv1.chilecom.net
+0 7 7 978446 0 0
+-
+ec2-34-220-228-95.us-west-2.compute.amazonaws.com
+0 1 1 7711 1 1564923246
+/
+ip-54-36-148-187.a.ahrefs.com
+0 1 0 0 0 0
+-
+crawl-66-249-66-145.googlebot.com
+0 1 1 7711 1 1565304351
+/
+msnbot-40-77-189-60.search.msn.com
+0 1 0 0 0 0
+-
+191.116.144.67
+0 65 39 558411 1 1564769070
+/
+ip145.ip-167-114-181.net
+0 87 72 807695 1 1564624162
+/contacto.html
+ip-54-36-149-94.a.ahrefs.com
+0 1 0 0 0 0
+-
+191.116.17.66
+0 317 274 1438499 0 0
+-
+183.90.237.35.bc.googleusercontent.com
+0 2 1 7711 1 1565227469
+/
+msnbot-157-55-39-39.search.msn.com
+0 1 0 0 0 0
+-
+ip-54-36-148-32.a.ahrefs.com
+0 1 1 7711 1 1565266837
+/
+ip-54-36-148-31.a.ahrefs.com
+0 1 0 0 0 0
+-
+cache.google.com
+0 29 26 330088 1 1565286120
+/
+191.116.118.81
+0 97 83 314113 0 0
+-
+google-proxy-66-249-85-61.google.com
+0 1 1 43 0 0
+-
+38.145.109.147
+0 1 1 7711 1 1565169210
+/
+101.247.231.35.bc.googleusercontent.com
+0 2 1 7711 1 1564874732
+/
+ip-54-36-150-187.a.ahrefs.com
+0 1 1 7711 1 1564652108
+/
+crawl-66-249-66-147.googlebot.com
+0 1 0 0 0 0
+-
+msnbot-40-77-188-136.search.msn.com
+0 2 2 8970 0 0
+-
+msnbot-40-77-190-204.search.msn.com
+0 1 1 1816 0 0
+-
+ip-54-36-148-82.a.ahrefs.com
+0 1 0 0 0 0
+-
+# End Of Table - sites (monthly)
+# -sites- (daily)
+181.215.50.204
+0 1 1 7711 1 1565335633
+/
+# End Of Table - sites (daily)
+# -referrers- 
+http://www.aridosmoreno.cl/sistema/css/style.css
+0 6
+http://www.aridosmoreno.cl/sistema/InsertarItemCoti.php
+0 30
+http://www.aridosmoreno.cl/sistema/EditaCotizacion.php
+0 8
+http://www.aridosmoreno.cl/sistema/ConsultarGuiaDespacho.php
+0 11
+https://www.google.cl/
+0 2
+http://www.aridosmoreno.cl/sistema/ReporteGuiasFechas.php
+0 10
+http://aridosmoreno.cl/quienes_somos.html
+0 22
+http://www.aridosmoreno.cl/index.html
+0 10
+http://www.aridosmoreno.cl/sistema/Cotizacion2.php
+0 41
+http://www.aridosmoreno.cl/sistema/add.php
+0 128
+http://www.aridosmoreno.cl/sistema/EditarGuiaDespacho.php
+0 19
+http://aridosmoreno.cl/
+0 50
+http://aridosmoreno.cl/contacto.html
+0 16
+http://www.aridosmoreno.cl/sistema/Cliente.php
+0 4
+https://www.google.com/
+0 1
+- (Direct Request)
+0 117
+http://www.aridosmoreno.cl/sistema/FacturaEmitidas.php
+0 1
+http://www.aridosmoreno.cl/sistema/InsertarItemG.php
+0 70
+http://www.aridosmoreno.cl/sistema/GuiaDespacho2.php
+0 213
+http://aridosmoreno.cl/contacto.php
+0 3
+http://aridosmoreno.cl/index.html
+0 3
+http://www.aridosmoreno.cl/sistema/EditartemG.php
+0 1
+http://aridosmoreno.cl/servicios.html
+0 13
+http://www.aridosmoreno.cl/sistema/ObraCliente.php
+0 4
+http://www.aridosmoreno.cl/sistema/FacturaRecibida.php
+0 3
+http://www.aridosmoreno.cl/quienes_somos.html
+0 8
+http://www.aridosmoreno.cl/css/style.css
+0 35
+http://www.aridosmoreno.cl/sistema/EditarGuiaDespacho2.php
+0 13
+http://www.aridosmoreno.cl/sistema/EditaProveedor.php
+0 7
+http://www.aridosmoreno.cl/sistema/VIstaMante.php
+0 24
+http://www.aridosmoreno.cl/sistema/ReporteTranspFechas.php
+0 21
+http://www.aridosmoreno.cl/servicios.html
+0 8
+http://www.aridosmoreno.cl/sistema/AnulaGuiaDespacho.php
+0 5
+http://www.aridosmoreno.cl/sistema/GuiaDespacho.php
+0 162
+http://aridosmoreno.cl/css/style.css
+0 11
+http://www.aridosmoreno.cl/
+0 69
+http://www.aridosmoreno.cl/sistema/ReporteCotiFolio.php
+0 11
+http://www.aridosmoreno.cl/sistema/ModificaAridos.php
+0 6
+http://www.aridosmoreno.cl/sistema/ActualizarGuiaDespacho.php
+0 18
+http://www.aridosmoreno.cl/sistema/Cotizacion.php
+0 14
+http://aridosmoreno.cl/consultauser.pho
+0 1
+http://www.aridosmoreno.cl/sistema/ReporteComision.php
+0 1
+http://www.aridosmoreno.cl/sistema/InformeMensual.php
+0 5
+http://www.aridosmoreno.cl/contacto.php
+0 10
+http://www.aridosmoreno.cl/sistema/ReporteProveedor.php
+0 4
+http://www.aridosmoreno.cl/sistema/VistaGral.php
+0 193
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:63.0) Gecko/20100101 Firefox/63.0
+0 4
+Mozilla/5.0 (compatible; Nimbostratus-Bot/v1.3.2; http://cloudsystemnetworks.com)
+0 1
+Mozilla/5.0 (compatible; DotBot/1.1; http://www.opensiteexplorer.org/dotbot, help@moz.com)
+0 6
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36
+0 51
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/11.1 Safari/605.1.15
+0 1
+Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/534+ (KHTML, like Gecko) BingPreview/1.0b
+0 14
+Mozilla/5.0 (Linux; Android 9; SAMSUNG SM-A505G Build/PPR1.180610.011) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/
+0 12
+Mozilla/5.0 (Windows NT 10.0; Win64; x64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+0 8
+Mozilla/5.0 (compatible; AhrefsBot/6.1; +http://ahrefs.com/robot/)
+0 14
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+0 9
+Mozilla/5.0 (compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm)
+0 3
+Go-http-client/1.1
+0 8
+Mozilla/5.0 (Linux; Android 9; SM-A505G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36
+0 11
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:47.0) Gecko/20100101 Firefox/47.0
+0 4
+Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.1
+0 1
+Mozilla/5.0 (Linux; Android 9; SM-G950F) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36
+0 37
+Mozilla/5.0 (Windows NT 6.1; rv:57.0) Gecko/20100101 Firefox/57.0
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+0 29
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.96 Mobile S
+0 14
+WhatsApp/2.19.203 A
+0 1
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36
+0 1058
+Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0
+0 1
+Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.4) Gecko/20030624
+0 4
+Mozilla/5.0 (Linux; Android 9; FLA-LX3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.143 Mobile Safari/537.36
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.100 Safari/537.36
+0 26
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:68.0) Gecko/20100101 Firefox/68.0
+0 52
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/17.1
+0 31
+Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36
+0 1
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames

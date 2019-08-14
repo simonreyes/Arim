@@ -1,0 +1,15 @@
+To: %email%
+Subject: Your email requires verification verify#%msgid%)
+
+The message you sent requires that you verify that you
+are a real live human being and not a spam source.
+
+%if can_verify_web%
+To complete this verification, simply reply to this message and leave
+the subject line intact or click the link below:
+
+http://%webdomain%/cgi-sys/bxd.cgi?a=%acct%&id=%msgid%
+%endif%
+The headers of the message sent from your address are shown below:
+
+%headers%

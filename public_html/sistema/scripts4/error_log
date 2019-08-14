@@ -1,0 +1,65 @@
+[03-Jun-2016 00:39:23 America/Santiago] PHP Notice:  Undefined variable: pais in /home/nikovald/public_html/sistema/scripts2/clases/class.combos.php on line 36
+[03-Jun-2016 00:39:23 America/Santiago] PHP Notice:  Undefined variable: pais in /home/nikovald/public_html/sistema/scripts2/clases/class.combos.php on line 36
+[03-Jun-2016 00:39:23 America/Santiago] PHP Notice:  Undefined variable: pais in /home/nikovald/public_html/sistema/scripts2/clases/class.combos.php on line 36
+[03-Jun-2016 00:39:25 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts2/dependencia-ciudades.php on line 7
+[03-Jun-2016 00:41:49 America/Santiago] PHP Notice:  Undefined variable: pais in /home/nikovald/public_html/sistema/scripts2/clases/class.combos.php on line 36
+[03-Jun-2016 00:41:49 America/Santiago] PHP Notice:  Undefined variable: pais in /home/nikovald/public_html/sistema/scripts2/clases/class.combos.php on line 36
+[03-Jun-2016 00:41:49 America/Santiago] PHP Notice:  Undefined variable: pais in /home/nikovald/public_html/sistema/scripts2/clases/class.combos.php on line 36
+[03-Jun-2016 00:41:51 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts2/dependencia-ciudades.php on line 7
+[03-Jun-2016 00:45:09 America/Santiago] PHP Notice:  Undefined variable: pais in /home/nikovald/public_html/sistema/scripts2/clases/class.combos.php on line 36
+[03-Jun-2016 00:45:09 America/Santiago] PHP Notice:  Undefined variable: pais in /home/nikovald/public_html/sistema/scripts2/clases/class.combos.php on line 36
+[03-Jun-2016 00:45:09 America/Santiago] PHP Notice:  Undefined variable: pais in /home/nikovald/public_html/sistema/scripts2/clases/class.combos.php on line 36
+[03-Jun-2016 00:45:11 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts2/dependencia-ciudades.php on line 7
+[03-Jun-2016 00:54:36 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts2/dependencia-sucursal.php on line 7
+[07-Jun-2016 14:37:47 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[07-Jun-2016 14:38:50 America/Santiago] PHP Notice:  Undefined index: nombretrans in /home/nikovald/public_html/sistema/scripts4/clases/class.combos.php on line 36
+[07-Jun-2016 14:38:50 America/Santiago] PHP Notice:  Undefined index: nombretrans in /home/nikovald/public_html/sistema/scripts4/clases/class.combos.php on line 37
+[07-Jun-2016 14:38:50 America/Santiago] PHP Notice:  Undefined index: nombretrans in /home/nikovald/public_html/sistema/scripts4/clases/class.combos.php on line 36
+[07-Jun-2016 14:38:50 America/Santiago] PHP Notice:  Undefined index: nombretrans in /home/nikovald/public_html/sistema/scripts4/clases/class.combos.php on line 37
+[07-Jun-2016 14:39:11 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[07-Jun-2016 14:39:16 America/Santiago] PHP Notice:  Undefined index: nombretrans in /home/nikovald/public_html/sistema/scripts4/clases/class.combos.php on line 36
+[07-Jun-2016 14:39:16 America/Santiago] PHP Notice:  Undefined index: nombretrans in /home/nikovald/public_html/sistema/scripts4/clases/class.combos.php on line 37
+[07-Jun-2016 14:41:25 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-ciudades.php on line 7
+[07-Jun-2016 14:41:44 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[07-Jun-2016 14:41:52 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-ciudades.php on line 7
+[07-Jun-2016 14:49:15 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[07-Jun-2016 14:49:22 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-ciudades.php on line 7
+[07-Jun-2016 14:49:36 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-ciudades.php on line 7
+[07-Jun-2016 14:49:44 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-ciudades.php on line 7
+[07-Jun-2016 14:52:07 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-ciudades.php on line 7
+[07-Jun-2016 15:00:49 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-ciudades.php on line 7
+[07-Jun-2016 15:02:12 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-ciudades.php on line 7
+[07-Jun-2016 15:03:02 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-ciudades.php on line 7
+[07-Jun-2016 15:03:42 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-ciudades.php on line 7
+[07-Jun-2016 15:03:58 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-ciudades.php on line 7
+[07-Jun-2016 15:04:16 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-ciudades.php on line 7
+[07-Jun-2016 15:05:06 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-ciudades.php on line 7
+[07-Jun-2016 19:10:53 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[07-Jun-2016 19:20:30 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[07-Jun-2016 19:20:34 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[08-Jun-2016 00:31:45 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[08-Jun-2016 00:35:10 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[08-Jun-2016 00:39:09 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[08-Jun-2016 00:39:51 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[09-Jun-2016 13:57:43 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[09-Jun-2016 21:41:06 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[09-Jun-2016 21:41:12 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[09-Jun-2016 21:41:19 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[09-Jun-2016 21:41:26 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[09-Jun-2016 21:41:32 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[09-Jun-2016 21:41:40 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[10-Jun-2016 16:19:03 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[10-Jun-2016 16:19:15 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[10-Jun-2016 16:19:23 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[14-Jun-2016 01:25:46 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[21-Jul-2016 12:11:37 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[21-Jul-2016 12:12:24 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[21-Jul-2016 12:17:23 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[25-Jul-2016 16:50:32 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[29-Jul-2016 13:15:06 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[29-Jul-2016 22:29:21 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[05-Aug-2016 09:22:32 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[23-Jan-2017 11:25:15 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[31-Jan-2017 11:38:07 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[09-Mar-2017 07:56:38 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7
+[21-Mar-2017 09:58:10 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts4/dependencia-estado.php on line 7

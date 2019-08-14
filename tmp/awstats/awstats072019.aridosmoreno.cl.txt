@@ -1,0 +1,632 @@
+AWSTATS DATA FILE 7.7 (build 20180105)
+# If you remove this file, all statistics for date 201907 will be lost/reset.
+# Last config file used to build this data file was /home2/nikovald/tmp/awstats/awstats.aridosmoreno.cl.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2013                
+POS_TIME 2696                
+POS_VISITOR 9713                
+POS_DAY 16091               
+POS_DOMAIN 3473                
+POS_LOGIN 3845                
+POS_ROBOT 4000                
+POS_WORMS 4527                
+POS_EMAILSENDER 4658                
+POS_EMAILRECEIVER 4801                
+POS_SESSION 16914               
+POS_SIDER 17123               
+POS_FILETYPES 4936                
+POS_DOWNLOADS 5156                
+POS_OS 5204                
+POS_BROWSER 5436                
+POS_SCREENSIZE 6200                
+POS_UNKNOWNREFERER 6274                
+POS_UNKNOWNREFERERBROWSER 6560                
+POS_ORIGIN 6772                
+POS_SEREFERRALS 6912                
+POS_PAGEREFS 7093                
+POS_SEARCHWORDS 7310                
+POS_KEYWORDS 7462                
+POS_MISC 2359                
+POS_ERRORS 7521                
+POS_CLUSTER 3701                
+POS_SIDER_404 7620                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20190801014916 306 86330 10326116274112
+FirstTime 20190701085636
+LastTime 20190731192318
+LastUpdate 20190801082420 306 0 305 0 0
+TotalVisits 194                 
+TotalUnique 150                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 164                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+FlashSupport 0 0 0
+JavaEnabled 0 0 0
+AddToFavourites 0 26 0
+DirectorSupport 0 0 0
+PDFSupport 0 0 0
+QuickTimeSupport 0 0 0
+JavascriptDisabled 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 1 1 7711 7 98 964816
+1 10 10 69735 3 3 7711
+2 3 3 23133 9 10 23456
+3 2 27 337799 7 14 7754
+4 3 3 22337 9 12 68470
+5 2 2 14626 3 17 91256
+6 4 4 30844 11 14 62011
+7 5 5 38555 3 4 7711
+8 69 69 326308 13 43 200286
+9 390 442 2492142 68 97 242579
+10 327 354 1760039 65 79 46704
+11 420 499 3712978 65 81 147755
+12 368 537 4660586 75 144 297750
+13 463 489 3518938 119 129 606210
+14 107 138 1505533 21 39 125201
+15 228 256 3453186 36 53 559532
+16 249 358 3757324 43 88 154550
+17 75 101 1100498 23 57 185221
+18 44 44 310195 18 20 37769
+19 2 2 15139 1 20 296929
+20 2 2 15422 25 63 233751
+21 7 7 38555 23 27 66814
+22 6 6 30844 2 3 7227
+23 4 4 30844 8 15 23456
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 11
+cl 2639 3114 24901925
+us 110 181 1725314
+ru 10 11 82023
+cn 9 9 69399
+cz 8 8 56568
+ua 8 8 61688
+de 2 2 15422
+gb 2 2 15422
+jp 1 1 7711
+kr 1 1 7711
+cr 1 26 330088
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 10
+baidu 68 964816 20190727000712 0
+Googlebot/ 54 475265 20190727045010 0
+spider 42 370884 20190723085817 0
+bingbot/ 39 492800 20190728021619 0
+AhrefsBot/ 27 202539 20190728124133 0
+bingpreview 22 189776 20190722171804 0
+no_user_agent 15 1700469 20190730150958 0
+bot[\s_+:,\.\;\/\\-] 4 30844 20190730104528 0
+DotBot/ 3 21720 20190729161041 0
+(firefox/)([0-9]\.|[0-1][0]\.) 1 7711 20190726091226 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 8
+gif 58 12888 0 0
+jpg 136 5535988 0 0
+html 155 1113011 0 0
+js 175 2620548 0 0
+Unknown 1 33879 0 0
+css 75 326351 0 0
+php 2635 17236398 0 0
+png 128 394208 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 13
+Unknown 33 33
+win8.1 3 3
+ios_ipad 1 1
+macosx11 16 16
+linux 23 23
+ios_iphone 28 3
+macosx7 1 1
+win7 184 28
+macosx8 4 4
+win10 3044 2675
+macosx10 1 1
+winxp 24 2
+win8 1 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 36
+chrome75.0.3770.80 27 3
+chrome72.0.3626.121 3 3
+chrome73.0.3683.103 1 1
+chrome40.0.2214.85 26 1
+opera54.0.2952.71 2 2
+chrome26.0.1410.65 4 4
+firefox54.0 1 1
+edge18 26 1
+chrome68.0.3440.106 9 9
+safari12.1 27 2
+netscape5.0 1 1
+chrome23.0.1271.64 26 1
+mozilla 20 20
+msie11.0 37 5
+chrome67.0.3396.87 2 2
+safari6.1.3 1 1
+msie8.0 23 1
+firefox65.0 1 1
+chrome75.0.3770.100 1082 880
+firefox47.0 9 9
+chrome32.0.1700.76 1 1
+chrome68.0.3440.75 1 1
+safari11.1 7 7
+Unknown 32 32
+firefox59.0 1 1
+chrome41.0.2228.0 1 1
+chrome67.0.3396.99 9 9
+chrome74.0.3729.131 3 3
+opera19.0.1326.59 1 1
+chrome75.0.3770.142 1888 1746
+safari7.0 2 2
+msie10.0 1 1
+chrome66.0.3359.181 33 33
+firefox58.0 2 2
+firefox63.0 27 2
+chrome74.0.3729.169 26 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 5
+python-requests/2.22.0 20190715105143
+python-requests/2.18.4 20190725104436
+Mozilla/5.0_(Nintendo_3DS;_U;_;_en)_Version/1.7412.EU 20190727115617
+Go-http-client/1.1 20190731112648
+Ruby 20190711091906
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 4
+Ruby 20190711091906
+Go-http-client/1.1 20190731112648
+python-requests/2.22.0 20190715105143
+python-requests/2.18.4 20190725104436
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 199 235
+From1 0 0
+From2 6 6
+From3 4 5
+From4 2582 3117
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 2
+www_google_cl 1 1
+www_google_com 5 5
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 2
+https://kabinet-es-pfrf.ru 4 4
+http://www.lacruz.cl/RRF/Home.php 0 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+302 490 6977
+404 339 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 65
+/demo/ 1 -
+/dev/ 1 -
+/xmlrpc.php 2 -
+//wp-admin/install.php 1 -
+/test/wp-includes/wlwmanifest.xml 1 -
+/wordpress/wp-includes/wlwmanifest.xml 1 -
+/wp 1 -
+/website/wp-includes/wlwmanifest.xml 1 -
+/blog/ 2 -
+/www/ 1 -
+/dev/wp-includes/wlwmanifest.xml 1 -
+/phpminiadmin.php 1 -
+/site/ 1 -
+/main/ 1 -
+/new/wp-includes/wlwmanifest.xml 1 -
+/js/tms_presets.js 59 http://www.aridosmoreno.cl/
+/robots.txt 44 -
+/blog/wp-includes/wlwmanifest.xml 1 -
+/admin/index.php 1 -
+/staging/wp-includes/wlwmanifest.xml 1 -
+/demo/wp-includes/wlwmanifest.xml 1 -
+/wp/ 2 -
+/js/cufon-replace.js 67 http://www.aridosmoreno.cl/
+/site/wp-includes/wlwmanifest.xml 1 -
+/sql.php 1 -
+//wp-login.php 4 http://www.google.com.hk
+/tmp/ 1 -
+/backup/ 1 -
+/cms/ 1 -
+/news/wp-includes/wlwmanifest.xml 1 -
+/wordpress/ 2 -
+/shop/wp-includes/wlwmanifest.xml 1 -
+/wordpress 1 -
+/vendor/phpunit/phpunit/build.xml 2 -
+/sistema/jquery-1.7.1.min.js 14 http://www.aridosmoreno.cl/sistema/ReporteCotiFolio.php
+/web/ 1 -
+/js/FF-cash.js 75 http://www.aridosmoreno.cl/
+/.git/config 1 -
+/wp-includes/wlwmanifest.xml 2 -
+/sistema/VistaMante.php 2 http://www.lacruz.cl/RRF/VistaGral.php
+/portal/wp-includes/wlwmanifest.xml 1 -
+/new/ 1 -
+/test/ 1 -
+/2019/wp-includes/wlwmanifest.xml 1 -
+/main/wp-includes/wlwmanifest.xml 1 -
+/2018/wp-includes/wlwmanifest.xml 1 -
+/components/ 2 -
+/beta/wp-includes/wlwmanifest.xml 1 -
+/admin/kcfinder/browse.php 1 -
+/wp2/wp-includes/wlwmanifest.xml 1 -
+/.env 1 -
+/adminer.php 1 -
+/portal/ 1 -
+/home/ 2 -
+/v1/wp-includes/wlwmanifest.xml 1 -
+/1/wp-includes/wlwmanifest.xml 1 -
+/wp-admin 1 -
+/administrator/index.php 1 -
+/www/wp-includes/wlwmanifest.xml 1 -
+/wp-login.php 7 -
+//xmlrpc.php 3 http://www.google.com.hk
+/cms/wp-includes/wlwmanifest.xml 1 -
+/temp/ 1 -
+/old/ 1 -
+/home/wp-includes/wlwmanifest.xml 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 164
+191.126.131.142 306 306 1814083 20190717140233
+191.119.239.183 244 244 2581737 20190731192318
+191.116.101.193 169 185 949903 20190729131334
+191.116.117.98 153 159 755955 20190726093457
+191.125.48.83 133 139 1002131 20190724130223
+191.126.41.58 125 125 440042 20190704125223
+191.126.157.242 124 124 527230 20190718164031
+191.116.127.136 119 119 1102117 20190730180656
+191.126.61.92 93 93 306837 20190703163451
+191.125.25.86 91 120 1107340 20190723152124
+191.125.150.120 89 89 310400 20190708102635
+181.203.35.217 89 89 297464 20190715104003
+191.125.131.236 87 87 589634 20190719155207
+191.126.58.47 81 81 773702 20190722125108
+191.116.225.172 74 74 697538 20190726133655
+191.126.17.157 70 70 239877 20190702111947
+191.126.20.218 70 70 381062 20190701163030
+191.126.139.215 70 70 241848 20190711172656
+191.126.29.54 69 69 342063 20190709160923
+191.126.41.77 65 65 225181 20190711113153
+186.21.193.52 58 79 2213486 20190722155419
+181.203.4.248 57 57 198035 20190710102058
+191.125.40.77 51 51 192005 20190725082639
+191.116.197.46 22 22 612420 20190719155142
+191.116.59.75 18 18 139239 20190704114406
+45.32.223.213 0 1 14324 
+31.13.190.254 2 2 14626 20190712043615
+185.234.219.17 2 2 13830 20190727053635
+104.243.195.186 0 1 237 
+185.211.147.124 0 1 8097 
+165.22.251.78 1 1 6915 20190703183705
+163.247.65.3 5 37 551453 20190722163128
+35.225.144.17 1 1 7711 20190713171027
+34.215.199.31 1 1 7711 20190718063901
+54.245.144.43 1 1 7711 20190723092824
+54.209.139.93 1 1 7711 20190725222056
+190.151.9.18 5 37 551453 20190705123028
+69.171.251.39 0 1 167 
+34.212.192.160 1 1 7711 20190720054653
+34.220.25.154 1 1 7711 20190702115115
+181.203.42.202 14 15 182087 20190723162157
+54.218.85.34 1 1 7711 20190714084742
+34.210.248.168 1 1 7711 20190719081305
+95.181.176.201 1 1 7711 20190712195922
+34.221.173.151 1 1 7711 20190728062709
+18.234.223.16 1 1 7711 20190711091906
+54.189.47.53 1 1 7711 20190712045439
+212.92.107.15 1 1 7711 20190708200533
+54.184.116.78 1 1 7711 20190716081541
+18.237.195.187 1 1 7711 20190728085600
+191.119.146.171 1 1 7711 20190716165304
+34.221.221.20 1 1 7711 20190710134524
+50.2.38.136 1 1 7711 20190729231050
+191.125.176.48 11 11 37441 20190705105119
+54.202.110.127 1 1 7711 20190707115540
+35.196.115.119 2 2 7711 20190710151529
+191.116.240.3 8 8 156288 20190729154136
+176.100.191.79 4 4 30844 20190716181101
+113.35.251.98 1 1 7711 20190713164414
+54.246.152.237 1 1 7711 20190718180535
+190.54.38.178 2 28 337046 20190729104611
+54.218.215.6 1 1 7711 20190715080157
+69.171.251.7 1 15 227385 20190709033138
+18.237.241.34 1 1 7711 20190713083809
+200.89.75.70 2 52 660176 20190723114934
+54.245.74.216 1 1 7711 20190701091013
+185.93.3.114 8 8 56568 20190702182518
+35.163.34.38 1 1 7711 20190720082454
+52.27.49.46 1 1 7711 20190704090925
+185.234.219.246 4 4 30048 20190729172041
+34.213.48.60 1 1 7711 20190731112648
+191.119.253.253 1 1 4012 20190706082801
+35.160.226.73 1 1 7711 20190723091430
+54.185.208.244 1 1 7711 20190702110646
+38.130.180.124 0 1 59330 
+34.212.21.26 1 1 7711 20190710122457
+34.219.181.27 1 1 7711 20190718091147
+46.165.210.26 2 2 15422 20190702171648
+200.89.75.68 2 52 660176 20190723114934
+54.186.19.219 1 1 7711 20190717114422
+151.106.12.254 8 8 56568 20190722010336
+181.203.116.104 10 10 33757 20190715151034
+51.83.141.109 2 2 15422 20190713001417
+34.219.52.94 1 1 7711 20190726075557
+191.119.222.157 1 26 330088 20190703121842
+54.71.187.124 1 26 330088 20190711165315
+35.224.211.39 1 1 7711 20190715105143
+35.196.22.225 2 2 7711 20190722215537
+54.185.239.133 1 1 7711 20190722125506
+35.227.79.102 2 2 7711 20190718213342
+186.67.132.2 2 28 337046 20190725165419
+52.38.56.152 1 1 7711 20190726090641
+191.125.151.112 1 1 7428 20190715184804
+34.220.251.243 1 1 7711 20190719102127
+54.227.19.125 1 1 7711 20190712144524
+34.215.115.249 1 1 7711 20190724112540
+35.243.210.108 2 2 7711 20190726222658
+65.181.113.150 0 1 5698 
+191.125.12.167 1 1 7428 20190725132951
+138.186.122.37 1 26 330088 20190725121927
+178.159.127.39 4 4 30844 20190717232250
+69.50.232.108 0 1 1816 
+207.244.103.187 0 1 66771 
+35.243.231.165 4 4 15422 20190702140603
+64.246.165.140 1 1 7711 20190722021316
+34.218.50.141 1 1 7711 20190724112552
+69.171.251.12 0 10 102536 
+34.218.234.1 1 1 7711 20190712090435
+201.236.191.52 2 28 337046 20190708175516
+34.214.99.32 1 1 7711 20190719210728
+18.237.179.162 1 1 7711 20190727115617
+54.184.117.146 1 1 7711 20190708085536
+34.222.230.23 1 1 7711 20190704092409
+18.236.114.210 1 1 7711 20190706112926
+211.176.125.70 1 1 7711 20190727070255
+54.187.129.167 1 1 7711 20190705141635
+45.58.55.50 0 1 199 
+34.221.15.46 1 1 7711 20190714082955
+190.160.161.206 0 1 11915 
+209.242.218.208 2 2 13167 20190714012449
+200.89.75.69 3 78 990264 20190729131920
+34.220.217.188 1 1 7711 20190729111458
+35.167.71.214 1 1 7711 20190725091443
+54.202.237.27 1 1 7711 20190701085636
+34.215.88.206 1 1 7711 20190705121511
+60.191.38.77 9 9 69399 20190729215018
+54.149.211.110 1 1 7711 20190708090115
+34.218.77.156 1 1 7711 20190706112910
+18.237.183.130 1 1 7711 20190731112618
+54.188.171.165 1 1 7711 20190715090305
+52.34.81.41 1 1 7711 20190712091257
+52.11.131.158 1 1 7711 20190709082055
+34.221.162.102 1 1 7711 20190716073837
+54.245.180.69 1 1 7711 20190713082724
+38.127.124.107 0 1 11726 
+34.222.95.45 1 1 7711 20190703083322
+191.116.233.149 11 26 382520 20190725144623
+34.211.163.181 1 1 7711 20190730072250
+35.237.200.92 2 2 7711 20190702133532
+54.213.205.58 1 1 7711 20190729115508
+172.245.25.35 2 2 13166 20190702174227
+54.214.230.93 1 1 7711 20190711101340
+54.188.72.144 1 1 7711 20190702151533
+191.116.255.133 10 10 195921 20190730160737
+54.218.61.206 1 1 7711 20190709090332
+52.27.223.238 1 1 7711 20190707134225
+23.27.145.188 0 1 68229 
+190.107.178.2 1 1 33879 20190723113320
+54.190.106.111 1 1 7711 20190721063415
+34.221.138.172 1 1 7711 20190703093708
+34.73.67.152 2 2 7711 20190730225944
+23.94.25.188 2 2 15422 20190725104436
+38.130.161.173 1 12 83504 20190712093544
+52.12.4.157 1 1 7711 20190721085444
+107.21.131.223 1 1 7711 20190728061454
+191.116.42.94 16 30 702757 20190701164945
+52.41.100.226 1 1 7711 20190717074926
+200.14.209.185 3 27 342704 20190712091430
+54.202.166.91 1 1 7711 20190727115148
+52.42.81.35 1 1 7711 20190712100150
+207.244.103.188 0 1 15764 
+35.229.113.246 2 2 7711 20190714154457
+34.73.128.10 2 2 7711 20190706144616
+18.237.21.68 1 1 7711 20190711080503
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20190701 88 102 1099241 4
+20190702 106 111 1002639 13
+20190703 99 149 997061 9
+20190704 145 145 594703 5
+20190705 18 50 604316 4
+20190706 7 7 41771 6
+20190707 3 3 23133 3
+20190708 94 120 670579 5
+20190709 73 98 695284 7
+20190710 61 61 221168 4
+20190711 140 190 1150338 8
+20190712 13 59 747002 10
+20190713 7 7 53977 7
+20190714 6 6 36300 4
+20190715 105 130 699581 8
+20190716 8 8 61688 5
+20190717 310 335 2167304 6
+20190718 159 175 1882063 8
+20190719 113 113 1232898 9
+20190720 2 2 15422 2
+20190721 3 3 23133 3
+20190722 112 144 1670724 8
+20190723 110 190 1998904 8
+20190724 137 143 1032975 7
+20190725 70 136 1279931 9
+20190726 231 237 1476626 5
+20190727 4 4 30048 4
+20190728 3 3 23133 3
+20190729 186 253 1818795 10
+20190730 132 133 1325375 6
+20190731 246 246 2597159 4
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+30s-2mn 7
+30mn-1h 10
+5mn-15mn 13
+15mn-30mn 7
+0s-30s 142
+1h+ 7
+2mn-5mn 8
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 55
+/sistema/scripts/cargar-paises.php 477 292878 0 2
+/sistema/VistaGral.php 415 3082620 48 21
+/sistema/ActualizarGuiaDespacho.php 330 2190027 1 0
+/sistema/GuiaDespacho.php 324 2486443 4 0
+/sistema/scripts/dependencia-estado.php 157 28918 0 0
+/sistema/InsertarItemG.php 154 338992 1 0
+/sistema/GuiaDespacho2.php 152 1315033 0 0
+/sistema/scripts/dependencia-ciudades.php 149 8080 0 0
+/sistema/insertaGD.php 149 243595 0 16
+/ 143 1025563 127 120
+/sistema/ReporteGuiasFechas.php 53 2452341 1 6
+/contacto.php 25 171548 9 14
+/sistema/EditaCotizacion.php 23 150372 0 0
+/sistema/ReporteTranspFechas.php 20 803497 0 1
+/sistema/ReporteProveedor.php 17 726270 0 4
+/sistema/ReporteCotiFolio.php 16 284081 0 1
+/sistema/Cotizacion.php 15 141698 0 0
+/sistema/InformeMensual.php 12 381262 0 1
+/sistema/scripts3/cargar-paises.php 11 12672 0 0
+/sistema/scripts3/dependencia-ciudades.php 11 4958 0 0
+/sistema/scripts5/cargar-paises.php 10 6140 0 0
+/sistema/scripts3/dependencia-estado.php 10 1218 0 0
+/sistema/scripts3/dependencia-sucursal.php 10 340 0 0
+/contacto.html 8 57816 0 2
+/sistema/EditarGuiaDespacho.php 8 51215 0 0
+/sistema/add.php 6 32142 0 0
+/sistema/InfFactProv.php 7 51212 0 0
+/sistema/ReporteComision.php 2 16717 0 0
+/sistema/scripts5/dependencia-ciudades.php 2 110 0 0
+/quienes_somos.html 2 13564 0 0
+/whm 1 33879 1 1
+/sistema/scripts2/dependencia-estado.php 1 435 0 0
+/sistema/add2.php 5 26815 0 0
+/sistema/Home.php 2 8024 2 1
+/sistema/scripts2/dependencia-sucursal.php 2 86 0 0
+/sistema/AnulaGuiaDespacho.php 4 29831 0 0
+/sistema/InsertarItemCoti.php 1 3466 0 0
+/sistema/Cotizacion2.php 7 71340 0 0
+/sistema/pdf2.php 6 806685 0 1
+/sistema/ModificaAridos.php 1 5804 0 0
+/servicios.html 2 16068 0 0
+/sistema/EditaCotizacion2.php 5 37560 0 0
+/sistema/pdf.php 6 806277 0 1
+/sistema/InfFactProvClie.php 2 14172 0 0
+/sistema/EditarGuiaDespacho2.php 2 14750 0 0
+/sistema/EditaGD.php 2 3306 0 0
+/sistema/scripts2/cargar-paises.php 1 1152 0 0
+/sistema/VIstaMante.php 5 33925 0 0
+/sistema/ObraCliente.php 2 18194 0 0
+/sistema/scripts2/dependencia-ciudades.php 2 66 0 0
+/sistema/InfFactCliente.php 3 30944 0 0
+/sistema/scripts5/dependencia-estado.php 2 380 0 0
+/sistema/ConsultarGuiaDespacho.php 6 37775 0 2
+/sistema/InsertarItemCoti2.php 1 3640 0 0
+/sistema/Cliente.php 2 7392 0 0
+END_SIDER

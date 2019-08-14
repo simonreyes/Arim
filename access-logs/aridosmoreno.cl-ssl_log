@@ -1,0 +1,2 @@
+54.36.149.71 - - [09/Aug/2019:09:06:06 -0400] "GET /robots.txt HTTP/1.1" 404 - "-" "Mozilla/5.0 (compatible; AhrefsBot/6.1; +http://ahrefs.com/robot/)"
+54.36.148.61 - - [09/Aug/2019:09:06:08 -0400] "GET / HTTP/1.1" 200 7711 "-" "Mozilla/5.0 (compatible; AhrefsBot/6.1; +http://ahrefs.com/robot/)"

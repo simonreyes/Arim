@@ -1,0 +1,13 @@
+[04-Oct-2016 19:22:08 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts6/dependencia-ciudades.php on line 7
+[04-Oct-2016 19:22:58 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts6/dependencia-ciudades.php on line 7
+[04-Oct-2016 19:24:01 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts6/dependencia-ciudades.php on line 7
+[04-Oct-2016 19:30:11 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts6/dependencia-ciudades.php on line 7
+[04-Oct-2016 23:03:02 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts6/dependencia-estado.php on line 7
+[05-Oct-2016 09:04:24 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts6/dependencia-estado.php on line 7
+[06-Oct-2016 11:31:26 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts6/dependencia-estado.php on line 7
+[06-Oct-2016 11:35:33 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts6/dependencia-estado.php on line 7
+[06-Oct-2016 12:57:33 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts6/dependencia-estado.php on line 7
+[06-Oct-2016 13:01:43 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home/nikovald/public_html/sistema/scripts6/dependencia-estado.php on line 7
+[07-Mar-2018 10:31:43 America/Halifax] PHP Warning:  Invalid argument supplied for foreach() in /home2/nikovald/public_html/sistema/scripts6/dependencia-estado.php on line 7
+[05-Jun-2018 13:33:08 America/Halifax] PHP Warning:  Invalid argument supplied for foreach() in /home2/nikovald/public_html/sistema/scripts6/dependencia-estado.php on line 7
+[13-Sep-2018 12:20:00 America/Santiago] PHP Warning:  Invalid argument supplied for foreach() in /home2/nikovald/public_html/sistema/scripts6/dependencia-estado.php on line 7
