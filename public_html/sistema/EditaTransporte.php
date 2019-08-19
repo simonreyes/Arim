@@ -1,13 +1,13 @@
 <?php 
 define('HOST_DB', 'localhost'); 
-define('USER_DB', 'nikovald'); 
-define('PASS_DB', 'arimoreno2016'); 
+define('USER_DB', 'root'); 
+define('PASS_DB', ''); 
 define('NAME_DB', 'nikovald_aridos'); 
 function conectar()
 { global $conexion; 
 //Definición global para poder utilizar en todo el contexto 
 $conexion = mysql_connect(HOST_DB, USER_DB, PASS_DB) or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
-mysql_select_db(NAME_DB) or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB); 
+mysql_select_db(NAME_DB) or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . mysql_error(); 
 } function desconectar(){ global $conexion; mysql_close($conexion); }  
 
 $mt3 = "";

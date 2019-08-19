@@ -1,8 +1,8 @@
 <?php 
 
 define('HOST_DB', 'localhost'); 
-define('USER_DB', 'nikovald'); 
-define('PASS_DB', 'arimoreno2016'); 
+define('USER_DB', 'root'); 
+define('PASS_DB', ''); 
 define('NAME_DB', 'nikovald_aridos'); 
 
 function conectar()
@@ -288,7 +288,7 @@ $Id2 .= $row['idCliente'];
 	//$result = mysql_query("SELECT * FROM cotizacion ORDER BY id_User DESC");
 
 		
-	mysql_connect("localhost", "nikovald", "arimoreno2016") or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
+	mysql_connect("localhost", "root", "") or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
 	mysql_select_db("nikovald_aridos") or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB); 
 
 	$result="	SELECT *

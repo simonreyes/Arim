@@ -9,8 +9,8 @@
  */
 
 $server = 'localhost';
-$username = 'nikovald';
-$password = 'arimoreno2016';
+$username = 'root';
+$password = '';
 $database_name = 'nikovald_aridos';
 
 ?>

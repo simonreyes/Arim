@@ -2,8 +2,8 @@
 // llama a Cotizacion2.php para mostrar nuevamente los datos
 {
 	$host = "localhost";
-    $user = "nikovald";
-    $pass = "arimoreno2016";
+    $user = "root";
+    $pass = "";
     $bd = "nikovald_aridos";		
 
     $conexion = mysql_connect($host,$user,$pass) or die ("problemas al conectar el host");
@@ -87,13 +87,13 @@
 				'".$Comision."',
 				'".$VentaFinal."',
 				'".$Cantidad."',
-				'".$Sucursal."')", $conexion); 
+				'".$Sucursal."')", $conexion) or die('Consulta fallida: ' . mysql_error()); 
 	
 	}else{
 		
 	}
 				
-	header ("Location: http://www.aridosmoreno.cl/sistema/Cotizacion2.php?Vidcli=".$cliente."&Vfolio=".$folio."");	
+	header ("Location: http://www.localhost/arim/public_html/sistema/Cotizacion2.php?Vidcli=".$cliente."&Vfolio=".$folio."");	
 	 
 	}
 ?>	

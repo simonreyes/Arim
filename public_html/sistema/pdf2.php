@@ -16,7 +16,7 @@ $Vobra = '27'; */
 	$idCliente = "";
 	$NombreCliente = "";
 	
-	$link = mysql_connect('localhost', 'nikovald', 'arimoreno2016') or die('No se pudo conectar: ' . mysql_error());
+	$link = mysql_connect('localhost', 'root', '') or die('No se pudo conectar: ' . mysql_error());
 	mysql_select_db('nikovald_aridos') or die('No se pudo seleccionar la base de datos');		
 	
 	$incLCM = 'UPDATE cotizacion SET  FormaPago = "'.$Vfp. '", idobra = "'.$Vobra. '", Status = "Abierta" WHERE Folio= "'.$Vfolio. '"';

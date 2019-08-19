@@ -16,7 +16,7 @@ $Vobra = '27'; */
 	$idCliente = "";
 	$NombreCliente = "";
 	
-	$link = mysql_connect('localhost', 'nikovald', 'arimoreno2016') or die('No se pudo conectar: ' . mysql_error());
+	$link = mysql_connect('localhost', 'root', '') or die('No se pudo conectar: ' . mysql_error());
 	mysql_select_db('nikovald_aridos') or die('No se pudo seleccionar la base de datos');		
 	
 	$incLCM = 'UPDATE cotizacion SET  FormaPago = "'.$Vfp. '", idobra = "'.$Vobra. '", Status = "Abierta" WHERE Folio= "'.$Vfolio. '"';
@@ -44,7 +44,7 @@ $Vobra = '27'; */
 	
 	$pdf=new FPDF();
 	$pdf->AddPage();
-	$pdf->Image('http://www.aridosmoreno.cl/sistema/FormatoC.png' , 0 ,0, 210 , 280,'PNG');  
+	$pdf->Image('FormatoC.png' , 0 ,0, 210 , 280,'PNG');  
 
 $pdf->SetFont('Arial','B',14);
 $pdf->SetXY(157, 25);
@@ -136,7 +136,7 @@ $pdf->SetXY(41, 165);
 $pdf->Cell(10, 8, utf8_decode('R.U.T. 76.177.124-8'), 0, 'C');
 
 $pdf->SetXY(41, 188);
-$pdf->Cell(10, 8, utf8_decode($ContactoClie), 0, 'C');
+$pdf->Cell(10, 8, utf8_decode(''), 0, 'C');
 $pdf->SetXY(41, 193);
 $pdf->Cell(10, 8, utf8_decode($Cnombreobra), 0, 'C');
 $pdf->SetXY(41, 199);

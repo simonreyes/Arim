@@ -1,7 +1,7 @@
 ﻿<?php 
 define('HOST_DB', 'localhost'); 
-define('USER_DB', 'nikovald'); 
-define('PASS_DB', 'arimoreno2016'); 
+define('USER_DB', 'root'); 
+define('PASS_DB', ''); 
 define('NAME_DB', 'nikovald_aridos'); 
 function conectar()
 {global $conexion; 
@@ -105,14 +105,24 @@ while($fila = mysql_fetch_assoc($resultado))
 	                               Fecha, IdCliente, Comision, VentaFinal, FormaPago, Cantidad, idobra, sucursal)
 						VALUES('".$idguia."', '".$proveedor."', '".$km."', '".$cubo."', '".$tarifa."', '".$valorarido."', '".$ganancia."', '".$idaridos."',
 								'".$valor."', '".$peaje."', '".$venta."', 'Creada', '".$folio."', '0', '".$idcliente."', '".$comision."', '".$ventafinal."',
-								'".$Formapago."', '".$Cantidad."', '".$IdObra."', '".$sucursal."')"); 
+								'".$Formapago."', '".$cantidad."', '".$IdObra."', '".$sucursal."')") 
+	/*or die (mysql_error() . "insert into Guia_temp( id_user, Proveedor, Km, Cubo, Tarifa, ValorArido, Ganancia, idAridos, Valor, Peaje, Venta, Status, Folio, 
+	                               Fecha, IdCliente, Comision, VentaFinal, FormaPago, Cantidad, idobra, sucursal)
+						VALUES('".$idguia."', '".$proveedor."', '".$km."', '".$cubo."', '".$tarifa."', '".$valorarido."', '".$ganancia."', '".$idaridos."',
+								'".$valor."', '".$peaje."', '".$venta."', 'Creada', '".$folio."', '0', '".$idcliente."', '".$comision."', '".$ventafinal."',
+								'".$Formapago."', '".$cantidad."', '".$IdObra."', '".$sucursal."')")*/; 
 								}  
 
 conectar(); mysql_set_charset('utf8'); 
 $sqla = "SELECT * FROM clienteobras WHERE idobra  =  '" .$IdObra. "'";  
-$resultadoa = mysql_query($sqla); 
+$resultadoa = mysql_query($sqla) or die (mysql_error());
+//echo $resultadoa + "resultad";
+$Cnombreobra = "";
+$Ccontacto = "";
+$Cfono = "";
+$Cemail = ""; 
 while($filaa = mysql_fetch_assoc($resultadoa))
-{  
+{
 $Cnombreobra .= $filaa['nombreobra'];
 $Ccontacto .= $filaa['contacto'];
 $Cfono .= $filaa['fono'];
@@ -376,7 +386,7 @@ dd{font-size:150%;}
   </table>
  <br/> 
  <?php
- mysql_connect("localhost", "nikovald", "arimoreno2016") or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
+ mysql_connect("localhost", "root", "") or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
 	mysql_select_db("nikovald_aridos") or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB); 
 
 	$result="	SELECT *

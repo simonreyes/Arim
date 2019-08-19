@@ -4,8 +4,8 @@
 	$Folio = $_POST['busqueda']; 
 	 
 	$host = "localhost";
-    $user = "nikovald";
-    $pass = "arimoreno2016";
+    $user = "root";
+    $pass = "";
     $bd = "nikovald_aridos";		
 
     $conexion = mysql_connect($host,$user,$pass) or die ("problemas al conectar el host");
