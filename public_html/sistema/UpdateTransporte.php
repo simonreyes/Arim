@@ -1,8 +1,8 @@
 <?php
 {
 	$host = "localhost";
-    $user = "nikovald";
-    $pass = "arimoreno2016";
+    $user = "root";
+    $pass = "";
     $bd = "nikovald_aridos";		
 
     $conexion = mysql_connect($host,$user,$pass) or die ("problemas al conectar el host");
@@ -18,16 +18,11 @@
 	 
 	 	
 	 
-	 mysql_query("update transchofer Set MT3 = '$mt3', 
-					 					 CHOFER = '$chofer', 
-										 RUT = '$rut',
-										 FONO = '$fono'
-									     WHERE NOMBRETRANS = '$empresa' and PATENTE = '$patente'", $conexion);
-										
-	
-									
-										
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");											
+	 mysql_query("insert into transchofer(NOMBRETRANS, MT3, PATENTE, CHOFER, RUT, FONO)
+	VALUES ( '$empresa', '$mt3', '$patente', '$chofer', '$rut', '$fono')",$conexion) or die (mysql_error() . "error insert into transchofer ('nombretrans','mt3','patente','chofer','rut','fono') values 
+	 									  ('$empresa', '".$patente."', '".$chofer."', '".$rut."', '".$fono."')");	
+
+	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");	
 	
 	 }
 ?>	

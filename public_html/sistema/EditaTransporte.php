@@ -7,13 +7,16 @@ function conectar()
 { global $conexion; 
 //Definición global para poder utilizar en todo el contexto 
 $conexion = mysql_connect(HOST_DB, USER_DB, PASS_DB) or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
-mysql_select_db(NAME_DB) or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . mysql_error(); 
+mysql_select_db(NAME_DB) or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . mysql_error()); 
 } function desconectar(){ global $conexion; mysql_close($conexion); }  
 
 $mt3 = "";
 $chofer = "";
 $rut = "";
 $fono = "";
+$busqueda2 = "";
+$busqueda = "";
+
 	
 if($_POST){  
 
@@ -38,8 +41,7 @@ $rut .= $fila['rut'];
 $fono .= $fila['fono'];
 }  
 }else{ $texto = "NO HAY RESULTADOS EN LA BBDD";	 } 
-mysql_close($conexion); 
-
+mysql_close($conexion);
 
 conectar(); mysql_set_charset('utf8'); 
 $sql2 = "SELECT nombre FROM transporte WHERE idnombre = '".$busqueda."'";  
@@ -47,6 +49,7 @@ $resultado2 = mysql_query($sql2);
 if (mysql_num_rows($resultado2) > 0){  
 $registros2 = '<p>HEMOS ENCONTRADO ' . mysql_num_rows($resultado2) . ' registros </p>'; 
 // Se almacenan las cadenas de resultado 
+$nombre = "";
 while($fila2 = mysql_fetch_assoc($resultado2))
 {  
 $nombre .= $fila2['nombre'];
@@ -55,7 +58,12 @@ $nombre .= $fila2['nombre'];
 mysql_close($conexion); 
 } 
 }
- 
+ // Prueba
+conectar(); mysql_set_charset('utf8'); 
+$sqlchoferes = "SELECT chofer FROM transchofer WHERE patente = '".$busqueda2."'";  
+$listado = mysql_query($sqlchoferes); 
+
+//fin prueba
 ?> 
 
 <html>
@@ -227,17 +235,17 @@ dd{font-size:150%;}
 	<tbody>
 		<tr>
 			<td>Empresa Transporte : </td>
-			<td><input size="40" name="nombre" type="text" value="<?php echo $nombre; ?>" /></td>
+			<td><input size="40" name="nombre" type="text" value="<?php echo $nombre; ?>" READONLY= "readonly"/></td>
 			<td>&nbsp;</td>
 			<td>Patente :</td>
-			<td><input size="40" name="busqueda2" type="text" value="<?php echo $busqueda2; ?>" /></td>
+			<td><input size="40" name="busqueda2" type="text" value="<?php echo $busqueda2; ?>" READONLY= "readonly" /></td>
 		</tr>
 		<tr>
 			<td>Mt3 : </td>
-			<td><input size="40" name="mt3" type="text" value="<?php echo $mt3; ?>" /></td>
+			<td><input size="40" name="mt3" type="text" value="" /></td>
 			<td>&nbsp;</td>
 			<td>Chofer :</td>
-			<td><input size="40" name="chofer" type="text" value="<?php echo $chofer; ?>" /></td>
+			<td><input size="40" name="chofer" type="text" value="" /></td>
 		</tr>
 		<tr>
 			<td>Rut :</td>
@@ -261,6 +269,17 @@ dd{font-size:150%;}
 			<td><input type="button" name="Cancelar" value=" Cancelar " onClick="location.href='VistaGral.php'"></td>
 			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 		</tr>
+<form>
+	<table align="center" border="1" cellpadding="1" cellspacing="1" style="width:950px;" >
+		<tr>
+			<td>Choferes Inscritos : </td>
+			<tr><?php while($fila2 = mysql_fetch_assoc($listado))
+			echo '<tr><td> '.$fila2['chofer'].'</td></tr>';
+			?>
+			</tr>
+		</tr>
+	</table>
+</form>
 	</tbody>
 	</table>
 	</form>		
