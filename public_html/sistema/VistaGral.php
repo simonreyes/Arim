@@ -141,6 +141,21 @@
 							<a href="#"></a>
 					</div>
 				</li>
+				<li>
+					<a href="#">
+						<img src="images/Vales.jpg" alt=""/>
+						<span class="sdt_active"></span>
+						<span class="sdt_wrap">
+							<span class="sdt_link">Vales</span>
+							<span class="sdt_descr"></span>
+						</span>
+					</a>
+					<div class="sdt_box">
+							<a href="http://www.aridosmoreno.cl/sistema/InformeMensual.php">Ingresar</a>
+							<a href="http://www.aridosmoreno.cl/sistema/InfFactCliente.php">Modificar</a>
+							<a href="http://www.aridosmoreno.cl/sistema/InfFactProv.php">Eliminar</a>
+					</div>
+				</li>
 			</ul>
 		</div>
         <div>
