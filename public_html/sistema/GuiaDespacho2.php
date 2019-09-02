@@ -176,7 +176,7 @@ $(document).ready(function(){
 
 function cargar_paises()
 {
-	$.get("scripts/cargar-paises.php", function(resultado){
+	$.get("scriptsGD/cargar-paises.php", function(resultado){
 		if(resultado == false)
 		{
 			alert("Error");
@@ -190,7 +190,7 @@ function cargar_paises()
 function dependencia_estado()
 {
 	var code = $("#pais").val();
-	$.get("scripts/dependencia-estado.php", { code: code },
+	$.get("scriptsGD/dependencia-estado.php", { code: code },
 		function(resultado)
 		{
 			if(resultado == false)
@@ -210,8 +210,8 @@ function dependencia_estado()
 
 function dependencia_ciudad()
 {
-	var code = $("#estado").val();
-	$.get("scripts/dependencia-ciudades.php?", { code: code }, function(resultado){
+	var code = $("#pais").val();
+	$.get("scriptsGD/dependencia-ciudades.php?", { code: code }, function(resultado){
 		if(resultado == false)
 		{
 			alert("Error");
