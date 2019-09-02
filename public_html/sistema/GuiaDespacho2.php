@@ -48,6 +48,8 @@ else {
 // Select Trae Datos Cotización
 
 // Si hay información para buscar, abrimos la conexión
+$IdObra = "";
+
 conectar(); mysql_set_charset('utf8'); 
 $sql = "SELECT * FROM Guia_temp WHERE folio  =  '" .$busqueda. "' Group By folio";  
 $resultado = mysql_query($sql); 
@@ -58,10 +60,14 @@ while($fila = mysql_fetch_assoc($resultado))
 {  
 $NombreCli .= $fila['idCliente'];
 $Formapago .= $fila['FormaPago'];
-$Status .= $fila['Status'];
+//$Status .= $fila['Status'];
 $IdObra .= $fila['idobra'];
 }  
 
+$Cnombreobra = "";
+$Ccontacto = "";
+$Cfono = "";
+$Cemail = "";
 conectar(); mysql_set_charset('utf8'); 
 $sqla = "SELECT * FROM clienteobras WHERE idobra  =  '" .$IdObra. "'";  
 $resultadoa = mysql_query($sqla); 
@@ -157,6 +163,15 @@ $(document).ready(function(){
 	$("#estado").change(function(){dependencia_ciudad();});
 	$("#estado").attr("disabled",true);
 	$("#ciudad").attr("disabled",true);
+
+	$(function () {
+    $.datepicker.setDefaults($.datepicker.regional["es"]);
+
+    $("#FechCotizacion").datepicker({
+      firstDay: 1,
+      dateFormat: "yymmdd"
+      });
+    });
 });
 
 function cargar_paises()
@@ -236,12 +251,20 @@ dd{font-size:150%;}
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- incluyo la libreria jQuery -->
     <script type="text/javascript" src="resources/jquery-1.7.1.min.js"></script>
+	<!-- Jquery UI -->
+	<script type="text/javascript" src="resources/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<!-- Datepicker Jquery Ui -->
+	<script type="text/javascript" src="resources/jquery-ui-1.12.1/datepicker-es.js"></script>
     <!-- incluyo el archivo que tiene mis funciones javascript -->
     <script type="text/javascript" src="resources/functions.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="resources/css/all.css">
     <!-- incluyo el framework css , blueprint. -->
     <link rel="stylesheet" type="text/css" href="resources/screen.css" />
     <!-- incluyo mis estilos css -->
     <link rel="stylesheet" type="text/css" href="resources/style.css" />
+    <!-- Jquery UI-->
+    <link href="resources/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" >
 		
 <form action="insertaGD.php" method="post" target="_blank" > 
    <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
@@ -250,41 +273,45 @@ dd{font-size:150%;}
 			<td>Nombre Cliente :</td>
 			<td><input readonly="readonly" name="NombreCli" id="NombreCli" type="text"  value="<?php echo $Nom_Cli; ?>"/></td>
 			<td>&nbsp;</td>
-			<td>Dirección :</td>
-			<td><input readonly="readonly" name="DireccionClie" type="text" size="30" value="<?php echo $DireccionClie; ?>"/></td>
+			<td><i class="fas fa-calendar-alt"></i><label> Fecha:</label> <label style="color:red;">(Obligatorio)</label> </td>
+			<td><input placeholder="20160501" name="FechCotizacion" id="FechCotizacion" type="text" required></td>
 		</tr>
 		<tr>
 			<td>Rut :</td>
 			<td><input readonly="readonly" name="rut" type="text"  value="<?php echo $RutClie; ?>"/></td>
 			<td>&nbsp;</td>
-			<td>Giro :</td>
-			<td><input readonly="readonly" name="giro" type="text" size="30" value="<?php echo $Giro; ?>"/></td>
+			<td>Dirección :</td>
+			<td><input readonly="readonly" name="DireccionClie" type="text" size="30" value="<?php echo $DireccionClie; ?>"/></td>		
 		</tr>
 		<tr>
 			<td>Correo Electronico:</td>
 			<td><input readonly="readonly" size="30" name="correo" type="text" value="<?php echo $CorreoClie; ?>"/></td>
 			<td>&nbsp;</td>
-			<td>Fono Cliente :</td>
-			<td><input readonly="readonly" name="fono" type="text" value="<?php echo $FonoClie; ?>"/></td>
+			<td>Giro :</td>
+			<td><input readonly="readonly" name="giro" type="text" size="30" value="<?php echo $Giro; ?>"/></td>
 		</tr>
 		<tr>
 			<td>Obra:</td>
 			<td><input readonly="readonly" size="30" name="Destino" id="Destino" type="text" value="<?php echo $Cnombreobra;?>" /></td>
 			<td>&nbsp;</td>
-			<td>Nombre Contacto:</td>
-			<td><input readonly="readonly" size="30" name="contacto" id= "contacto" type="text" value="<?php echo $Ccontacto;?>"/> </td>
+			<td>Fono Cliente :</td>
+			<td><input readonly="readonly" name="fono" type="text" value="<?php echo $FonoClie; ?>"/></td>
 		</tr>
 		<tr>
 			<td>Fono Contacto:</td>
 			<td><input readonly="readonly" size="30" type="text" name="fonocontacto" id= "fonocontacto" value="<?php echo $Cfono;?>"/> </td>
 			<td>&nbsp;</td>
-			<td>Email Contacto:</td>
-			<td><input readonly="readonly" size="30" type="text" name="cemail" id= "cemail" value="<?php echo $Cemail;?>"/> </td>
+			<td>Nombre Contacto:</td>
+			<td><input readonly="readonly" size="30" name="contacto" id= "contacto" type="text" value="<?php echo $Ccontacto;?>"/> </td>
 		</tr>
 		<tr>
 			<td>Forma de Pago:</td>
 			<td><input readonly="readonly" name="Formapago" id="Formapago" type="text" value="<?php echo $Formapago; ?>"/></td>
 			<td>&nbsp;</td>
+			<td>Email Contacto:</td>
+			<td><input readonly="readonly" size="30" type="text" name="cemail" id= "cemail" value="<?php echo $Cemail;?>"/> </td>
+		</tr>
+		<tr>
 			<td>N° OC:</td>
 			<td><input size="10" name="ordencompra" id="ordencompra" type="text" placeholder="Ingresar OC..."/></td>
 		</tr>	
@@ -300,7 +327,7 @@ dd{font-size:150%;}
    <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
 	 <tbody>
 	    <tr>
-			<td>Transporte</td> 
+			<td><i class="fas fa-truck"></i> Transporte</td> 
 			<td></td>
 		    <td>Patente</td>
 			<td></td>
@@ -369,7 +396,7 @@ dd{font-size:150%;}
  <tr>
     <td size="40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;</td>	
-   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input align="center" type="submit" value=" Crear Guía Despacho "/></td>	
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button align="center" type="submit" value=" Crear Guía Despacho "/>Crear Guía Despacho <i style="color:red;" class="far fa-file-pdf"></i></button></td>	
 	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name="Cancelar" value=" Cancelar " onClick="location.href='CancelaInserG.php'"></td>	
 	<td size="40"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

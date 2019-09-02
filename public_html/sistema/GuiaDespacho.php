@@ -267,6 +267,9 @@ function dependencia_ciudad()
 	});	
 	
 }
+
+
+
 </script>
 <style type="text/css">
 dt{font-size:200%;}
@@ -293,8 +296,15 @@ dd{font-size:150%;}
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <!-- incluyo la libreria jQuery -->
     <script type="text/javascript" src="resources/jquery-1.7.1.min.js"></script>
+    <!-- Jquery UI -->
+	<script type="text/javascript" src="resources/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<!-- Datepicker Jquery Ui -->
+	<script type="text/javascript" src="resources/jquery-ui-1.12.1/datepicker-es.js"></script>
     <!-- incluyo el archivo que tiene mis funciones javascript -->
     <script type="text/javascript" src="resources/functions.js"></script>
+
+    <!-- Jquery UI-->
+    <link href="resources/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" >
     <!-- incluyo el framework css , blueprint. -->
     <link rel="stylesheet" type="text/css" href="resources/screen.css" />
     <!-- incluyo mis estilos css -->
@@ -338,7 +348,8 @@ dd{font-size:150%;}
 		<?php 		
 		 }  		
 		?>	
-        </td> 		
+        </td>
+        <td>&nbsp;</td>
 		</tr>
 		<tr>
 			<td>Nombre Cliente :</td>

@@ -1,7 +1,6 @@
 <?php
 
  	require_once ( __DIR__ . '/fpdf/fpdf.php' );
- 
    
   	$Destino = $_POST['Destino'];
 	$Contacto = $_POST['contacto'];
@@ -13,7 +12,8 @@
 	$NombreCli = $_POST['NombreCli'];
 	$idcliente = $_POST['idcliente'];
 	$Formapago = $_POST['Formapago'];
-	$Proveedor = $_POST['Proveedor'];
+	//$Proveedor = $_POST['Proveedor'];
+	$FechCotizacion = $_POST['FechCotizacion'];
 	
 	$transporte =  $_POST['pais'];
 	$patente =  $_POST['estado'];
@@ -82,44 +82,50 @@ $pdf->AddPage();
 $pdf->SetFont('Helvetica','B',14);
 //$pdf->Image('http://www.aridosmoreno.cl/sistema/formatoGD.png' , 0 ,0, 210 , 280,'PNG');
 
-$dia = date("d"); 
-$mes = date("m");
-$anno = date("Y");
+if(isset($_POST["FechCotizacion"])){
+	$dia = date("d", strtotime($FechCotizacion));
+	$mes = date("m", strtotime($FechCotizacion));
+	$anno = date("Y", strtotime($FechCotizacion));
+}else{
+	$dia = date("d");
+	$mes = date("m");
+	$anno = date("Y");
+}
 
-if ($mes == 01){
+if (strcmp($mes,"01") == 0){
   $lmes = "Enero";
   }
-if ($mes == 02){
+elseif (strcmp($mes,"02") == 0){
   $lmes = "Febrero";
   }
-if ($mes == 03){
+elseif (strcmp($mes,"03") == 0){
   $lmes = "Marzo";
   }
-  if ($mes == 04){
+elseif (strcmp($mes,"04") == 0){
   $lmes = "Abril";
   }
-if ($mes == 05){
+elseif (strcmp($mes,"05") == 0){
   $lmes = "Mayo";
   }
-if ($mes == 06){
+elseif (strcmp($mes,"06") == 0){
   $lmes = "Junio";
 }
-if ($mes == 07){
+elseif (strcmp($mes,"07") == 0){
   $lmes = "Julio";
 }
-if ($mes == 08){
+elseif (strcmp($mes,"08") == 0){
   $lmes = "Agosto";
 }
-if ($mes == 09){
+elseif (strcmp($mes,"09") == 0){
   $lmes = "Septiembre";
 }
-if ($mes == 10){
+elseif (strcmp($mes,"10") == 0){
   $lmes = "Octubre";
 }
-if ($mes == 11){
+elseif (strcmp($mes,"11") == 0){
   $lmes = "Noviembre";
 }
-if ($mes == 12){
+else{
   $lmes = "Diciembre";
 }
 
@@ -217,8 +223,7 @@ while ($row = mysql_fetch_array($resultDATOS, MYSQL_ASSOC))
 								   Patente_Guia, Chofer_Guia, OC_Guia)
 						VALUES('".$idguia."', '".$proveedor."', '".$km."', '".$cubo."', '".$tarifa."', '".$valorarido."', '".$ganancia."', '".$idaridos."',
 								'".$valor."', '".$peaje."', '".$venta."', 'Creada', '".$folio."', '0', '".$idcliente."', '".$comision."', '".$ventafinal."',
-								'".$Formapago."', '".$Cantidad."', '".$IdObra."', '".$sucursal."', '". $FolioGuia."', '". $Fecha ."', '". $nombreT ."', 
-								'". $patente ."', '". $chofer ."', '". $OC ."')"); 	
+								'".$Formapago."', '".$Cantidad."', '".$IdObra."', '".$sucursal."', '". $FolioGuia."', '". $FechCotizacion ."', '". $nombreT ."', '". $patente ."', '". $chofer ."', '". $OC ."')"); 	
 	
 			
 		$pdf->SetXY(1, $fila);
@@ -265,6 +270,6 @@ $resultactgd = mysql_query($actgd) or die('Consulta fallida: ' . mysql_error());
 
 mysql_query('delete from Guia_temp WHERE Folio = "'.$busqueda.'"');
 
-$pdf->Output();	
+$pdf->Output();
  
 ?>
