@@ -371,11 +371,11 @@ mysql_close($conexion); }
 <!-- Start your project here-->
 
 <!-- SCRIPTS -->
-<!-- JQuery -->
+<!-- JQuery 3.4.1 -->
 <script type="text/javascript" src="resources/js/jquery-3.4.1.min.js"></script>
 <!-- Bootstrap tooltips -->
 <script type="text/javascript" src="resources/js/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
+<!-- Bootstrap 4.3.1 core JavaScript -->
 <script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="resources/js/mdb.min.js"></script>
