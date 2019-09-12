@@ -27,7 +27,7 @@
 						</div>
 						<div class="form-group">
 							<label>Transporte</label>
-							<select class="form-control" id="selectTransporte" name="selectTransporte">
+							<select class="form-control" id="selectTransporte" name="selectTransporte" required>
 						    <option value="">Selecciona Transporte</option>
 						    <?php 
 						    if($numrowsTR > 0){ 
@@ -43,14 +43,14 @@
 						<!-- Patentes dropdown -->	
 						<div class="form-group">
 							<label>Patente</label>
-							<select id="selectPatente" name="selectPatente" class="form-control">
+							<select id="selectPatente" name="selectPatente" class="form-control" required>
 						    	<option value="">Selecciona Transporte primero</option>
 							</select>
 						</div>
 						<div class="form-group">
 						<!-- City dropdown -->
 							<label>Chofer</label>
-							<select id="selectChofer" name="selectChofer" class="form-control">
+							<select id="selectChofer" name="selectChofer" class="form-control" required>
 							    <option value="">Selecciona Chofer primero</option>
 							</select>		
 						</div>

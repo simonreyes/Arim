@@ -1,7 +1,7 @@
-<div id="deleteProductModal" class="modal fade">
+<div id="deleteProvModal" class="modal fade">
 		<div class="modal-dialog">
 			<div class="modal-content">
-				<form name="delete_product" id="delete_product">
+				<form name="delete_prov" id="delete_prov">
 					<div class="modal-header">						
 						<h4 class="modal-title">Eliminar Producto</h4>
 						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -9,7 +9,7 @@
 					<div class="modal-body">					
 						<p>¿Seguro que quieres eliminar este registro?</p>
 						<p class="text-warning"><small>Esta acción no se puede deshacer.</small></p>
-						<input type="hidden" name="delete_id" id="delete_id">
+						<input type="hidden" name="delete_id_gd" id="delete_id_gd">
 					</div>
 					<div class="modal-footer">
 						<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancelar">

@@ -59,15 +59,15 @@ mysql_close($conexion); }
   <!-- Font Awesome -->
   <link rel="stylesheet" href="resources/css/all.css">
   <!-- Bootstrap core CSS -->
-  <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+  <link href="resources/css_mdb/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="resources/css/mdb.min.css" rel="stylesheet">
+  <link href="resources/css_mdb/mdb.min.css" rel="stylesheet">
   <!-- DataTables CSS -->
-  <link href="resources/css/addons/datatables.min.css" rel="stylesheet">
+  <link href="resources/css_mdb/addons/datatables.min.css" rel="stylesheet">
   <!-- DataTables CSS -->
-  <link href="resources/buttons/css/buttons.dataTables.min.css" rel="stylesheet">
+  <link href="resources/buttons/css_mdb/buttons.dataTables.min.css" rel="stylesheet">
   <!-- DataTables Select CSS -->
-  <link href="resources/css/addons/datatables-select.min.css" rel="stylesheet">
+  <link href="resources/css_mdb/addons/datatables-select.min.css" rel="stylesheet">
   <!-- Jquery UI-->
   <link href="resources/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" >
   <!-- Your custom styles (optional) -->

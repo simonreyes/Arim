@@ -47,7 +47,7 @@ if($action == 'ajax'){
 	$rowClientes = mysqli_fetch_array($queryCliente);
 	
 	//Buscar Información Proveedores
-	$queryProovedores = mysqli_query($con, "	SELECT * from Guia c inner join aridos a on c.idaridos = a.idaridos inner join proveedores p on c.proveedor = p.idproveedor where Num_Guia = '".$valorbuscado."'");
+	$queryProovedores = mysqli_query($con, "SELECT c.iguia, p.Proveedor, c.sucursal, a.glosa, c.Cantidad, c.VentaFinal from Guia c inner join aridos a on c.idaridos = a.idaridos inner join proveedores p on c.proveedor = p.idproveedor where Num_Guia = '".$valorbuscado."'");
 
 	?>
 
@@ -56,11 +56,17 @@ if($action == 'ajax'){
 		<caption><h4><b>Información Guía de Despacho N° <?php echo $rowGD['Num_Guia']  ?></b></h4></caption>
 		<tbody>
 			<tr>
-				<td >Folio Cotización: </td> 
+				<td>Folio Cotización: </td> 
 				<td><?php echo $rowGD['Folio']  ?></td>
 				<td><i class="fas fa-calendar-alt"></i> <label> Fecha: </label></td>
-				<td><input name="FechaGuia" id="FechaGuia" type="text"
-					value="<?php echo date("d/m/Y", strtotime($rowGD['Fecha_Guia'])) ?>"></td> 		
+				<td class="input-group">
+					<input name="FechaGuia" id="FechaGuia" type="text" value="<?php echo date("d/m/Y", strtotime($rowGD['Fecha_Guia'])) ?>">
+					<span class="input-group-btn">
+                            <button class="btn btn-success btn-sm" type="button" onclick="updateGuia();">
+                                Actualizar Fecha <span class="fa fa-save"></span>
+                            </button>
+                    </span>	
+				</td>
 			</tr>
 			<tr>
 				<td>Nombre Cliente: </td>
@@ -130,7 +136,9 @@ if($action == 'ajax'){
 
 		</div>
 		<table class="table table-striped table-hover">
-			<caption><h4><b>Proveedores</h4><b> <a href="#addProductModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Agregar nuevo proveedor</span></a></caption>
+			<caption><h4><b>Proveedores</h4><b>
+				<!-- <a href="#addProductModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Agregar nuevo proveedor</span></a> -->
+			</caption>
 			<thead>
 				<tr>
 					<th>Proveedor</th>
@@ -160,7 +168,7 @@ if($action == 'ajax'){
 					<td class='text-center'>
 					<a href="#"  data-target="#editProvModal" class="edit" data-toggle="modal" data-prov='<?php echo $Proveedor;?>' data-suc="<?php echo $Sucursal?>" data-arido="<?php echo $Arido?>" data-cant="<?php echo $Cantidad?>" data-mt3="<?php echo $MT3;?>" data-id="<?php echo $id_guia;?>"><i class="material-icons" data-toggle="tooltip" title="Editar" >&#xE254;</i></a></td>
 					<td class='text-center'>
-					<a href="#deleteProductModal" class="delete" data-toggle="modal" data-id="<?php echo $id_guia;?>"><i class="material-icons" data-toggle="tooltip" title="Eliminar">&#xE872;</i></a>
+					<a href="#deleteProvModal" class="delete" data-toggle="modal" data-id="<?php echo $id_guia;?>"><i class="material-icons" data-toggle="tooltip" title="Eliminar">&#xE872;</i></a>
                		</td>
 				</tr>
 				<?php }?>

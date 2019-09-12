@@ -9,22 +9,21 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <!-- Font Awesome 5.8.2 -->
 <link rel="stylesheet" href="resources/css/all.css">
-  <!-- Bootstrap 4.3.1 core CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<!-- Jquery UI-->
-<link href="resources/jquery-ui-1.12.1/jquery-ui.min.css" rel="stylesheet" >
+<!-- Bootstrap CSSs -->
+<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+<!-- Bootstrap Datepicker CSS -->
+<link rel="stylesheet" href="resources/css/datepicker/bootstrap-datepicker.min.css">
 <!-- JQuery 3.4.1 -->
 <script type="text/javascript" src="resources/js/jquery-3.4.1.min.js"></script>
-<!-- Bootstrap 4.3.1 core JavaScript -->
-<script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
-<!-- Jquery UI -->
-<script type="text/javascript" src="resources/jquery-ui-1.12.1/jquery-ui.min.js"></script>
-<!-- Datepicker Jquery Ui -->
-<script type="text/javascript" src="resources/jquery-ui-1.12.1/datepicker-es.js"></script>
+<!-- Bootstrap JS -->
+<script type="text/javascript" src="resources/bootstrap.min.js"></script>
+<!-- Bootstrap Datepicker JS -->
+<script type="text/javascript" src="resources/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="resources/bootstrap-datepicker.es.min.js" charset="UTF-8"></script>
 <!-- Custom Javascripts -->
-<script src="resources/scripts.js"></script>
+<script src="resources/scriptsEditarGuia.js"></script>
 <!-- Custom CSS -->
-<link rel="stylesheet" href="resources/custom.css">
+<link rel="stylesheet" href="resources/custom.css"> 
 </head>
 
 <body>

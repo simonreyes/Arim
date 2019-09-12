@@ -1,7 +1,6 @@
 <?php 
 // Include the database config file 
 require_once ("../Controladores/conexion.php");
-var_dump($_POST);
  
 if(!empty($_POST["idTransp"])){
     // Fetch state data based on the specific country 
