@@ -151,9 +151,10 @@
 						</span>
 					</a>
 					<div class="sdt_box">
-							<a href="http://www.aridosmoreno.cl/sistema/InformeMensual.php">Ingresar</a>
-							<a href="http://www.aridosmoreno.cl/sistema/InfFactCliente.php">Modificar</a>
-							<a href="http://www.aridosmoreno.cl/sistema/InfFactProv.php">Eliminar</a>
+							<a href="http://localhost/aridos/public_html/sistema/ingvale.php">Ingresar</a>
+							<a href="http://localhost/aridos/public_html/sistema/Editavale.php">Modificar</a>
+							<a href="http://localhost/aridos/public_html/sistema/Eliminavale.php">Eliminar</a>
+							<a href="http://localhost/aridos/public_html/sistema/reportevale.php">Reporte</a>
 					</div>
 				</li>
 			</ul>

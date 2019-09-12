@@ -10,31 +10,6 @@ $conexion = mysql_connect(HOST_DB, USER_DB, PASS_DB) or die ('NO SE HA PODIDO CO
 mysql_select_db(NAME_DB) or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB); 
 } function desconectar(){ global $conexion; mysql_close($conexion); }  
 
-$DireccionClie = "";
-$RutClie = "";
-$Giro= ""; 
-$Obra = "";
-$ContactoClie = "";
-$CorreoClie= "";
-$FonoClie = "";
-$FolioGuia = "";
-$Destino = "";
-$Nom_Cli = "";
-$Formapago = "";
-$Transporte = "";
-$Patente = "";
-$Chofer = "";
-$Fonochofer = "";
-$Disponoble = "";
-$ciudadvale = "";
-
-$NombreCli = "";
-$Cubo = "";  
-$Tarifa = ""; 
-$Arido = ""; 
-$Valor = ""; 
-$Venta = "";
-$fonocontacto="";
 
 if($_POST){ 
 $busqueda = trim($_POST['buscar']);  
@@ -47,13 +22,64 @@ $foliov = "";
 }
 else { 
 
+//Consulta trae datos desde vale
+conectar(); mysql_set_charset('utf8'); 
+$sqlval = "SELECT * FROM vale WHERE rangovale1  =  '" .$busqueda. "'";  
+$resultadov = mysql_query($sqlval) or die (mysql_error());
+//echo $resultadoa + "resultad";
+$nombrev = "";
+$rfecha1 = "";
+$rfecha2 = "";
+$girov = "";
+$rutv = "";
+$direccionv = "";
+$rangovale1 = "";
+$rangovale2 = "";
+$cantidadv = "";
+$detallev = "";
+$transportev="";
+$patentev = "";
+$choferv = "";
+$cotizacionv = "";          
+while($filav = mysql_fetch_assoc($resultadov))
+{
+$nombrev = $filav['nombre'];
+$rfecha12 = $filav['rfecha1'];
+$phpdate = strtotime( $rfecha12 );
+$rfecha1 = date( 'Y-m-d', $phpdate );
+$rfecha23 = $filav['rfecha2'];
+$phpdate = strtotime( $rfecha23 );
+$rfecha2 = date( 'Y-m-d', $phpdate );
+$girov = $filav['giro'];
+$rutv = $filav['rut'];
+$direccionv = $filav['direccion'];
+$rangovale1 = $filav['rangovale1'];
+$rangovale2 = $filav['rangovale2'];
+$cantidadv = $filav['cantidad'];
+$detallev = $filav['detalle'];
+$transportev = $filav['transporte'];
+$patentev = $filav['patente'];
+$choferv = $filav['chofer'];
+$cotizacionv = $filav['cotizacion'];
+}   
+
+// Select valida transportista
+conectar(); mysql_set_charset('utf8'); 
+$sqlt = "SELECT nombre FROM transporte WHERE idnombre = '" .$transportev. "'";  
+$idtrans = mysql_query($sqlt, $conexion);
+$transportef = "";
+while($filaa = mysql_fetch_assoc($idtrans))
+{
+$transportef .= $filaa['nombre'];
+}
+
 // Select Trae Datos de idvale
 conectar(); mysql_set_charset('utf8'); 
 $sqlv = "SELECT MAX(idvale) as maximo FROM vale";  
 $idval = mysql_query($sqlv, $conexion);
 $resultadov = mysql_fetch_assoc($idval);
 $idvale = $resultadov["maximo"]+ "1"; 
-// Validar vale si resultado menor que...
+// Insertamos cero a la izquierda...
 $valeCeros = str_pad($idvale, 3, "0", STR_PAD_LEFT);
 
 // Si hay información para buscar, abrimos la conexión
@@ -134,10 +160,17 @@ $Cnombreobra .= $filaa['nombreobra'];
 $Ccontacto .= $filaa['contacto'];
 $Cfono .= $filaa['fono'];
 $Cemail .= $filaa['email'];
-}  
+}
 
 // Select Trae Datos Cliente
-
+$Nom_Cli ="";
+$DireccionClie ="";
+$RutClie="";
+$Giro="";
+$ContactoClie="";
+$CorreoClie="";
+$FonoClie="";
+$FolioGuia="";
 conectar(); mysql_set_charset('utf8'); 
 $sql2 = "SELECT * FROM cliente WHERE idCliente = '" .$idcliente. "'";  
 $resultado2 = mysql_query($sql2); 
@@ -165,11 +198,11 @@ $Disponoble = "Guía :" . "  " . $status ;
 	   } 
 mysql_close($conexion); } 
 }
-?> 
+?>
 <html>
 	<head>
 	<META http-equiv=Content-Type content="text/html; charset=utf-8">
-		<title>Crear Vale</title>
+		<title>Modifica Vale</title>
 		<style type="text/css">			
 			* {
 				margin:0px;
@@ -213,7 +246,11 @@ mysql_close($conexion); }
 			}
 		</style>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<!-- Bootstrap 4.3.1 core JavaScript -->
+		<script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
+		  <!-- Bootstrap 4.3.1 core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script type="text/javascript">
 $(document).ready(function(){
 	cargar_paises();
@@ -289,7 +326,7 @@ dd{font-size:150%;}
    <div class="container">
     <br>
    	<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>TRANSPORTES EDGARDO CRISTIAN MORENO SOLIS E.I.R.L </b></font></p>
-        <h3 class="title">Crear Vale&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <h3 class="title">Modifica Vale&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -311,7 +348,7 @@ dd{font-size:150%;}
    <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
 	 <tbody>
 		<tr>
-			<td>Ingrese N° Cotización : <input id="buscar" name="buscar" type="search">
+			<td>Ingrese Rango de Vale : <input id="buscar" name="buscar" type="search">
 			<input type="submit" name="buscador" class="boton peque aceptar" value="Buscar">
 			</td>			
 		</tr>
@@ -319,67 +356,61 @@ dd{font-size:150%;}
  </table>
 </form>	
  <br/>
-<form action="Grabavale.php" method="post" target="_blank" > 
+<form action="Modificavale.php" method="post" target="_blank" > 
    <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
 	 <tbody>
 	    <tr>
+	    	<input name="rangobuscar" type="hidden"  value="<?php echo $busqueda; ?>"/>
 			<td align="right"><font color="red">Cotización N°:</font>
 			</td> 
 			<td> 
-			<?php 
-			if($_POST){ 
-			$busqueda = trim($_POST['buscar']);  
-			?> 
-			<input readonly="readonly" name="busqueda" type="text"  value="<?php echo $busqueda; ?>"/>
-			<?php 		
-			 }  		
-			?>	
+			<input readonly="readonly" name="busqueda" type="text"  value="<?php echo $cotizacionv; ?>"/>	
         	</td>
         	<td>Rango Fecha :</td>
-        	<td><input name="rfecha1" id="rfecha1" type="text"  placeholder="20190901"/></td>
-			<td><input name="rfecha2" id="rfecha2" type="text"  placeholder="20190930"/></td>
+        	<td><input name="rfecha1" id="rfecha1" type="text"  value="<?php echo $rfecha1; ?>"/></td>
+			<td><input name="rfecha2" id="rfecha2" type="text"  value="<?php echo $rfecha2; ?>"/></td>
 		</tr>
 		<tr>
 			<td>Nombre Cliente :</td>
-			<td><input readonly="readonly" name="nombre" id="NombreCli" type="text"  value="<?php echo $Nom_Cli; ?>"/></td>
+			<td><input readonly="readonly" name="nombre" id="NombreCli" type="text"  value="<?php echo $nombrev; ?>"/></td>
 			<td>&nbsp;</td>
 			<td>Giro :</td>
-			<td><input readonly="readonly" name="giro" type="text" size="30" value="<?php echo $Giro; ?>"/></td>
+			<td><input readonly="readonly" name="giro" type="text" size="30" value="<?php echo $girov; ?>"/></td>
 		</tr>
 		<tr>
 			<td>Rut :</td>
-			<td><input readonly="readonly" name="rut" type="text"  value="<?php echo $RutClie; ?>"/></td>
+			<td><input readonly="readonly" name="rut" type="text"  value="<?php echo $rutv; ?>"/></td>
 			<td>&nbsp;</td>
 			<td>Dirección :</td>
-			<td><input readonly="readonly" name="direccion" type="text" size="30" value="<?php echo $DireccionClie; ?>"/></td>
+			<td><input readonly="readonly" name="direccion" type="text" size="30" value="<?php echo $direccionv; ?>"/></td>
 		</tr>
 		<tr>
 			<td>Rango Vale :</td>
-			<td><input  name="rvale1" type="text"  value=""/></td>
+			<td><input  name="rangov1" type="text"  value="<?php echo $rangovale1; ?>"/></td>
 			<td>&nbsp;</td>
 			<td>Rango Vale :</td>
-			<td><input  name="rvale2" type="text"  value=""/></td>			
+			<td><input  name="rangovale2" type="text"  value="<?php echo $rangovale2; ?>"/></td>			
 		</tr>
 		<tr>
 			<td>Cantidad :</td>
-			<td><input  name="cantidadv" type="text"  value=""/></td>
+			<td><input  name="cantidadv" type="text"  value="<?php echo $cantidadv; ?>"/></td>
 			<td>&nbsp;</td>
 			<td>Detalle :</td>
-			<td><input  name="detalle" type="text"  value=""/></td>			
+			<td><input  name="detalle" type="text"  value="<?php echo $detallev; ?>"/></td>			
 		</tr>		
     </tbody>
   </table>
   <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
 	 <tbody>
 	    <tr>
-			<td>Transporte</td> 
+			<td>Transporte: <?php echo $transportef; ?> </td> 
 			<td></td>
-		    <td>Patente</td>
+		    <td>Patente: <?php echo $patentev; ?> </td>
 			<td></td>
-			<td>Chofer</td>	
+			<td>Chofer: <?php echo $choferv; ?> </td>	
 			<td></td>					
 		</tr>
-		 <tr>
+		<tr>
 			<td>
 			<select id="pais" name="transporte" >
 				<option value="0">Seleccione Transporte...</option>
@@ -397,8 +428,8 @@ dd{font-size:150%;}
 			<td></td>
 		</tr>
 	</tbody>
-  </table>
- <br/> 
+	  </table>
+	 <br/> 
 	</table>   
  	<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:950px;" >
  	<tr>
@@ -411,7 +442,7 @@ dd{font-size:150%;}
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>	
    		<tr>
    	</table>
-  <br/>
+ 	 <br/>
 </form>  
 </div>
 </body>
