@@ -1,4 +1,5 @@
 <?php
+var_dump($_POST);
 {
 	$host = "localhost";
     $user = "root";
@@ -8,56 +9,39 @@
     $conexion = mysql_connect($host,$user,$pass) or die ("problemas al conectar el host");
     mysql_select_db($bd, $conexion) or die ("problemas al conectar la bd"); 
 
-	  $rfecha1 = "";
-	  $rfecha2 = "";
+	  $transporte = "";
+	  $patente ="";
 	  $chofer = "";
-	  $patente ="";   
-      $nombre = $_POST['nombre'];
-	  $rfecha1 = $_POST['rfecha1'];
-	  $rfecha2 = $_POST['rfecha2'];
-      $giro = $_POST['giro'];
-      $rut = $_POST['rut'];
-	  $direccion = $_POST['direccion'];
-	  $rvale1 = $_POST['rvale1'];
-	  $rvale2 = $_POST['rvale2'];
-	  $cantidadv =$_POST['cantidadv'];
-      $detalle = $_POST['detalle'];
+	  $folio = "";
+	  $fecha = "";
+	  $cantidad = "";
+	  $detalle ="";
       $transporte = $_POST['transporte'];
-      $chofer = $_POST['chofer'];
-      $patente = $_POST['patente'];
-      $cotizacion = $_POST['busqueda'];
-
+	  $patente = $_POST['patente'];
+	  $chofer = $_POST['chofer'];
+	  $folio = $_POST['folio'];
+	  $fechar = $_POST['fecha'];
+	  $date = str_replace('/', '-', $fechar);
+   	  $phpdate = strtotime($date);
+   	  $fecha = date('Y-m-d', $phpdate);	        
+      $cantidadv =$_POST['cantidadv'];
+      $detalle = $_POST['detalle'];
 	 
-	 mysql_query("INSERT INTO vale(nombre, rfecha1, rfecha2, giro, rut, direccion, rangovale1, rangovale2, cantidad, detalle, transporte, patente, chofer, cotizacion) VALUES
-	  ('".$nombre."',
-	  '".$rfecha1."',
-	  '".$rfecha2."',
-	  '".$giro."',
-	  '".$rut."',
-	  '".$direccion."',
-	  '".$rvale1."',
-	  '".$rvale2."',
-	  '".$cantidadv."',
-	  '".$detalle."',
-	  '".$transporte."',
+	 mysql_query("INSERT INTO vale(transporte, patente, chofer, folio, fecha, cantidad, detalle) VALUES
+	  ('".$transporte."',
 	  '".$patente."',
 	  '".$chofer."',
-	  '".$cotizacion."')", $conexion) or die ("INSERT INTO vale(nombre, rfecha1, rfecha2, giro, rut, direccion, rangovale1,rangovale2, cantidad, detalle, transporte, patente, chofer, cotizacion) VALUES
-	  ('".$nombre."',
-	  '".$rfecha1."',
-	  '".$rfecha2."',
-	  '".$giro."',
-	  '".$rut."',
-	  '".$direccion."',
-	  '".$rvale1."',
-	  '".$rvale2."',
+	  '".$folio."',
+	  '".$fecha."',
 	  '".$cantidadv."',
-	  '".$detalle."',
-	  '".$valor."',
-	  '".$transporte."',
+	  '".$detalle."')", $conexion) or die ("INSERT INTO vale(transporte, patente, chofer, folio, fecha, cantidad, detalle) VALUES
+	  ('".$transporte."',
 	  '".$patente."',
 	  '".$chofer."',
-	  '".$cotizacion."')". mysql_error());
+	  '".$folio."',
+	  '".$fecha."',
+	  '".$cantidadv."',
+	  '".$detalle."')". mysql_error());
 				
 	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");
 	 }

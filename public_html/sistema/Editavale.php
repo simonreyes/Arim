@@ -14,7 +14,7 @@ mysql_select_db(NAME_DB) or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB);
 if($_POST){ 
 $busqueda = trim($_POST['buscar']);  
 $entero = 0;  
-
+}
 if (empty($busqueda))
 {
 $texto = 'Búsqueda sin resultados';
@@ -24,179 +24,41 @@ else {
 
 //Consulta trae datos desde vale
 conectar(); mysql_set_charset('utf8'); 
-$sqlval = "SELECT * FROM vale WHERE rangovale1  =  '" .$busqueda. "'";  
+$sqlval = "SELECT * FROM vale WHERE folio  =  '" .$busqueda. "'";  
 $resultadov = mysql_query($sqlval) or die (mysql_error());
 //echo $resultadoa + "resultad";
-$nombrev = "";
-$rfecha1 = "";
-$rfecha2 = "";
-$girov = "";
-$rutv = "";
-$direccionv = "";
-$rangovale1 = "";
-$rangovale2 = "";
+$transporte = "";
+$patente ="";
+$chofer = "";
+$fecha = "";
+$folio = "";
 $cantidadv = "";
-$detallev = "";
-$transportev="";
-$patentev = "";
-$choferv = "";
-$cotizacionv = "";          
+$detalle ="";  
+$transportef ="";
+
 while($filav = mysql_fetch_assoc($resultadov))
 {
-$nombrev = $filav['nombre'];
-$rfecha12 = $filav['rfecha1'];
-$phpdate = strtotime( $rfecha12 );
-$rfecha1 = date( 'Y-m-d', $phpdate );
-$rfecha23 = $filav['rfecha2'];
-$phpdate = strtotime( $rfecha23 );
-$rfecha2 = date( 'Y-m-d', $phpdate );
-$girov = $filav['giro'];
-$rutv = $filav['rut'];
-$direccionv = $filav['direccion'];
-$rangovale1 = $filav['rangovale1'];
-$rangovale2 = $filav['rangovale2'];
-$cantidadv = $filav['cantidad'];
-$detallev = $filav['detalle'];
-$transportev = $filav['transporte'];
-$patentev = $filav['patente'];
-$choferv = $filav['chofer'];
-$cotizacionv = $filav['cotizacion'];
-}   
 
-// Select valida transportista
+$transport = $filav['transporte'];
+$patente = $filav['patente'];
+$chofer = $filav['chofer'];
+$fecha1 = $filav['fecha'];
+$phpdate = strtotime( $fecha1 );
+$fecha = date( 'd-m-Y', $phpdate );
+$folio = $filav['folio'];
+$cantidadv =$filav['cantidad'];
+$detalle = $filav['detalle'];
+} 
+// select transportes para identificar el id
 conectar(); mysql_set_charset('utf8'); 
-$sqlt = "SELECT nombre FROM transporte WHERE idnombre = '" .$transportev. "'";  
-$idtrans = mysql_query($sqlt, $conexion);
-$transportef = "";
-while($filaa = mysql_fetch_assoc($idtrans))
-{
-$transportef .= $filaa['nombre'];
-}
-
-// Select Trae Datos de idvale
-conectar(); mysql_set_charset('utf8'); 
-$sqlv = "SELECT MAX(idvale) as maximo FROM vale";  
-$idval = mysql_query($sqlv, $conexion);
-$resultadov = mysql_fetch_assoc($idval);
-$idvale = $resultadov["maximo"]+ "1"; 
-// Insertamos cero a la izquierda...
-$valeCeros = str_pad($idvale, 3, "0", STR_PAD_LEFT);
-
-// Si hay información para buscar, abrimos la conexión
-conectar(); mysql_set_charset('utf8'); 
-$sql = "SELECT * FROM cotizacion WHERE folio = '" .$busqueda. "'";  
-$resultado = mysql_query($sql); 
-if (mysql_num_rows($resultado) > 0){  
-$registros = '<p>HEMOS ENCONTRADO ' . mysql_num_rows($resultado) . ' registros </p>'; 
-// Se almacenan las cadenas de resultado 
-while($fila = mysql_fetch_assoc($resultado))
-{  
-        $idguia = "";
-		$proveedor = "";
-		$km = "";
-		$cubo = "";
-		$tarifa = "";
-		$valorarido = "";
-		$ganancia = "";
-		$idaridos = "";
-		$valor = "";
-		$peaje = "";
-		$venta = "";
-		$status = "";		
-		$folio = "";
-		$idcliente = "";
-		$comision = "";
-		$ventafinal = "";
-		$Formapago = "";
-		$cantidad = "";
-		$IdObra = "";
-		$sucursal = "";
-
-	    $idguia = $fila['id_user'];
-		$proveedor = $fila['Proveedor'];
-		$km = $fila['Km'];
-		$cubo = $fila['Cubo'];
-		$tarifa = $fila['Tarifa'];
-		$valorarido = $fila['ValorArido'];
-		$ganancia = $fila['Ganancia'];
-		$idaridos = $fila['idAridos'];
-		$valor = $fila['Valor'];
-		$peaje = $fila['Peaje'];
-		$venta = $fila['Venta'];
-		$status .= $fila['Status'];		
-		$folio = $fila['Folio'];
-		$idcliente = $fila['idCliente'];
-		$comision = $fila['Comision'];
-		$ventafinal = $fila['VentaFinal'];
-		$Formapago .= $fila['FormaPago'];
-		$cantidad = '0';
-		$IdObra = $fila['idobra'];
-		$sucursal = $fila['sucursal'];
-		
-		
-	mysql_query("insert into Guia_temp( id_user, Proveedor, Km, Cubo, Tarifa, ValorArido, Ganancia, idAridos, Valor, Peaje, Venta, Status, Folio, 
-	                               Fecha, IdCliente, Comision, VentaFinal, FormaPago, Cantidad, idobra, sucursal)
-						VALUES('".$idguia."', '".$proveedor."', '".$km."', '".$cubo."', '".$tarifa."', '".$valorarido."', '".$ganancia."', '".$idaridos."',
-								'".$valor."', '".$peaje."', '".$venta."', 'Creada', '".$folio."', '0', '".$idcliente."', '".$comision."', '".$ventafinal."',
-								'".$Formapago."', '".$cantidad."', '".$IdObra."', '".$sucursal."')") 
-	/*or die (mysql_error() . "insert into Guia_temp( id_user, Proveedor, Km, Cubo, Tarifa, ValorArido, Ganancia, idAridos, Valor, Peaje, Venta, Status, Folio, 
-	                               Fecha, IdCliente, Comision, VentaFinal, FormaPago, Cantidad, idobra, sucursal)
-						VALUES('".$idguia."', '".$proveedor."', '".$km."', '".$cubo."', '".$tarifa."', '".$valorarido."', '".$ganancia."', '".$idaridos."',
-								'".$valor."', '".$peaje."', '".$venta."', 'Creada', '".$folio."', '0', '".$idcliente."', '".$comision."', '".$ventafinal."',
-								'".$Formapago."', '".$cantidad."', '".$IdObra."', '".$sucursal."')")*/; 
-								}  
-
-conectar(); mysql_set_charset('utf8'); 
-$sqla = "SELECT * FROM clienteobras WHERE idobra  =  '" .$IdObra. "'";  
-$resultadoa = mysql_query($sqla) or die (mysql_error());
+$sqlt = "SELECT nombre FROM transporte WHERE idnombre  =  '" .$transport. "'";  
+$resultadoa = mysql_query($sqlt) or die (mysql_error());
 //echo $resultadoa + "resultad";
-$Cnombreobra = "";
-$Ccontacto = "";
-$Cfono = "";
-$Cemail = ""; 
+$transporte = "";
 while($filaa = mysql_fetch_assoc($resultadoa))
 {
-$Cnombreobra .= $filaa['nombreobra'];
-$Ccontacto .= $filaa['contacto'];
-$Cfono .= $filaa['fono'];
-$Cemail .= $filaa['email'];
-}
-
-// Select Trae Datos Cliente
-$Nom_Cli ="";
-$DireccionClie ="";
-$RutClie="";
-$Giro="";
-$ContactoClie="";
-$CorreoClie="";
-$FonoClie="";
-$FolioGuia="";
-conectar(); mysql_set_charset('utf8'); 
-$sql2 = "SELECT * FROM cliente WHERE idCliente = '" .$idcliente. "'";  
-$resultado2 = mysql_query($sql2); 
-while($fila2 = mysql_fetch_assoc($resultado2))
-{  
-$Nom_Cli .= $fila2['Nombre_Cliente'];
-$DireccionClie .= $fila2['Direccion'];
-$RutClie .= $fila2['Rut'];  
-$Giro .= $fila2['Giro']; 
-$ContactoClie .= $fila2['Contacto']; 
-$CorreoClie .= $fila2['Correo'];
-$FonoClie .= $fila2['Fono'];
+$transportef .= $filaa['nombre'];
 }  
-
-conectar(); mysql_set_charset('utf8'); 
-$sql = "SELECT * FROM folios WHERE letra  =  'GD00'";  
-$resultado = mysql_query($sql); 
-while($fila2 = mysql_fetch_assoc($resultado))
-{  
-$FolioGuia .= "GD00" . $fila2['numero'];
-}
-$Disponoble = "Guía :" . "  " . $status ;
-}else{ $texto = "NO HAY RESULTADOS EN LA BBDD";	 
-       $Disponoble = "Guía No Disponible";
-	   } 
-mysql_close($conexion); } 
 }
 ?>
 <html>
@@ -247,10 +109,16 @@ mysql_close($conexion); }
 		</style>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-		<!-- Bootstrap 4.3.1 core JavaScript -->
-		<script type="text/javascript" src="resources/js/bootstrap.min.js"></script>
-		  <!-- Bootstrap 4.3.1 core CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+		<!-- Bootstrap Datepicker CSS -->
+		<link rel="stylesheet" href="resources/css/datepicker/bootstrap-datepicker.min.css">
+		<!-- JQuery 3.4.1 -->
+		<!--<script type="text/javascript" src="resources/js/jquery-3.4.1.min.js"></script>-->
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" src="resources/bootstrap.min.js"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script type="text/javascript" src="resources/bootstrap-datepicker.min.js" defer></script>
+		<script type="text/javascript" src="resources/bootstrap-datepicker.es.min.js" defer charset="UTF-8"></script>
 <script type="text/javascript">
 $(document).ready(function(){
 	cargar_paises();
@@ -258,6 +126,11 @@ $(document).ready(function(){
 	$("#estado").change(function(){dependencia_ciudad();});
 	$("#estado").attr("disabled",true);
 	$("#ciudad").attr("disabled",true);
+	$("#FechaInicial").datepicker({
+			format: "dd-mm-yyyy",
+			weekStart: 1,
+			language: "es"
+	});
 });
 
 function cargar_paises()
@@ -348,7 +221,7 @@ dd{font-size:150%;}
    <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
 	 <tbody>
 		<tr>
-			<td>Ingrese Rango de Vale : <input id="buscar" name="buscar" type="search">
+			<td>Ingrese Folio : <input id="buscar" name="buscar" type="search">
 			<input type="submit" name="buscador" class="boton peque aceptar" value="Buscar">
 			</td>			
 		</tr>
@@ -356,58 +229,15 @@ dd{font-size:150%;}
  </table>
 </form>	
  <br/>
-<form action="Modificavale.php" method="post" target="_blank" > 
-   <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
-	 <tbody>
-	    <tr>
-	    	<input name="rangobuscar" type="hidden"  value="<?php echo $busqueda; ?>"/>
-			<td align="right"><font color="red">Cotización N°:</font>
-			</td> 
-			<td> 
-			<input readonly="readonly" name="busqueda" type="text"  value="<?php echo $cotizacionv; ?>"/>	
-        	</td>
-        	<td>Rango Fecha :</td>
-        	<td><input name="rfecha1" id="rfecha1" type="text"  value="<?php echo $rfecha1; ?>"/></td>
-			<td><input name="rfecha2" id="rfecha2" type="text"  value="<?php echo $rfecha2; ?>"/></td>
-		</tr>
-		<tr>
-			<td>Nombre Cliente :</td>
-			<td><input readonly="readonly" name="nombre" id="NombreCli" type="text"  value="<?php echo $nombrev; ?>"/></td>
-			<td>&nbsp;</td>
-			<td>Giro :</td>
-			<td><input readonly="readonly" name="giro" type="text" size="30" value="<?php echo $girov; ?>"/></td>
-		</tr>
-		<tr>
-			<td>Rut :</td>
-			<td><input readonly="readonly" name="rut" type="text"  value="<?php echo $rutv; ?>"/></td>
-			<td>&nbsp;</td>
-			<td>Dirección :</td>
-			<td><input readonly="readonly" name="direccion" type="text" size="30" value="<?php echo $direccionv; ?>"/></td>
-		</tr>
-		<tr>
-			<td>Rango Vale :</td>
-			<td><input  name="rangov1" type="text"  value="<?php echo $rangovale1; ?>"/></td>
-			<td>&nbsp;</td>
-			<td>Rango Vale :</td>
-			<td><input  name="rangovale2" type="text"  value="<?php echo $rangovale2; ?>"/></td>			
-		</tr>
-		<tr>
-			<td>Cantidad :</td>
-			<td><input  name="cantidadv" type="text"  value="<?php echo $cantidadv; ?>"/></td>
-			<td>&nbsp;</td>
-			<td>Detalle :</td>
-			<td><input  name="detalle" type="text"  value="<?php echo $detallev; ?>"/></td>			
-		</tr>		
-    </tbody>
-  </table>
-  <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
+<form action="Modificavale.php" method="post" target="_blank" >
+<table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
 	 <tbody>
 	    <tr>
 			<td>Transporte: <?php echo $transportef; ?> </td> 
 			<td></td>
-		    <td>Patente: <?php echo $patentev; ?> </td>
+		    <td>Patente: <?php echo $patente; ?> </td>
 			<td></td>
-			<td>Chofer: <?php echo $choferv; ?> </td>	
+			<td>Chofer: <?php echo $chofer; ?> </td>	
 			<td></td>					
 		</tr>
 		<tr>
@@ -427,10 +257,27 @@ dd{font-size:150%;}
 			</select></td>	
 			<td></td>
 		</tr>
-	</tbody>
-	  </table>
-	 <br/> 
-	</table>   
+		</tbody>
+	  </table> 
+   <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
+	 <tbody>
+		<tr>
+			<input hidden="hidden" value="<?php echo $busqueda; ?>" name="foliob">
+			<td>Folio :</td>
+			<td><input name="folio" type="text"  value="<?php echo $folio; ?>"/></td>
+			<td>&nbsp;</td>
+			<td>Fecha :</td>
+			<td><input name="fecha" id="FechaInicial" type="text" value="<?php echo $fecha ?>"/></td>
+		</tr>
+		<tr>
+			<td>Cantidad :</td>
+			<td><input  name="cantidadv" type="text"  value="<?php echo $cantidadv; ?>"/></td>
+			<td>&nbsp;</td>
+			<td>Detalle :</td>
+			<td><input  name="detalle" type="text"  value="<?php echo $detalle; ?>"/></td>			
+		</tr>		
+    </tbody>
+  	</table>  
  	<table align="center" border="0" cellpadding="0" cellspacing="0" style="width:950px;" >
  	<tr>
    	 <td size="40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

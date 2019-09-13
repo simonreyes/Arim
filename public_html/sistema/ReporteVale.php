@@ -154,67 +154,37 @@ mysql_close($conexion); }
    <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" id="dvData">
 	<tbody>
 		<tr>
-			<td><P ALIGN=center><u><b>IdVale</b></u></P></td>
-			<td><P ALIGN=center><u><b>Nombre</b></u></P></td>
-			<td><P ALIGN=center><u><b>Rango Desde</b></u></P></td>
-			<td><P ALIGN=center><u><b>Rango Hasta</b></u></P></td>
-			<td><P ALIGN=center><u><b>Giro</b></u></P></td>
-			<td><P ALIGN=center><u><b>Rut</b></u></P></td>
-			<td><P ALIGN=center><u><b>Dirección</b></u></P></td>
-			<td><P ALIGN=center><u><b>Folio Desde</b></u></P></td>
-			<td><P ALIGN=center><u><b>Folio Hasta</b></u></P></td>
-			<td><P ALIGN=center><u><b>Cantidad</b></u></P></td>
-			<td><P ALIGN=center><u><b>Detalle</b></u></P></td>	
-			<td><P ALIGN=center><u><b>Transporte</b></u></P></td>
+			<td><P ALIGN=center><u><b>Tranporte</b></u></P></td>
 			<td><P ALIGN=center><u><b>Patente</b></u></P></td>
 			<td><P ALIGN=center><u><b>Chofer</b></u></P></td>
-			<td><P ALIGN=center><u><b>N° Cotizacion</b></u></P></td>
+			<td><P ALIGN=center><u><b>Folio</b></u></P></td>
+			<td><P ALIGN=center><u><b>Fecha</b></u></P></td>
+			<td><P ALIGN=center><u><b>Cantidad</b></u></P></td>
+			<td><P ALIGN=center><u><b>Detalle</b></u></P></td>
 		</tr>			
 		<?php 
 		if($_POST){ 
 		  
 		conectar(); mysql_set_charset('utf8'); 
-		$sqlp = "SELECT * FROM vale order by idvale ASC ";  
+		$sqlp = "SELECT * FROM vale WHERE Fecha  >=  '" .$busqueda. "' and Fecha  <=  '" .$busqueda2. "'";  
 		$resultadop = mysql_query($sqlp); 		
 		while($filap = mysql_fetch_assoc($resultadop))
-		{  
-	
-		$Idvale = ""; 
-		$nombre = "";
-		$rfecha1 = "";  
-		$rfecha2 = "";  
-		$giro = "";
-		$rut = ""; 
-		$direccion = "";
-		$rangovale1 = "";
-		$rangovale2 = "";
-		$cantidad = "";
-		$detalle = "";
+		{  	
 		$transporte = "";
-		$Patente = "";  
-		$Chofer = ""; 
-		$cotizacion = ""; 
-			
-		$idvale = $filap["idvale"]; 
-		$nombre = $filap["nombre"]; 
-		$rfecha12 = $filap['rfecha1'];
-		$phpdate = strtotime( $rfecha12 );
-		$rfecha1 = date( 'Y-m-d', $phpdate );
-		$rfecha23 = $filap['rfecha2'];
-		$phpdate = strtotime( $rfecha23 );
-		$rfecha2 = date( 'Y-m-d', $phpdate );   
-		$giro = $filap["giro"]; 
-		$rut = $filap["rut"];  
-		$direccion = $filap["direccion"]; 
-		$rangovale1 = $filap["rangovale1"]; 
-		$rangovale2 = $filap["rangovale2"]; 
-		$cantidad = $filap["cantidad"]; 
-		$detalle = $filap["detalle"]; 
-		$transporte = $filap["transporte"]; 
-		$patente = $filap["patente"];   
-		$chofer = $filap["chofer"];  
-		$cotizacion = $filap["cotizacion"]; 
-		
+		$patente ="";
+		$chofer = "";
+		$folio = "";
+		$fecha = "";
+		$cantidad = "";
+		$detalle ="";
+    	$transporte = $filap['transporte'];
+		$patente = $filap['patente'];
+		$chofer = $filap['chofer'];
+		$folio = $filap['folio'];
+		$fecha = $filap['fecha'];        
+    	$cantidadv =$filap['cantidad'];
+    	$detalle = $filap['detalle']; 
+
 		// Select valida transportista
 		conectar(); mysql_set_charset('utf8'); 
 		$sqlt = "SELECT nombre FROM transporte WHERE idnombre = '" .$transporte. "'";  
@@ -227,25 +197,17 @@ mysql_close($conexion); }
 		?> 
 					
 		<tr>
-			<td><P ALIGN=center><?php echo $idvale; ?></P></td>
-			<td><P ALIGN=center><?php echo $nombre; ?></P></td>
-			<td><P ALIGN=center><?php echo $rfecha1; ?></P></td>
-			<td><P ALIGN=center><?php echo $rfecha2; ?></P></td>
-			<td><P ALIGN=center><?php echo $giro; ?></P></td>
-			<td><P ALIGN=center><?php echo $rut; ?></P></td>
-			<td><P ALIGN=center><?php echo $direccion; ?></P></td>
-			<td><P ALIGN=center><?php echo $rangovale1; ?></P></td>
-			<td><P ALIGN=center><?php echo $rangovale2; ?></P></td>
-			<td><P ALIGN=center><?php echo $cantidad; ?>&nbsp MT3</P></td>
-			<td><P ALIGN=center><?php echo $detalle; ?></P></td>	
 			<td><P ALIGN=center><?php echo $transportef; ?></P></td>
-			<td><P ALIGN=center><?php echo $patente; ?></P></td>				
-			<td><P ALIGN=center><?php echo $chofer; ?></P></td>	
-			<td><P ALIGN=center><?php echo $cotizacion; ?></P></td>	
+			<td><P ALIGN=center><?php echo $patente; ?></P></td>
+			<td><P ALIGN=center><?php echo $chofer; ?></P></td>
+			<td><P ALIGN=center><?php echo $folio; ?></P></td>
+			<td><P ALIGN=center><?php echo $fecha; ?></P></td>
+			<td><P ALIGN=center><?php echo $cantidadv; ?></P></td>
+			<td><P ALIGN=center><?php echo $detalle; ?></P></td>
 		</tr>
 		<?php	
 		}
-		}
+	}
 		?>		
 	</tbody>	
    </table>

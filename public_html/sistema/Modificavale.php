@@ -8,35 +8,35 @@ var_dump($_POST);
 
     $conexion = mysql_connect($host,$user,$pass) or die ("problemas al conectar el host");
     mysql_select_db($bd, $conexion) or die ("problemas al conectar la bd"); 
-
-	  $rfecha1 = "";
-	  $rfecha2 = "";
-	  $chofer = "";
-	  $patente ="";   
-      $nombre = $_POST['nombre'];
-	  $rfecha1 = date('Y-m-d H:i:s');
-	  $rfecha2 = date('Y-m-d H:i:s');
-      $giro = $_POST['giro'];
-      $rut = $_POST['rut'];
-	  $direccion = $_POST['direccion'];
-	  $rangovale1 = $_POST['rangov1'];
-	  $rangovale2 = $_POST['rangovale2'];
-	  $cantidadv =$_POST['cantidadv'];
-      $detalle = $_POST['detalle'];
-      $transporte = $_POST['transporte'];
-      $patente = $_POST['patente'];
-      $chofer = $_POST['chofer'];
-      $cotizacion = $_POST['busqueda'];
-      $rbuscar = $_POST['rangobuscar'];
+    
+    $transporte = "";
+    $patente ="";
+    $chofer = "";
+    $folio = "";
+    $fecha = "";
+    $cantidadv = "";
+    $detalle ="";
+    $foliob="";
+    $transporte = $_POST['transporte'];
+    $patente = $_POST['patente'];
+    $chofer = $_POST['chofer'];
+    $folio = $_POST['folio'];
+    $fechar = $_POST['fecha'];      
+    $cantidadv =$_POST['cantidadv'];
+    $detalle = $_POST['detalle'];
+    $foliob= $_POST['foliob'];
+    $date = str_replace('/', '-', $fechar);
+    $phpdate = strtotime($date);
+    $fecha = date('d-m-y', $phpdate);
 
       if(empty($_POST['transporte']))
       {
-      mysql_query ('UPDATE vale SET nombre="'. $nombre .'", rfecha1 = "'. $rfecha1.'", rfecha2= "'.$rfecha2.'", giro = "'. $giro.'", rut ="'.$rut.'", direccion = "'.$direccion.'" , rangovale1= "'.$rangovale1.'", rangovale2= "'.$rangovale2.'", cantidad= "'.$cantidadv.'", detalle= "'.$detalle.'", cotizacion= "'.$cotizacion.'" WHERE rangovale1 = "'.$rbuscar.'"') or die ( 'UPDATE vale SET nombre="'. $nombre .'", rfecha1 = "'. $rfecha1.'", rfecha2= "'.$rfecha2.'", giro = "'. $giro.'", rut ="'.$rut.'", direccion = "'.$direccion.'" , rangovale1= "'.$rangovale1.'", rangovale2= "'.$rangovale2.'", cantidad= 2'.$cantidadv.'", detalle= "'.$detalle.'", chofer= "'.$chofer.'", patente= "'.$patente.'", cotizacion= "'.$cotizacion.'" WHERE rangovale1 = "'.$rbuscar.'"'). mysql_error();
+      mysql_query ('UPDATE vale SET folio = "'. $folio.'", fecha ="'.$fecha.'", cantidad = "'.$cantidadv.'" , detalle= "'.$detalle.'" WHERE folio ="'. $foliob .'"') or die ('UPDATE vale SET folio = "'. $folio.'", fecha ="'.$fecha.'", cantidad = "'.$cantidadv.'" , detalle= "'.$detalle.'" WHERE folio ="'. $foliob .'" '). mysql_error();
       }
       else
       {
-	  mysql_query ('UPDATE vale SET nombre="'. $nombre .'", rfecha1 = "'. $rfecha1.'", rfecha2= "'.$rfecha2.'", giro = "'. $giro.'", rut ="'.$rut.'", direccion = "'.$direccion.'" , rangovale1= "'.$rangovale1.'", rangovale2= "'.$rangovale2.'", cantidad= "'.$cantidadv.'", detalle= "'.$detalle.'", transporte= "'.$transporte.'", patente= "'.$patente.'", chofer= "'.$chofer.'", cotizacion= "'.$cotizacion.'" WHERE rangovale1 = "'.$rbuscar.'"') or die ( 'UPDATE vale SET nombre="'. $nombre .'", rfecha1 = "'. $rfecha1.'", rfecha2= "'.$rfecha2.'", giro = "'. $giro.'", rut ="'.$rut.'", direccion = "'.$direccion.'" , rangovale1= "'.$rangovale1.'", rangovale2= "'.$rangovale2.'", cantidad= 2'.$cantidadv.'", detalle= "'.$detalle.'", chofer= "'.$chofer.'", patente= "'.$patente.'", cotizacion= "'.$cotizacion.'" WHERE rangovale1 = "'.$rbuscar.'"'). mysql_error();
+	   mysql_query ('UPDATE vale SET transporte="'. $transporte .'", patente = "'. $patente.'", chofer= "'.$chofer.'", folio = "'. $folio.'", fecha ="'.$fecha.'", cantidad = "'.$cantidadv.'" , detalle= "'.$detalle.'" WHERE folio ="'. $foliob .'" ') or die ('UPDATE vale SET transporte="'. $transporte .'", patente = "'. $patente.'", chofer= "'.$chofer.'", folio = "'. $folio.'", fecha ="'.$fecha.'", cantidad = "'.$cantidadv.'" , detalle= "'.$detalle.'" WHERE folio ="'. $foliob .'" '). mysql_error();
 	}			
-	header ("Location: http://localhost/aridos/public_html/sistema/Vistagral.php");
+	//header ("Location: http://localhost/aridos/public_html/sistema/Vistagral.php");
 }
 ?>	

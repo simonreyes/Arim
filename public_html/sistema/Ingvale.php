@@ -213,7 +213,18 @@ mysql_close($conexion); }
 			}
 		</style>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+		<!-- Bootstrap Datepicker CSS -->
+		<link rel="stylesheet" href="resources/css/datepicker/bootstrap-datepicker.min.css">
+		<!-- JQuery 3.4.1 -->
+		<!--<script type="text/javascript" src="resources/js/jquery-3.4.1.min.js"></script>-->
+		<!-- Bootstrap JS -->
+		<script type="text/javascript" src="resources/bootstrap.min.js"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script type="text/javascript" src="resources/bootstrap-datepicker.min.js" defer></script>
+		<script type="text/javascript" src="resources/bootstrap-datepicker.es.min.js" defer charset="UTF-8"></script>
+
 <script type="text/javascript">
 $(document).ready(function(){
 	cargar_paises();
@@ -221,6 +232,12 @@ $(document).ready(function(){
 	$("#estado").change(function(){dependencia_ciudad();});
 	$("#estado").attr("disabled",true);
 	$("#ciudad").attr("disabled",true);
+
+		$("#FechaInicial").datepicker({
+			format: "dd-mm-yyyy",
+			weekStart: 1,
+			language: "es"
+		});
 });
 
 function cargar_paises()
@@ -306,70 +323,9 @@ dd{font-size:150%;}
     <link rel="stylesheet" type="text/css" href="resources/screen.css" />
     <!-- incluyo mis estilos css -->
     <link rel="stylesheet" type="text/css" href="resources/style.css" />
-		
-<form id="buscador" name="buscador" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>"> 
-   <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
-	 <tbody>
-		<tr>
-			<td>Ingrese N° Cotización : <input id="buscar" name="buscar" type="search">
-			<input type="submit" name="buscador" class="boton peque aceptar" value="Buscar">
-			</td>			
-		</tr>
-	</tbody>	
- </table>
-</form>	
  <br/>
 <form action="Grabavale.php" method="post" target="_blank" > 
-   <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
-	 <tbody>
-	    <tr>
-			<td align="right"><font color="red">Cotización N°:</font>
-			</td> 
-			<td> 
-			<?php 
-			if($_POST){ 
-			$busqueda = trim($_POST['buscar']);  
-			?> 
-			<input readonly="readonly" name="busqueda" type="text"  value="<?php echo $busqueda; ?>"/>
-			<?php 		
-			 }  		
-			?>	
-        	</td>
-        	<td>Rango Fecha :</td>
-        	<td><input name="rfecha1" id="rfecha1" type="text"  placeholder="20190901"/></td>
-			<td><input name="rfecha2" id="rfecha2" type="text"  placeholder="20190930"/></td>
-		</tr>
-		<tr>
-			<td>Nombre Cliente :</td>
-			<td><input readonly="readonly" name="nombre" id="NombreCli" type="text"  value="<?php echo $Nom_Cli; ?>"/></td>
-			<td>&nbsp;</td>
-			<td>Giro :</td>
-			<td><input readonly="readonly" name="giro" type="text" size="30" value="<?php echo $Giro; ?>"/></td>
-		</tr>
-		<tr>
-			<td>Rut :</td>
-			<td><input readonly="readonly" name="rut" type="text"  value="<?php echo $RutClie; ?>"/></td>
-			<td>&nbsp;</td>
-			<td>Dirección :</td>
-			<td><input readonly="readonly" name="direccion" type="text" size="30" value="<?php echo $DireccionClie; ?>"/></td>
-		</tr>
-		<tr>
-			<td>Rango Vale :</td>
-			<td><input  name="rvale1" type="text"  value=""/></td>
-			<td>&nbsp;</td>
-			<td>Rango Vale :</td>
-			<td><input  name="rvale2" type="text"  value=""/></td>			
-		</tr>
-		<tr>
-			<td>Cantidad :</td>
-			<td><input  name="cantidadv" type="text"  value=""/></td>
-			<td>&nbsp;</td>
-			<td>Detalle :</td>
-			<td><input  name="detalle" type="text"  value=""/></td>			
-		</tr>		
-    </tbody>
-  </table>
-  <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
+	  <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
 	 <tbody>
 	    <tr>
 			<td>Transporte</td> 
@@ -381,22 +337,40 @@ dd{font-size:150%;}
 		</tr>
 		 <tr>
 			<td>
-			<select id="pais" name="transporte" >
-				<option value="0">Seleccione Transporte...</option>
+			<select id="pais" name="transporte" required>
+				<option value="">Seleccione Transporte...</option>
 			</select></td> 
 			<td></td>
 		    <td> 
-			<select id="estado" name="patente">
-				<option value="0">Seleccione Patente...</option>
+			<select id="estado" name="patente" required>
+				<option value="">Seleccione Patente...</option>
 			</select></td>
 			<td></td>
 			<td>  
-			<select id="ciudad" name="chofer">
-				<option value="0">Seleccione Chofer...</option>
+			<select id="ciudad" name="chofer" required>
+				<option value="">Seleccione Chofer...</option>
 			</select></td>	
 			<td></td>
 		</tr>
 	</tbody>
+  </table>
+   <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
+	 <tbody>
+		<tr>
+			<td>Folio :</td>
+			<td><input name="folio" type="text"  value="" required /></td>
+			<td>&nbsp;</td>
+			<td>Fecha :</td>
+			<td><input name="fecha" id="FechaInicial" type="text" value="<?php echo date("d/m/Y") ?>"/></td>
+		</tr>
+		<tr>
+			<td>Cantidad :</td>
+			<td><input  name="cantidadv" type="text"  value="" required/></td>
+			<td>&nbsp;</td>
+			<td>Detalle :</td>
+			<td><input  name="detalle" type="text"  value="" required/></td>			
+		</tr>		
+    </tbody>
   </table>
  <br/> 
 	</table>   
