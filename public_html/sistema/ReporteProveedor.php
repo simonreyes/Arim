@@ -1,284 +1,113 @@
-<?php 
-define('HOST_DB', 'localhost'); 
-define('USER_DB', 'nikovald'); 
-define('PASS_DB', 'arimoreno2016'); 
-define('NAME_DB', 'nikovald_aridos');  
-function conectar()
-{global $conexion; 
-//Definición global para poder utilizar en todo el contexto 
-$conexion = mysql_connect(HOST_DB, USER_DB, PASS_DB) or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
-mysql_select_db(NAME_DB) or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB); 
-} function desconectar(){ global $conexion; mysql_close($conexion); }  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reporte Proveedor</title>
+<!-- Fuentes -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-$Nom_Cliente = "";
-$RutClie = "";
-$idcliente= ""; 
+<!-- Font Awesome 5.8.2 -->
+<link rel="stylesheet" href="resources/Font Awesome/all.css">
 
-$NombreCli = "";
+<!-- Bootstrap CSS 3.4.1 -->
+<link rel="stylesheet" href="resources/Bootstrap-3.4.1/css/bootstrap.min.css">
 
+<!-- DataTables CSS 1.10.18 -->
+<link rel="stylesheet" href="resources/DataTables-1.10.18/css/dataTables.bootstrap.min.css">
 
-if($_POST){ 
+<!-- Buttons CSS 1.5.6 -->
+<link rel="stylesheet" href="resources/Buttons-1.5.6/css/buttons.bootstrap.min.css">
 
-$busqueda = trim($_POST['buscar']); 
-$busqueda2 = trim($_POST['buscar2']);  
-$entero = 0;  
+<!-- Bootstrap Datepicker CSS -->
+<link rel="stylesheet" href="resources/Datepicker/css/bootstrap-datepicker.min.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="resources/custom.css">
+ 
+<!-- JQuery JS 3.4.1 -->
+<script type="text/javascript" src="resources/js/jquery-3.4.1.min.js"></script>
 
-if (empty($busqueda))
-{
-$texto = 'Búsqueda sin resultados'; 
-}
-else { 
+<!-- Bootstrap JS 3.4.1-->
+<script type="text/javascript" src="resources/Bootstrap-3.4.1/js/bootstrap.min.js"></script>
 
-// Select Trae Datos Cotización
+<!-- JSZip JS 2.5.0 -->
+<script type="text/javascript" src="resources/JSZip-2.5.0/jszip.min.js" ></script>
 
-// Si hay información para buscar, abrimos la conexión
-conectar(); mysql_set_charset('utf8'); 
-$sql = "SELECT * FROM cliente WHERE rut  =  '" .$busqueda. "'";  
-$resultado = mysql_query($sql); 
-if (mysql_num_rows($resultado) > 0){  
-$registros = '<p>HEMOS ENCONTRADO ' . mysql_num_rows($resultado) . ' registros </p>'; 
-// Se almacenan las cadenas de resultado 
-while($fila = mysql_fetch_assoc($resultado))
-{  
-$idcliente .= $fila['idCliente'];
-$Nom_Cliente .= $fila['Nombre_Cliente'];
-}  
-    
-}else{ $texto = "NO HAY RESULTADOS EN LA BBDD";	 } 
-mysql_close($conexion); } 
-}
-?> 
-<html>
-	<head>
-	<META http-equiv=Content-Type content="text/html; charset=utf-8">
-		<title>Reporte Proveedor por Fechas</title>
-		<style type="text/css">			
-			* {
-				margin:0px;
-				padding:0px;
-			}			
-			#header {
-				margin:auto;
-				width:900px;
-				font-family:Arial, Helvetica, sans-serif;
-			}			
-			ul, ol {
-				list-style:none;
-			}
-		    .nav > li {
-				float:left;
-			}
-			.nav li a {
-				background-color:#999;
-				color:#fff;
-				text-decoration:none;
-				padding:10px 12px;
-				display:block;
-			}
-			.nav li a:hover {
-				background-color:#404CF2;
-			}
-			.nav li ul {
-				display:none;
-				position:absolute;
-				min-width:140px;
-			}
-			.nav li:hover > ul {
-				display:block;
-			}
-			.nav li ul li {
-				position:relative;
-			}
-			.nav li ul li ul {
-				right:-140px;
-				top:0px;
-			}
-		</style>
-		<script type="text/javascript" src="resources/jquery-1.7.1.min.js"></script>
-		<script language="javascript">   </script>
-	</head>
+<!-- PDF Make JS 0.1.36 -->
+<script type="text/javascript" src="resources/pdfmake-0.1.36/pdfmake.min.js" ></script>
+<script type="text/javascript" src="resources/pdfmake-0.1.36/vfs_fonts.js" ></script>
+
+<!-- DataTables JS 1.10.18 -->	
+<script type="text/javascript" src="resources/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="resources/DataTables-1.10.18/js/dataTables.bootstrap.min.js"></script>
+
+<!-- Buttons JS 1.5.6 -->
+<script type="text/javascript" src="resources/Buttons-1.5.6/js/dataTables.buttons.min.js" ></script>
+<script type="text/javascript" src="resources/Buttons-1.5.6/js/buttons.bootstrap.min.js" ></script>
+<script type="text/javascript" src="resources/Buttons-1.5.6/js/buttons.colVis.min.js" ></script>
+<script type="text/javascript" src="resources/Buttons-1.5.6/js/buttons.flash.min.js" ></script>
+<script type="text/javascript" src="resources/Buttons-1.5.6/js/buttons.html5.min.js" ></script>
+<script type="text/javascript" src="resources/Buttons-1.5.6/js/buttons.print.min.js" ></script>
+
+<!-- Bootstrap Datepicker JS -->
+<script type="text/javascript" src="resources/Datepicker/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript" src="resources/Datepicker/bootstrap-datepicker.es.min.js" charset="UTF-8"></script>
+
+<!-- Custom Javascripts -->
+<script src="resources/scriptsReportes.js"></script>
+</head>
+
 <body>
-
-<div id="header">
-	<ul class="nav">
-	</ul>	
-		
-<div id ="block"></div>
-   <div class="container">
-   <p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>TRANSPORTES EDGARDO CRISTIAN MORENO SOLIS E.I.R.L </b></font></p>
-        <h3 class="title">Reporte Proveedor Fecha Desde - Hasta</h3>
-	    <div id="popupbox"></div>
-        <div id="content"></div>
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+						<h2>Reporte<b> Proveedores</b></h2>
+					</div>
+                </div>
+            </div>
+			<div class="row">
+				<div id="custom-search-input"  class='col-sm-7 pull-left'>
+					<div class="input-daterange input-group" id="datepicker">
+    					<input type="text" class="input-sm-addon form-control" name="start" id="FechaInicial"
+    					value="<?php echo date("d/m/Y", strtotime("first day of this month")) ?>"/>
+    					<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+    					<span class="input-group-addon">Hasta</span>
+    					<input type="text" class="input-sm-addon form-control" name="end" id="FechaFinal"
+    					value="<?php echo date("d/m/Y", strtotime("last day of this month")) ?>"/>
+    					<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+    					<span class="input-group-btn">
+                            <button class="btn btn-info" type="button" onclick="BuscarProveedores();">
+                                Cargar Proveedores <span class="fa fa-search"></span>
+                            </button>
+                        </span>
+                    </div>
+				</div>
+				<div class="col-sm-1">
+					<label>PROVEEDOR</label>
+				</div>
+                <div  class='col-sm-4'>
+					<select id="selectProveedor" name="selectProveedor" class="form-control col-sm-4">
+						<option value="">Selecciona Fechas primero</option>
+					</select>
+				</div>
+			</div>
+			<div class='clearfix'></div>
+			<hr>
+			<div id="loader"></div><!-- Carga de datos ajax aqui -->
+			<div id="resultados"></div><!-- Carga de datos ajax aqui -->
+			<div class='outer_div'></div><!-- Carga de datos ajax aqui -->
+        </div>
     </div>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <!-- incluyo la libreria jQuery -->
-    <script type="text/javascript" src="resources/jquery-1.7.1.min.js"></script>
-    <!-- incluyo el archivo que tiene mis funciones javascript -->
-    <script type="text/javascript" src="resources/functions.js"></script>
-    <!-- incluyo el framework css , blueprint. -->
-    <link rel="stylesheet" type="text/css" href="resources/screen.css" />
-    <!-- incluyo mis estilos css -->
-    <link rel="stylesheet" type="text/css" href="resources/style.css" />
-		
-<form id="buscador" name="buscador" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>"> 
-   <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
-	 <tbody>
-		<tr>
-			<td>Fecha Desde  :<input id="buscar" name="buscar" type="search">
-			<td>Fecha Hasta  : <input id="buscar2" name="buscar2" type="search">			
-			<input type="submit" name="buscador" class="boton peque aceptar" value="Buscar">
-			</td>
-		</tr>
-	</tbody>	
- </table>
-</form>	
-<form method="post"> 
-  <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
-	<tbody>
-		<tr>
-		<?php 
-		if($_POST)
-		{ 
-			?> 
-			<td><P ALIGN=center><font color="red">Fecha Desde:&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $busqueda; ?>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			Fecha Hasta:&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $busqueda2; ?></font></P></td>
-			<?php 		
-		 }  		
-		?>
-		</tr>
-		</tbody>	
-   </table>   
-    <div id="dvData">
-   <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" id="dvData">
-	<tbody>
-		<tr>
-			<td><P ALIGN=center><u><b>Fecha</b></u></P></td>
-			<td><P ALIGN=center><u><b>N° Guía</b></u></P></td>
-			<td><P ALIGN=center><u><b>N° G Manual</b></u></P></td>
-			<td><P ALIGN=center><u><b>N° G Prov</b></u></P></td>
-			<td><P ALIGN=center><u><b>Proveedor</b></u></P></td>
-			<td><P ALIGN=center><u><b>Sucursal</b></u></P></td>
-			<td><P ALIGN=center><u><b>Arido</b></u></P></td>
-			<td><P ALIGN=center><u><b>MT3 Guía</b></u></P></td>
-			<td><P ALIGN=center><u><b>Transporte</b></u></P></td>
-			<td><P ALIGN=center><u><b>Patente</b></u></P></td>
-			<td><P ALIGN=center><u><b>Chofer</b></u></P></td>	
-			<td><P ALIGN=center><u><b>Valor MT3</b></u></P></td>
-			<td><P ALIGN=center><u><b>Total</b></u></P></td>
-		</tr>			
-		<?php 
-		if($_POST){ 
-		  
-		conectar(); mysql_set_charset('utf8'); 
-		$sqlp = "SELECT * FROM Guia WHERE Fecha_Guia  >=  '" .$busqueda. "' and Fecha_Guia  <=  '" .$busqueda2. "'  and Status <> 'Anulada' order by iguia ASC ";  
-		$resultadop = mysql_query($sqlp); 		
-		while($filap = mysql_fetch_assoc($resultadop))
-		{  
-	
-		$Fecha_C = ""; 
-		$EIRL = "";
-		$Prov = "";  
-		$MT3 = "";  
-		$Suc = ""; 
-		$CT = "";
-		$Prod = "";
-		$TArido = "";
-		$Transp = "";
-		$Patente = "";  
-		$Chofer = "";  
-			
-		
-		$Fecha_C = $filap['Fecha_Guia']; 
-		$EIRL = $filap['Num_Guia'];
-		$guiamanual = $filap['guia_manual'];
-		$guiaprov = $filap['guia_prov'];
-		$MT3 = $filap['Cantidad'];
-		$Prov = $filap['Proveedor'];
-		$Suc = $filap['sucursal'];
-		$CT = $filap['Folio'];
-		$Prod = $filap['idAridos'];
-		$VArido = $filap['ValorArido'];
-		$Transp = $filap['Transp_Guia'];
-		$Patente = $filap['Patente_Guia'];
-		$Chofer = $filap['Chofer_Guia'];
-		
-		
-		
-			conectar(); mysql_set_charset('utf8'); 
-			$sqld = "SELECT * FROM proveedores WHERE IdProveedor  =  '" .$Prov. "'";  
-			$resultadod = mysql_query($sqld); 		
-			while($filad = mysql_fetch_assoc($resultadod))
-			{  
-				$Nom_Prov = "";
-				$Nom_Prov = $filad['Proveedor'];
-			}
-			
-			conectar(); mysql_set_charset('utf8'); 
-			$sqldd = "SELECT * FROM aridos WHERE idAridos  =  '" .$Prod. "'";  
-			$resultadodd = mysql_query($sqldd); 		
-			while($filadd = mysql_fetch_assoc($resultadodd))
-			{  
-				$Nom_arido = "";
-				$Nom_arido = $filadd['glosa'];
-			}
-										
-			$Total = 0;
-		    $Total = $VArido * $MT3;
-					
-		?> 
-					
-		<tr>
-			<td><P ALIGN=center><?php echo $Fecha_C; ?></P></td>
-			<td><P ALIGN=center><?php echo $EIRL; ?></P></td>
-			<td><P ALIGN=center><?php echo $guiamanual; ?></P></td>
-			<td><P ALIGN=center><?php echo $guiaprov; ?></P></td>
-			<td><P ALIGN=center><?php echo $Nom_Prov; ?></P></td>
-			<td><P ALIGN=center><?php echo $Suc; ?></P></td>
-			<td><P ALIGN=center><?php echo $Nom_arido; ?></P></td>
-			<td><P ALIGN=center><?php echo $MT3; ?></P></td>
-			<td><P ALIGN=center><?php echo $Transp; ?></P></td>
-			<td><P ALIGN=center><?php echo $Patente; ?></P></td>
-			<td><P ALIGN=center><?php echo $Chofer; ?></P></td>
-			
-			
-			<td><P ALIGN=center><?php echo $VArido; ?></P></td>			
-			<td><P ALIGN=center><?php echo $Total; ?></P></td>
-			
-			
-			
-			
-		</tr>
-		<?php	
-		}
-		}
-		?>		
-	</tbody>	
-   </table>
- <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:950px;" >
-	<tr>
-		<td size="40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;</td>	
-		<td size="40"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<input type="button" id="btnExport" value=" Export Excel " />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<input type="button" name="Cancelar" value=" Cancelar " onClick="location.href='VistaGral.php'"></td>	
-		
-				<script>
-			$("#btnExport").click(function(e) {
-			window.open('data:application/vnd.ms-excel,' + encodeURIComponent($('#dvData').html()));
-			e.preventDefault();
-			});
-		</script>
-   </tr>
-   </table>
-  <br/>
-  
-  
-</form>	   
-</div>
+	<!-- Add Modal HTML -->
+	<?php include("Modal/modal_add_prov.php");?>
+	<!-- Edit Modal HTML -->
+	<?php include("Modal/modal_edit_prov.php");?>
+	<?php include("Modal/modal_edit_transp.php");?>
+	<!-- Delete Modal HTML -->
+	<?php include("Modal/modal_delete_prov.php");?>
 </body>
 </html>
