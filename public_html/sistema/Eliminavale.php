@@ -226,12 +226,14 @@ dd{font-size:150%;}
 <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
 	 <tbody>
 	    <tr>
-			<td>Transporte: <?php echo $transportef; ?> </td> 
-			<td></td>
-		    <td>Patente: <?php echo $patente; ?> </td>
-			<td></td>
-			<td>Chofer: <?php echo $chofer; ?> </td>	
-			<td></td>					
+			<td>Transporte :</td>
+			<td><input name="folio" readonly type="text"  value="<?php echo $transportef; ?>"/></td>
+			<td>&nbsp;</td>
+			<td>Patente :</td>
+			<td><input name="fecha" readonly type="text" value="<?php echo $patente; ?>"/></td>
+			<td>&nbsp;</td>
+			<td>Chofer :</td>
+			<td><input name="folio" readonly type="text"  value="<?php echo $chofer; ?>"/></td>
 		</tr>
 		</tbody>
 	  </table> 
@@ -240,17 +242,17 @@ dd{font-size:150%;}
 		<tr>
 			<input hidden="hidden" value="<?php echo $busqueda; ?>" name="foliob">
 			<td>Folio :</td>
-			<td><input name="folio" type="text"  value="<?php echo $folio; ?>"/></td>
+			<td><input name="folio" readonly type="text"  value="<?php echo $folio; ?>"/></td>
 			<td>&nbsp;</td>
 			<td>Fecha :</td>
-			<td><input name="fecha" type="text" value="<?php echo $fecha ?>"/></td>
+			<td><input name="fecha" readonly type="text" value="<?php echo $fecha ?>"/></td>
 		</tr>
 		<tr>
 			<td>Cantidad :</td>
-			<td><input  name="cantidadv" type="text"  value="<?php echo $cantidadv; ?>"/></td>
+			<td><input  name="cantidadv" readonly type="text"  value="<?php echo $cantidadv; ?>"/></td>
 			<td>&nbsp;</td>
 			<td>Detalle :</td>
-			<td><input  name="detalle" type="text"  value="<?php echo $detalle; ?>"/></td>			
+			<td><input  name="detalle" readonly type="text"  value="<?php echo $detalle; ?>"/></td>			
 		</tr>		
     </tbody>
   	</table>  

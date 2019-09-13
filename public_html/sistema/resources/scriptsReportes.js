@@ -14,6 +14,9 @@ $(document).ready(function(){
 		$('#selectProveedor').on('change', function(){
 			cargarGDporProveedor();
 		});
+		$('#select_transportereportes').on('change', function(){
+			cargarGDporTransportes();
+		});
 	});
 
 	function BuscarClientes(){
@@ -59,6 +62,27 @@ $(document).ready(function(){
 	           $('#selectProveedor').html('<option value="">Selecciona Fechas Primero</option>');
 	       }
 	};
+		function BuscarTransporte(){
+		var FechaInicial = $("#FechaInicial").val();
+		var FechaFinal = $("#FechaFinal").val();
+		var parametros = {"action":"ajax","FechaInicial":FechaInicial, "FechaFinal":FechaFinal};
+		if(FechaFinal){
+	           $.ajax({
+	               type:'POST',
+	               url:'Controladores/select_transportereportes.php',
+	               data: parametros,
+	               beforeSend: function(objeto){
+					$("#loader").html("Cargando...");
+		  		},
+	               success:function(html){
+	                   $('#select_transportereportes').html(html);
+	                   $("#loader").html("");
+	               }
+	           }); 
+	       }else{
+	           $('#select_transportereportes').html('<option value="">Selecciona Fechas Primero</option>');
+	       }
+	};
 
 	function cargarGDporProveedor(){
 		var q = $("#selectProveedor").val();
@@ -69,6 +93,27 @@ $(document).ready(function(){
 		$("#loader").fadeIn('slow');
 		$.ajax({
 			url:'Controladores/listar_ReporteProveedor.php',
+			data: parametros,
+			beforeSend: function(objeto){
+			$("#loader").html("Cargando...");
+		  	},
+			success:function(data){
+				$(".outer_div").html(data).fadeIn('slow');
+				$("#loader").html("");
+				activaDataTables();
+			}
+		});
+	};
+
+	function cargarGDporTransportes(){
+		var q = $("#select_transportereportes").val();
+		var FechaInicial = $("#FechaInicial").val();
+		var FechaFinal = $("#FechaFinal").val();
+		var parametros = {"action":"ajax",'query':q, "FechaInicial":FechaInicial, 
+						  "FechaFinal":FechaFinal};
+		$("#loader").fadeIn('slow');
+		$.ajax({
+			url:'Controladores/listar_ReporteTransporte.php',
 			data: parametros,
 			beforeSend: function(objeto){
 			$("#loader").html("Cargando...");

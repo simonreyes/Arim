@@ -214,16 +214,16 @@ mysql_close($conexion); }
 		</style>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-		<link rel="stylesheet" href="resources/css/bootstrap.min.css">
+		<link rel="stylesheet" href="resources/Bootstrap-3.4.1/css/bootstrap.min.css">
 		<!-- Bootstrap Datepicker CSS -->
-		<link rel="stylesheet" href="resources/css/datepicker/bootstrap-datepicker.min.css">
+		<link rel="stylesheet" href="resources/Datepicker/css/bootstrap-datepicker.min.css">
 		<!-- JQuery 3.4.1 -->
 		<!--<script type="text/javascript" src="resources/js/jquery-3.4.1.min.js"></script>-->
 		<!-- Bootstrap JS -->
-		<script type="text/javascript" src="resources/bootstrap.min.js"></script>
+		<script type="text/javascript" src="resources/Bootstrap-3.4.1/js/bootstrap.min.js"></script>
 		<!-- Bootstrap Datepicker JS -->
-		<script type="text/javascript" src="resources/bootstrap-datepicker.min.js" defer></script>
-		<script type="text/javascript" src="resources/bootstrap-datepicker.es.min.js" defer charset="UTF-8"></script>
+		<script type="text/javascript" src="resources/Datepicker/bootstrap-datepicker.min.js" defer></script>
+		<script type="text/javascript" src="resources/Datepicker/bootstrap-datepicker.es.min.js" defer charset="UTF-8"></script>
 
 <script type="text/javascript">
 $(document).ready(function(){
