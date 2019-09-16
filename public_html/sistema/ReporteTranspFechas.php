@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Reporte Proveedor</title>
+<title>Reporte Transporte</title>
 <!-- Fuentes -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -24,7 +24,7 @@
 <!-- Bootstrap Datepicker CSS -->
 <link rel="stylesheet" href="resources/Datepicker/css/bootstrap-datepicker.min.css">
 <!-- Custom CSS -->
-<link rel="stylesheet" href="resources/custom.css">
+<link rel="stylesheet" href="resources/customDataTables.css">
  
 <!-- JQuery JS 3.4.1 -->
 <script type="text/javascript" src="resources/js/jquery-3.4.1.min.js"></script>
@@ -65,7 +65,7 @@
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6">
-						<h2>Reporte<b> Proveedores</b></h2>
+						<h2>Reporte<b> Transporte</b></h2>
 					</div>
                 </div>
             </div>
@@ -80,17 +80,17 @@
     					value="<?php echo date("d/m/Y", strtotime("last day of this month")) ?>"/>
     					<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
     					<span class="input-group-btn">
-                            <button class="btn btn-info" type="button" onclick="BuscarProveedores();">
-                                Cargar Proveedores <span class="fa fa-search"></span>
+                            <button class="btn btn-info" type="button" onclick="BuscarTransportes();">
+                                Cargar Transportes <span class="fa fa-search"></span>
                             </button>
                         </span>
                     </div>
 				</div>
 				<div class="col-sm-1">
-					<label>PROVEEDOR</label>
+					<label>TRANSPORTE</label>
 				</div>
                 <div  class='col-sm-4'>
-					<select id="selectProveedor" name="selectProveedor" class="form-control col-sm-4">
+					<select id="selectTransporte" name="selectTransporte" class="form-control col-sm-4">
 						<option value="">Selecciona Fechas primero</option>
 					</select>
 				</div>

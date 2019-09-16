@@ -51,7 +51,7 @@ mysql_close($conexion); }
 <html>
 	<head>
 	<META http-equiv=Content-Type content="text/html; charset=utf-8">
-		<title>Reporte Proveedor por Fechas</title>
+		<title>Reporte Guía por Fechas</title>
 		<style type="text/css">			
 			* {
 				margin:0px;
@@ -106,7 +106,7 @@ mysql_close($conexion); }
 <div id ="block"></div>
    <div class="container">
    <p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>TRANSPORTES EDGARDO CRISTIAN MORENO SOLIS E.I.R.L </b></font></p>
-        <h3 class="title">Reporte Proveedor Fecha Desde - Hasta</h3>
+        <h3 class="title">Reporte Guía de Despacho Fecha Desde - Hasta</h3>
 	    <div id="popupbox"></div>
         <div id="content"></div>
     </div>
@@ -154,58 +154,77 @@ mysql_close($conexion); }
    <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" id="dvData">
 	<tbody>
 		<tr>
-			<td><P ALIGN=center><u><b>Fecha</b></u></P></td>
-			<td><P ALIGN=center><u><b>N° Guía</b></u></P></td>
+			<td><P ALIGN=center><u><b>Fecha Creación</b></u></P></td>
+			<td><P ALIGN=center><u><b>EIRL</b></u></P></td>
 			<td><P ALIGN=center><u><b>N° G Manual</b></u></P></td>
 			<td><P ALIGN=center><u><b>N° G Prov</b></u></P></td>
 			<td><P ALIGN=center><u><b>Proveedor</b></u></P></td>
 			<td><P ALIGN=center><u><b>Sucursal</b></u></P></td>
-			<td><P ALIGN=center><u><b>Arido</b></u></P></td>
-			<td><P ALIGN=center><u><b>MT3 Guía</b></u></P></td>
+			<td><P ALIGN=center><u><b>Cliente</b></u></P></td>
+			<td><P ALIGN=center><u><b>Destino</b></u></P></td>
+			<td><P ALIGN=center><u><b>Producto</b></u></P></td>
+			<td><P ALIGN=center><u><b>MT3</b></u></P></td>
+			<td><P ALIGN=center><u><b>Valor MT3</b></u></P></td>
+			<td><P ALIGN=center><u><b>Valor Total</b></u></P></td>
 			<td><P ALIGN=center><u><b>Transporte</b></u></P></td>
 			<td><P ALIGN=center><u><b>Patente</b></u></P></td>
 			<td><P ALIGN=center><u><b>Chofer</b></u></P></td>	
-			<td><P ALIGN=center><u><b>Valor MT3</b></u></P></td>
-			<td><P ALIGN=center><u><b>Total</b></u></P></td>
 		</tr>			
 		<?php 
 		if($_POST){ 
 		  
+		$Fecha_C = ""; 
+		$EIRL = "";
+		$Prov = "";  
+		$Suc = "";  
+		$Cliente = "";  
+		$Destino = "";  
+		$Prod = ""; 
+		$MT3 = "";  
+		$Valor_MT3 = ""; 
+		$Valor_Total = "";
+		$Transp = "";
+		$Patente = "";  
+		$Chofer = "";  
+		
 		conectar(); mysql_set_charset('utf8'); 
 		$sqlp = "SELECT * FROM Guia WHERE Fecha_Guia  >=  '" .$busqueda. "' and Fecha_Guia  <=  '" .$busqueda2. "'  and Status <> 'Anulada' order by iguia ASC ";  
 		$resultadop = mysql_query($sqlp); 		
 		while($filap = mysql_fetch_assoc($resultadop))
 		{  
-	
 		$Fecha_C = ""; 
 		$EIRL = "";
 		$Prov = "";  
+		$Suc = "";  
+		$Cliente = "";  
+		$Destino = "";  
+		$Prod = ""; 
 		$MT3 = "";  
-		$Suc = ""; 
-		$CT = "";
-		$Prod = "";
-		$TArido = "";
+		$Valor_MT3 = ""; 
+		$Valor_Total = "";
 		$Transp = "";
 		$Patente = "";  
 		$Chofer = "";  
-			
+		
 		
 		$Fecha_C = $filap['Fecha_Guia']; 
 		$EIRL = $filap['Num_Guia'];
 		$guiamanual = $filap['guia_manual'];
 		$guiaprov = $filap['guia_prov'];
-		$MT3 = $filap['Cantidad'];
 		$Prov = $filap['Proveedor'];
 		$Suc = $filap['sucursal'];
-		$CT = $filap['Folio'];
+		$Cliente = $filap['idCliente'];
+		$Destino = $filap['idobra'];
 		$Prod = $filap['idAridos'];
-		$VArido = $filap['ValorArido'];
+		$MT3 = $filap['Cantidad'];
+		$Valor_MT3 = $filap['VentaFinal'];
 		$Transp = $filap['Transp_Guia'];
 		$Patente = $filap['Patente_Guia'];
 		$Chofer = $filap['Chofer_Guia'];
+		$guiamanual = $filap['guia_manual'];
+		$guiaprov = $filap['guia_prov'];
 		
-		
-		
+			
 			conectar(); mysql_set_charset('utf8'); 
 			$sqld = "SELECT * FROM proveedores WHERE IdProveedor  =  '" .$Prov. "'";  
 			$resultadod = mysql_query($sqld); 		
@@ -216,19 +235,36 @@ mysql_close($conexion); }
 			}
 			
 			conectar(); mysql_set_charset('utf8'); 
-			$sqldd = "SELECT * FROM aridos WHERE idAridos  =  '" .$Prod. "'";  
+			$sqldd = "SELECT * FROM cliente WHERE idCliente  =  '" .$Cliente. "'";  
 			$resultadodd = mysql_query($sqldd); 		
 			while($filadd = mysql_fetch_assoc($resultadodd))
 			{  
-				$Nom_arido = "";
-				$Nom_arido = $filadd['glosa'];
+				$Nom_Cliente = "";
+				$Nom_Cliente = $filadd['Nombre_Cliente'];
 			}
-										
-			$Total = 0;
-		    $Total = $VArido * $MT3;
-					
+		
+			conectar(); mysql_set_charset('utf8'); 
+			$sqlddd= "SELECT * FROM clienteobras WHERE idobra  =  '".$Destino."'";  
+			$resultadoddd = mysql_query($sqlddd); 		
+			while($filaddd = mysql_fetch_assoc($resultadoddd))
+			{  
+				$Nom_Destino = "";
+				$Nom_Destino = $filaddd['nombreobra'];
+			}
+			
+			conectar(); mysql_set_charset('utf8'); 
+			$sqldddd = "SELECT * FROM aridos WHERE idAridos  =  '" .$Prod. "'";  
+			$resultadodddd = mysql_query($sqldddd); 		
+			while($filadddd = mysql_fetch_assoc($resultadodddd))
+			{  
+				$Nom_arido = "";
+				$Nom_arido = $filadddd['glosa'];
+			}
+			
+			$Valor_total = 0;
+			$Valor_total = $MT3 * $Valor_MT3;
 		?> 
-					
+			
 		<tr>
 			<td><P ALIGN=center><?php echo $Fecha_C; ?></P></td>
 			<td><P ALIGN=center><?php echo $EIRL; ?></P></td>
@@ -236,22 +272,18 @@ mysql_close($conexion); }
 			<td><P ALIGN=center><?php echo $guiaprov; ?></P></td>
 			<td><P ALIGN=center><?php echo $Nom_Prov; ?></P></td>
 			<td><P ALIGN=center><?php echo $Suc; ?></P></td>
+			<td><P ALIGN=center><?php echo $Nom_Cliente; ?></P></td>
+			<td><P ALIGN=center><?php echo $Nom_Destino; ?></P></td>
 			<td><P ALIGN=center><?php echo $Nom_arido; ?></P></td>
 			<td><P ALIGN=center><?php echo $MT3; ?></P></td>
+			<td><P ALIGN=center><?php echo $Valor_MT3; ?></P></td>
+			<td><P ALIGN=center><?php echo $Valor_total; ?></P></td>
 			<td><P ALIGN=center><?php echo $Transp; ?></P></td>
 			<td><P ALIGN=center><?php echo $Patente; ?></P></td>
 			<td><P ALIGN=center><?php echo $Chofer; ?></P></td>
-			
-			
-			<td><P ALIGN=center><?php echo $VArido; ?></P></td>			
-			<td><P ALIGN=center><?php echo $Total; ?></P></td>
-			
-			
-			
-			
 		</tr>
-		<?php	
-		}
+		<?php 		
+		 }  
 		}
 		?>		
 	</tbody>	

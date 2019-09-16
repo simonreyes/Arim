@@ -24,7 +24,7 @@
 <!-- Bootstrap Datepicker CSS -->
 <link rel="stylesheet" href="resources/Datepicker/css/bootstrap-datepicker.min.css">
 <!-- Custom CSS -->
-<link rel="stylesheet" href="resources/custom.css">
+<link rel="stylesheet" href="resources/customDataTables.css">
  
 <!-- JQuery JS 3.4.1 -->
 <script type="text/javascript" src="resources/js/jquery-3.4.1.min.js"></script>
@@ -81,7 +81,7 @@
     					<span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
     					<span class="input-group-btn">
                             <button class="btn btn-info" type="button" onclick="BuscarProveedores();">
-                                Cargar Proveedores <span class="fa fa-search"></span>
+                                Cargar Proveedor <span class="fa fa-search"></span>
                             </button>
                         </span>
                     </div>
