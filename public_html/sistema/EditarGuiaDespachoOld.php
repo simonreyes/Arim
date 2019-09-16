@@ -26,7 +26,6 @@ $Patente = "";
 $Chofer = "";
 $Fonochofer = "";
 $Disponoble = "";
-$idcliente = "";
 
 $NombreCli = "";
 $Cubo = "";  
@@ -36,23 +35,17 @@ $Valor = "";
 $Venta = "";
 $fonocontacto="";
 
+if($_POST){ 
 
-IF($_POST){
-	//Se agrega línea siguiente para agregar errores de variable busqueda no definida
-	$busqueda  = $_POST['busqueda'];
-	$submitted =  trim($_POST['siguiente']);
-	IF (strcmp($submitted,"Siguiente") == 0){
-		$busqueda  = $_POST['busqueda'];
- 	}
-}else{
-	$busqueda  = $_GET['num_guia'];  
-	$entero = 0;  
-	$IdGuia  = $_GET['idguia']; 
+$busqueda = trim($_POST['buscar']);  
+$entero = 0;  
+
+if (empty($busqueda))
+{
+$texto = 'Búsqueda sin resultados'; 
 }
+else { 
 
-if (empty($busqueda)) {
-	$texto = 'Búsqueda sin resultados'; 
-} else {
 // Select Trae Datos Cotización
 
 // Si hay información para buscar, abrimos la conexión
@@ -107,6 +100,11 @@ while($fila = mysql_fetch_assoc($resultado))
 		$cantidad = $fila['Cantidad'];
 		$IdObra = $fila['idobra'];
 		$sucursal = $fila['sucursal'];
+		$FechaGuia = $fila['Fecha_Guia'];
+		
+		$Transporte = $fila['Transp_Guia'];
+		$Patente = $fila['Patente_Guia'];
+		$Chofer = $fila['Chofer_Guia'];
 		
 		
 conectar(); mysql_set_charset('utf8'); 
@@ -131,7 +129,7 @@ conectar(); mysql_set_charset('utf8');
 $sql2 = "SELECT * FROM cliente WHERE idCliente = '" .$idcliente. "'";  
 $resultado2 = mysql_query($sql2); 
 while($fila2 = mysql_fetch_assoc($resultado2))
-{
+{  
 $Nom_Cli = $fila2['Nombre_Cliente'];
 $DireccionClie = $fila2['Direccion'];
 $RutClie = $fila2['Rut'];  
@@ -141,7 +139,8 @@ $CorreoClie = $fila2['Correo'];
 $FonoClie = $fila2['Fono'];
 }  
 }
-
+}else{ $texto = "NO HAY RESULTADOS EN LA BBDD";	 
+} 
 mysql_close($conexion); } 
 }
 ?> 
@@ -277,18 +276,47 @@ dd{font-size:150%;}
     <script type="text/javascript" src="resources/jquery-1.7.1.min.js"></script>
     <!-- incluyo el archivo que tiene mis funciones javascript -->
     <script type="text/javascript" src="resources/functions.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="resources/css/all.css">
     <!-- incluyo el framework css , blueprint. -->
     <link rel="stylesheet" type="text/css" href="resources/screen.css" />
     <!-- incluyo mis estilos css -->
     <link rel="stylesheet" type="text/css" href="resources/style.css" />
 		
+<form id="buscador" name="buscador" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>"> 
+   <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
+	 <tbody>
+		<tr>
+			<td>Ingrese N° Guía : <input id="buscar" name="buscar" type="search">
+			<input type="submit" name="buscador" class="boton peque aceptar" value="Buscar">
+			</td>
+			<td width="30%"  align="right"><font color="red">Guía Encontrada :</font>
+			
+			<?php 
+		if($_POST){ 
+		$busqueda = trim($_POST['buscar']);  
+		?> 
+		<font color="red" align="left"><?php echo $busqueda; ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></td>
+		<td><font color="red" align="left">&nbsp;</font></td>
+		<?php 		
+		 }  		
+		?>		
+		</tr>
+	</tbody>	
+ </table>
+</form>	
  <br/>
-<form action="EditaGD.php" method="post" target="_blank" > 
+<form action="EditarGuiaDespacho2.php" method="post" target="_blank" > 
    <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
 	 <tbody>
 	    <tr>
 			<td align="right"><font color="red">Guía Despacho:</font></td> 
-			<td> <input readonly="readonly" name="busqueda" type="text"  value="<?php echo $busqueda; ?>"/>	</td> 		
+			<td> <?php if($_POST){ $busqueda = trim($_POST['buscar']);  ?> 
+			<input readonly="readonly" name="busqueda" type="text"  value="<?php echo $busqueda; ?>"/></td>
+			<td>&nbsp;</td>
+			<td><i class="fas fa-calendar-alt"></i><label> Fecha:</label></td>
+			<td><input readonly="readonly" name="FechaGuia" id="FechaGuia" type="text"
+				value="<?php echo date("d/m/Y", strtotime($FechaGuia)) ?>"></td> 		
 		</tr>
 		<tr>
 			<td>Nombre Cliente :</td>
@@ -330,16 +358,15 @@ dd{font-size:150%;}
 			<td><input readonly="readonly" name="Formapago" id="Formapago" type="text" value="<?php echo $Formapago; ?>"/></td>
 			<td>&nbsp;</td>
 			<td>&nbsp;</td>
-			<td><input type="hidden" name="idcliente" id="idcliente" value="<?php echo $idcliente; ?>"></td>
+			<td>&nbsp;</td>
 		</tr>
-				
     </tbody>
   </table>
- <br/> 
+ <br/>
    <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:950px;" >
 	 <tbody>
 	    <tr>
-			<td>Transporte</td> 
+			<td><i class="fas fa-truck"></i>Transporte</td> 
 			<td></td>
 		    <td>Patente</td>
 			<td></td>
@@ -347,27 +374,25 @@ dd{font-size:150%;}
 			<td></td>					
 		</tr>
 		 <tr>
-			<td>
-			<select id="pais" name="pais" >
-				<option value="0">Seleccione Transporte...</option>
-			</select></td> 
+			<<td><input readonly="readonly" name="Transporte" id="Transporte" type="text" value="<?php echo $Transporte; ?>"/></td>
 			<td></td>
-		    <td> 
-			<select id="estado" name="estado">
-				<option value="0">Seleccione Patente...</option>
-			</select></td>
+		    <td><input readonly="readonly" name="Patente" id="Patente" type="text" value="<?php echo $Patente; ?>"/></td>
 			<td></td>
-			<td>  
-			<select id="ciudad" name="ciudad">
-				<option value="0">Seleccione Chofer...</option>
-			</select></td>	
+			<td><input readonly="readonly" name="Chofer" id="Chofer" type="text" value="<?php echo $Chofer; ?>"/></td>	
 			<td></td>
 		</tr>
 	</tbody>
   </table>
  <br/>
+ <?php 		
+		 }  		
+		?>	
+ <br/>
  <?php
- 		
+ if($_POST){ 
+ 
+		$busqueda = trim($_POST['buscar']);  
+		
  mysql_connect("localhost", "root", "") or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
 	mysql_select_db("nikovald_aridos") or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB); 
 
@@ -386,7 +411,6 @@ dd{font-size:150%;}
             <th>ARIDO</th>
 			<th>VALOR MT3</th>
 			<th>CANTIDAD</th>
-            <th>Editar</th>
         </tr>
 	<?php 
 	while($row = mysql_fetch_array($res)) { 		
@@ -400,16 +424,17 @@ dd{font-size:150%;}
 		echo "<td>".$row['glosa'];
 		echo "<td>".$row['VentaFinal']."</td>";
 		echo "<td>".$row['Cantidad']."</td>";	
-		echo "<td><a href=\"EditartemG.php?id=$iGuia&Num_Guia=$Num_Guia&VentaFinal=$VentaFinal&Cantidad=$Cantidad\">Editar</a>";
+			
 	}
- 	?>
+ }
+	?>
 </table>    
    
 <table align="center" border="0" cellpadding="0" cellspacing="0" style="width:950px;" >
  <tr>
     <td size="40">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	&nbsp;&nbsp;&nbsp;</td>	
-   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input align="center" type="submit" value=" Guardar e Imprimir "/></td>	
+   	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" name="siguiente" value=" Editar "></td>	
 	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 	<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" name="Cancelar" value=" Cancelar " onClick="location.href='VistaGral.php'"></td>	
 	<td size="40"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

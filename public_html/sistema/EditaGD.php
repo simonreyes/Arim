@@ -1,7 +1,6 @@
 <?php
 
- 	require_once ( __DIR__ . '/fpdf/fpdf.php' );
-   
+ 	require_once ( __DIR__ . '/fpdf/fpdf.php' ); 
   	$Destino = $_POST['Destino'];
 	$Contacto = $_POST['contacto'];
 	$Fonocontacto = $_POST['fonocontacto'];
@@ -72,50 +71,53 @@ $pdf->AddPage();
 $pdf->SetFont('Arial','B',14);
 //$pdf->Image('http://www.aridosmoreno.cl/sistema/formatoGD.png' , 0 ,0, 210 , 280,'PNG');
 
-$dia = date("d"); 
-$mes = date("m");
-$anno = date("Y");
+if(isset($_POST["FechCotizacion"])){
+	$dia = date("d", strtotime($FechCotizacion));
+	$mes = date("m", strtotime($FechCotizacion));
+	$anno = date("Y", strtotime($FechCotizacion));
+}else{
+	$dia = date("d");
+	$mes = date("m");
+	$anno = date("Y");
+}
 
-
-
-if ($mes == 01){
+if (strcmp($mes,"01") == 0){
   $lmes = "Enero";
   }
-if ($mes == 02){
+elseif (strcmp($mes,"02") == 0){
   $lmes = "Febrero";
   }
-if ($mes == 03){
+elseif (strcmp($mes,"03") == 0){
   $lmes = "Marzo";
   }
-  if ($mes == 04){
+elseif (strcmp($mes,"04") == 0){
   $lmes = "Abril";
   }
-
-if ($mes == 05){
+elseif (strcmp($mes,"05") == 0){
   $lmes = "Mayo";
   }
-if ($mes == 06){
+elseif (strcmp($mes,"06") == 0){
   $lmes = "Junio";
 }
-if ($mes == 07){
+elseif (strcmp($mes,"07") == 0){
   $lmes = "Julio";
 }
-if ($mes == 08){
+elseif (strcmp($mes,"08") == 0){
   $lmes = "Agosto";
 }
-if ($mes == 09){
+elseif (strcmp($mes,"09") == 0){
   $lmes = "Septiembre";
 }
-if ($mes == 10){
+elseif (strcmp($mes,"10") == 0){
   $lmes = "Octubre";
 }
-if ($mes == 11){
+elseif (strcmp($mes,"11") == 0){
   $lmes = "Noviembre";
 }
-if ($mes == 12){
+else{
   $lmes = "Diciembre";
 }
-//$lmes = "Octubre";
+
 $pdf->SetXY(115, 22);
 $pdf->Cell(10, 8, $busqueda, 0, 'C');   
 $pdf->SetFont('Helvetica','B',12);

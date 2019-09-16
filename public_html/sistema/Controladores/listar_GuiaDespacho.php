@@ -37,7 +37,6 @@ if($action == 'ajax'){
 	
 	if ($numrowsGD >0){
 	$rowGD = mysqli_fetch_array($queryGD);
-
 	//Buscar Informacion Obras
 	$queryObras = mysqli_query($con, "SELECT * FROM clienteobras WHERE idobra = '".$rowGD['idobra']."'");
 	$rowObras = mysqli_fetch_array($queryObras);
@@ -100,7 +99,20 @@ if($action == 'ajax'){
 			</tr>
 			<tr>
 				<td>Forma de Pago: </td>
-				<td><?php echo$rowObras['nombreobra']  ?></td>
+				<td><?php echo$rowGD['FormaPago']  ?></td>
+				<td> </td>
+				<td><!--span class="input-group-btn">
+	                    <button class="btn btn-danger" type="button" onclick="load(1);">
+	                        Generar PDF <span class="fa fa-file-pdf"></span>
+	                    </button>
+	                </span-->
+	                <form action="generaPDF_GuiaDespacho.php" method="post">
+	                	<input type="hidden" name="idGD" value="<?php echo $rowGD['Num_Guia']  ?>"/>
+    					<button type="submit" name="btn_pdf" class="btn btn-danger">
+    						Generar PDF <span class="fa fa-file-pdf"></span>
+    					</button>
+					</form>
+	            </td>
 			</tr>
 	    </tbody>
   	</table>

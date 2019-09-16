@@ -193,7 +193,7 @@
 			var parametros = {"action":"ajax","page":page,'query':q};
 			$("#loader").fadeIn('slow');
 			$.ajax({
-				url:'Controladores/listar_productos.php',
+				url:'Controladores/listar_GuiaDespacho.php',
 				data: parametros,
 				beforeSend: function(objeto){
 				$("#loader").html("Cargando...");
