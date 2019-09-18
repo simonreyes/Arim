@@ -10,12 +10,12 @@ if($action == 'ajax'){
 	$FechaFinal = date("Ymd", strtotime(str_replace('/', '-', $FF)));
 	
 	//Count the total number of row in your table
-	$count_queryGD   = mysqli_query($con,"SELECT count(*) AS numrows FROM guia as g WHERE Status <> 'Anulada' AND Fecha_Guia >= '".$FechaInicial."' AND Fecha_Guia <= '".$FechaFinal."' ORDER BY g.iguia");
+	$count_queryGD   = mysqli_query($con,"SELECT count(*) AS numrows FROM Guia as g WHERE Status <> 'Anulada' AND Fecha_Guia >= '".$FechaInicial."' AND Fecha_Guia <= '".$FechaFinal."' ORDER BY g.iguia");
 	if ($rowGD = mysqli_fetch_array($count_queryGD)){$numrowsGD = $rowGD['numrows'];}
 	else {echo mysqli_error($con);}
 	//main query to fetch the data
 	$queryGD = mysqli_query($con,"SELECT g.*, p.Proveedor as prov, a.glosa, c.Nombre_Cliente, tc.mt3, co.nombreobra	
-			   FROM guia as g 
+			   FROM Guia as g 
 			   LEFT JOIN proveedores as p ON g.Proveedor = p.idProveedor 
 			   LEFT JOIN aridos as a ON g.idAridos = a.idAridos
                LEFT JOIN cliente as c ON  c.idCliente = g.idCliente

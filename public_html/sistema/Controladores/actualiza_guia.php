@@ -27,7 +27,7 @@
 		}
 				
 		// UPDATE data into database
-	    $sql = "UPDATE guia SET Fecha_Guia='".$mysqldate."' WHERE Num_Guia='".$valorbuscado."'";
+	    $sql = "UPDATE Guia SET Fecha_Guia='".$mysqldate."' WHERE Num_Guia='".$valorbuscado."'";
 	    $query = mysqli_query($con,$sql);
 	    // if product has been added successfully
 	    if($query){

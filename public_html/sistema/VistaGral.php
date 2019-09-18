@@ -151,10 +151,10 @@
 						</span>
 					</a>
 					<div class="sdt_box">
-							<a href="http://localhost/aridos/public_html/sistema/ingvale.php">Ingresar</a>
+							<a href="http://localhost/aridos/public_html/sistema/Ingvale.php">Ingresar</a>
 							<a href="http://localhost/aridos/public_html/sistema/Editavale.php">Modificar</a>
 							<a href="http://localhost/aridos/public_html/sistema/Eliminavale.php">Eliminar</a>
-							<a href="http://localhost/aridos/public_html/sistema/reportevale.php">Reporte</a>
+							<a href="http://localhost/aridos/public_html/sistema/ReporteVale.php">Reporte</a>
 					</div>
 				</li>
 			</ul>

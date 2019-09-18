@@ -175,8 +175,8 @@ if($action == 'ajax'){
 					<td class='text-rigth'><?php echo $Proveedor;?></td>
 					<td class='text-rigth'><?php echo $Sucursal;?></td>
 					<td class='text-rigth'><?php echo $Arido;?></td>
-					<td class='text-center' ><?php echo $Cantidad;?></td>
-					<td class='text-center'><?php echo $MT3;?></td>
+					<td class='text-center' ><?php echo $MT3;?></td>
+					<td class='text-center'><?php echo $Cantidad;?></td>
 					<td class='text-center'>
 					<a href="#"  data-target="#editProvModal" class="edit" data-toggle="modal" data-prov='<?php echo $Proveedor;?>' data-suc="<?php echo $Sucursal?>" data-arido="<?php echo $Arido?>" data-cant="<?php echo $Cantidad?>" data-mt3="<?php echo $MT3;?>" data-id="<?php echo $id_guia;?>"><i class="material-icons" data-toggle="tooltip" title="Editar" >&#xE254;</i></a></td>
 					<td class='text-center'>

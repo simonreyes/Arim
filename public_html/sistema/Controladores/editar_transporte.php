@@ -12,7 +12,7 @@
 	$Chofer = mysqli_real_escape_string($con,(strip_tags($_POST["selectChofer"],ENT_QUOTES)));
 	
 	// UPDATE data into database
-    $sql = "UPDATE guia SET Transp_Guia='".$nombreTransporte."', Patente_Guia='".$Patente."', Chofer_Guia='".$Chofer."' WHERE Num_Guia='".$idGuia."' ";
+    $sql = "UPDATE Guia SET Transp_Guia='".$nombreTransporte."', Patente_Guia='".$Patente."', Chofer_Guia='".$Chofer."' WHERE Num_Guia='".$idGuia."' ";
     $query = mysqli_query($con,$sql);
     // if product has been added successfully
     if ($query) {

@@ -2,8 +2,8 @@
 var_dump($_POST);
 {
 	$host = "localhost";
-    $user = "root";
-    $pass = "";
+    $user = "nikovald";
+    $pass = "arimoreno2016";
     $bd = "nikovald_aridos";		
 
     $conexion = mysql_connect($host,$user,$pass) or die ("problemas al conectar el host");
