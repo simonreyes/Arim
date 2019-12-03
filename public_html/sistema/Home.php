@@ -61,7 +61,7 @@
 			<ul class="nav">
 			</ul>
 			<br><br>
-			<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>TRANSPORTES EDGARDO CRISTIAN MORENO SOLIS E.I.R.L </b></font></p>
+			<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>ARIDOS Y TRANSPORTES EMS SPA </b></font></p>
 <form action="ConsultaUser.php" method="post">			
 <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:800px;">
 	<tbody>

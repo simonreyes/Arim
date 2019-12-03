@@ -101,7 +101,7 @@ mysql_close($conexion); }
 
   <!-- Start your project here-->
 <div class="flex-center flex-column">
-  <h5 class="animated fadeIn mb-3">TRANSPORTES EDGARDO CRISTIAN MORENO SOLIS E.I.R.L</h5>
+  <h5 class="animated fadeIn mb-3">ARIDOS Y TRANSPORTES EMS SPA</h5>
 
   <p class="animated fadeIn text-muted">Informe Moreno Fecha Desde - Hasta</p>
 </div>

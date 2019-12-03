@@ -59,7 +59,7 @@ $fpago .= $fila['FormaPago'];
 mysql_close($conexion); 
 } 
 
-$link = mysql_connect('localhost', 'nikovald', 'arimoreno2016')
+$link = mysql_connect('localhost', 'root', '')
 or die('No se pudo conectar: ' . mysql_error());
 mysql_select_db('nikovald_aridos') or die('No se pudo seleccionar la base de datos'); 
  
@@ -160,7 +160,7 @@ $Id2 .= $row['idCliente'];
 			<div id ="block"></div>
    <div class="container">
    <br>
-	<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>TRANSPORTES EDGARDO CRISTIAN MORENO SOLIS E.I.R.L </b></font></p>
+	<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>ARIDOS Y TRANSPORTES EMS SPA </b></font></p>
  <h3 class="title">Editar Cotización</h3>
 	    <div id="popupbox"></div>
         <div id="content"></div>
@@ -288,7 +288,7 @@ $Id2 .= $row['idCliente'];
 	//$result = mysql_query("SELECT * FROM cotizacion ORDER BY id_User DESC");
 
 		
-	mysql_connect("localhost", "nikovald", "arimoreno2016") or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
+	mysql_connect("localhost", "root", "") or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
 	mysql_select_db("nikovald_aridos") or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB); 
 
 	$result="	SELECT *

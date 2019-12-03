@@ -146,7 +146,7 @@ alert ("Proveedor Actualizado Correctamente!");
 <div id ="block"></div>		
 <div class="container">
 <br>
-<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>TRANSPORTES EDGARDO CRISTIAN MORENO SOLIS E.I.R.L </b></font></p>
+<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>ARIDOS Y TRANSPORTES EMS SPA </b></font></p>
         <h3 class="title">Edita Proveedor</h3>
 	    <div id="popupbox"></div>
         <div id="content"></div>

@@ -42,7 +42,7 @@
     <body>
 		<div class="content">
 		<br>
-			<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>TRANSPORTES EDGARDO CRISTIAN MORENO SOLIS E.I.R.L </b></font></p>
+			<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>ARIDOS Y TRANSPORTES EMS SPA </b></font></p>
 			<p style="font-size:30px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Menú Mantenedores </b></font></p>
 			<a href="http://www.aridosmoreno.cl/sistema/VistaGral.php"><img src="http://www.aridosmoreno.cl/sistema/volver.png"style="width: 100px; height: 30px;"></a>
