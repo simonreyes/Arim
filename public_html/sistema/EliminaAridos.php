@@ -1,9 +1,9 @@
 <?php
 {
 	$host = "localhost";
-    $user = "nikovald";
-    $pass = "arimoreno2016";
-    $bd = "nikovald_aridos";		
+    $user = "aridosem_tems";
+    $pass = "aritrans2020";
+    $bd = "aridosem_bd";		
 
   
 	$Aridos = $_POST['estado'];

@@ -16,9 +16,9 @@ $nomemp = trim($_POST['nomemp']);
 
 
 define('HOST_DB', 'localhost'); 
-define('USER_DB', 'nikovald'); 
-define('PASS_DB', 'arimoreno2016'); 
-define('NAME_DB', 'nikovald_aridos'); 
+define('USER_DB', 'aridosem_tems'); 
+define('PASS_DB', 'aritrans2020'); 
+define('NAME_DB', 'aridosem_bd'); 
 function conectar()
 {global $conexion; 
 //Definición global para poder utilizar en todo el contexto 
@@ -53,9 +53,9 @@ mysql_select_db(NAME_DB) or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB);
 
 
 	$host = "localhost";
-    $user = "nikovald";
-    $pass = "arimoreno2016";
-    $bd = "nikovald_aridos";		
+    $user = "aridosem_tems";
+    $pass = "aritrans2020";
+    $bd = "aridosem_bd";		
 
     $conexion = mysql_connect($host,$user,$pass) or die ("problemas al conectar el host");
     mysql_select_db($bd, $conexion) or die ("problemas al conectar la bd"); 
@@ -71,8 +71,8 @@ mysql_select_db(NAME_DB) or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB);
 		$NumGuia = trim($valor);
 	
 		
-		$link = mysql_connect('localhost', 'nikovald', 'arimoreno2016') or die('No se pudo conectar: ' . mysql_error());
-     	mysql_select_db('nikovald_aridos') or die('No se pudo seleccionar la base de datos');		
+		$link = mysql_connect('localhost', 'aridosem_tems', 'aritrans2020') or die('No se pudo conectar: ' . mysql_error());
+     	mysql_select_db('aridosem_bd') or die('No se pudo seleccionar la base de datos');		
 	
 	    $incLCM = 'UPDATE Guia SET  factura = "'.$factura.'" WHERE Num_Guia = "'.$NumGuia.'" ';
 	    $resultincLCM = mysql_query($incLCM) or die('Consulta fallida: ' . mysql_error());
@@ -90,8 +90,8 @@ mysql_select_db(NAME_DB) or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB);
 		$NumGuia = trim($valor);
 	
 		
-		$link = mysql_connect('localhost', 'nikovald', 'arimoreno2016') or die('No se pudo conectar: ' . mysql_error());
-     	mysql_select_db('nikovald_aridos') or die('No se pudo seleccionar la base de datos');		
+		$link = mysql_connect('localhost', 'aridosem_tems', 'aritrans2020') or die('No se pudo conectar: ' . mysql_error());
+     	mysql_select_db('aridosem_bd') or die('No se pudo seleccionar la base de datos');		
 	
 	    $incLCM = 'UPDATE Guia SET  factura = "'.$factura.'" WHERE Num_Guia = "'.$NumGuia.'" ';
 	    $resultincLCM = mysql_query($incLCM) or die('Consulta fallida: ' . mysql_error());

@@ -1,8 +1,8 @@
 <?php 
 define('HOST_DB', 'localhost'); 
-define('USER_DB', 'root'); 
-define('PASS_DB', ''); 
-define('NAME_DB', 'nikovald_aridos'); 
+define('USER_DB', 'aridosem_tems'); 
+define('PASS_DB', 'aritrans2020'); 
+define('NAME_DB', 'aridosem_bd'); 
 function conectar()
 {global $conexion; 
 //Definición global para poder utilizar en todo el contexto 
@@ -103,7 +103,7 @@ mysql_close($conexion); }
 <div class="flex-center flex-column">
   <h5 class="animated fadeIn mb-3">ARIDOS Y TRANSPORTES EMS SPA</h5>
 
-  <p class="animated fadeIn text-muted">Informe Moreno Fecha Desde - Hasta</p>
+  <p class="animated fadeIn text-muted">Informe EMS Fecha Desde - Hasta</p>
 </div>
 
 <div class="flex-center flex-column">

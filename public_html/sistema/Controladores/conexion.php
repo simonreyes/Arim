@@ -1,8 +1,8 @@
 <?php
 $host="localhost";
-$user="root";
-$password="";
-$db="nikovald_aridos";
+$user="aridosem_tems";
+$password="aritrans2020";
+$db="aridosem_bd";
 $con = new mysqli($host,$user,$password,$db);
 
 ?>

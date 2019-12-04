@@ -1,8 +1,8 @@
 <?php 
 define('HOST_DB', 'localhost'); 
-define('USER_DB', 'nikovald'); 
-define('PASS_DB', 'arimoreno2016'); 
-define('NAME_DB', 'nikovald_aridos'); 
+define('USER_DB', 'aridosem_tems'); 
+define('PASS_DB', 'aritrans2020'); 
+define('NAME_DB', 'aridosem_bd'); 
 function conectar()
 { global $conexion; 
 //Definición global para poder utilizar en todo el contexto 
@@ -55,9 +55,9 @@ $Ciudad .= $fila['Ciudad'];
 mysql_close($conexion); } }
  
 
-$link = mysql_connect('localhost', 'nikovald', 'arimoreno2016')
+$link = mysql_connect('localhost', 'aridosem_tems', 'aritrans2020')
 or die('No se pudo conectar: ' . mysql_error());
-mysql_select_db('nikovald_aridos') or die('No se pudo seleccionar la base de datos'); 
+mysql_select_db('aridosem_bd') or die('No se pudo seleccionar la base de datos'); 
  
 $sql2 = "SELECT numero FROM folios where letra = 'CT00'";  
 $resultado2 = mysql_query($sql2); 

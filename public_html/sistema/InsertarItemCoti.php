@@ -5,8 +5,8 @@ $VIdCliente = $_GET['cliente'];
 
 
 
-	$link = mysql_connect('localhost', 'root', '') or die('No se pudo conectar: ' . mysql_error());
-	mysql_select_db('nikovald_aridos') or die('No se pudo seleccionar la base de datos');		
+	$link = mysql_connect('localhost', 'aridosem_tems', 'aritrans2020') or die('No se pudo conectar: ' . mysql_error());
+	mysql_select_db('aridosem_bd') or die('No se pudo seleccionar la base de datos');		
 	
 	$queryDATOS3 = "SELECT * FROM cotizacion c
 					inner join proveedores p on c.Proveedor = IdProveedor
