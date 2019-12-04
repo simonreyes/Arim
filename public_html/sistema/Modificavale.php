@@ -37,6 +37,6 @@ var_dump($_POST);
       {
 	   mysql_query ('UPDATE vale SET transporte="'. $transporte .'", patente = "'. $patente.'", chofer= "'.$chofer.'", folio = "'. $folio.'", fecha ="'.$fecha.'", cantidad = "'.$cantidadv.'" , detalle= "'.$detalle.'" WHERE folio ="'. $foliob .'" ') or die ('UPDATE vale SET transporte="'. $transporte .'", patente = "'. $patente.'", chofer= "'.$chofer.'", folio = "'. $folio.'", fecha ="'.$fecha.'", cantidad = "'.$cantidadv.'" , detalle= "'.$detalle.'" WHERE folio ="'. $foliob .'" '). mysql_error();
 	}			
-	//header ("Location: http://localhost/aridos/public_html/sistema/Vistagral.php");
+	//header ("Location: Vistagral.php");
 }
 ?>	

@@ -93,7 +93,7 @@
 		
 	}
 				
-	header ("Location: http://www.localhost/arim/public_html/sistema/Cotizacion2.php?Vidcli=".$cliente."&Vfolio=".$folio."");	
+	header ("Location: Cotizacion2.php?Vidcli=".$cliente."&Vfolio=".$folio."");	
 	 
 	}
 ?>	

@@ -14,7 +14,7 @@
 	 
 	mysql_query("delete from Guia_temp WHERE id_user = '$idGuia' and Folio = '$Folio'", $conexion);
 	 
-	header ("Location: http://www.localhost/arim/public_html/sistema/GuiaDespacho2.php?Vfolio=$Folio");	
+	header ("Location: GuiaDespacho2.php?Vfolio=$Folio");	
 	 
 	 }
 ?>	

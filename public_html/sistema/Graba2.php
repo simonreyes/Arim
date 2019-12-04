@@ -21,7 +21,7 @@
 	$incLCM = 'UPDATE Guia_temp SET Cantidad = "'.$cantidad. '" WHERE id_user = "' . $idguia . '" and Folio = "' . $folio . '"';
 	$resultincLCM = mysql_query($incLCM) or die('Consulta fallida: ' . mysql_error());
 	
-	header ("Location: http://www.localhost/arim/public_html/sistema/GuiaDespacho2.php?idguia=".$idguia."&Vfolio=".$folio."");	
+	header ("Location: GuiaDespacho2.php?idguia=".$idguia."&Vfolio=".$folio."");	
 	
 }
 ?>	
