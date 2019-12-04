@@ -11,7 +11,7 @@
 	 
 	 mysql_query("delete from cotizacion WHERE Status = 'Creada' ", $conexion);
 	 
-	 header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");	
+	 header ("Location: VistaGral.php");	
 	 
 	 }
 ?>	

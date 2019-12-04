@@ -22,7 +22,7 @@
 	mysql_query("update cotizacion Set Status = 'Abierta'
 										WHERE Folio = '$num_cot' ", $conexion);
 										
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");										
+	header ("Location: VistaGral.php");										
 	 
 	 }
 ?>	

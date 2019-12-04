@@ -2,8 +2,8 @@
 var_dump($_POST);
 {
 	$host = "localhost";
-    $user = "root";
-    $pass = "";
+    $user = "nikovald";
+    $pass = "arimoreno2016";
     $bd = "nikovald_aridos";		
 
     $conexion = mysql_connect($host,$user,$pass) or die ("problemas al conectar el host");
@@ -23,7 +23,7 @@ var_dump($_POST);
 	  $fechar = $_POST['fecha'];
 	  $date = str_replace('/', '-', $fechar);
    	  $phpdate = strtotime($date);
-   	  $fecha = date('Y-m-d', $phpdate);	        
+   	  $fecha = date('Ymd', $phpdate);	        
       $cantidadv =$_POST['cantidadv'];
       $detalle = $_POST['detalle'];
 	 
@@ -43,6 +43,6 @@ var_dump($_POST);
 	  '".$cantidadv."',
 	  '".$detalle."')". mysql_error());
 				
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");
+	header ("Location: VistaGral.php");
 	 }
 ?>	

@@ -17,7 +17,7 @@
 	mysql_query("delete from transchofer WHERE NOMBRETRANS = '$empresa' and PATENTE = '$patente'", $conexion); 
 										
 										
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");											
+	header ("Location: VistaGral.php");											
 	
 	 }
 ?>	

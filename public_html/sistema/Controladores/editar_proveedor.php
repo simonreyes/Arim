@@ -10,7 +10,7 @@
 	    $Sucursal = mysqli_real_escape_string($con,(strip_tags($_POST["selectSuc"],ENT_QUOTES)));
 	
 		// UPDATE data into database
-	    $sql = "UPDATE guia SET Proveedor='".$Proveedor."', sucursal='".$Sucursal."', VentaFinal='".$ValorMT3."', cantidad ='".$Cantidad."'WHERE iguia ='".$idGuia."' ";
+	    $sql = "UPDATE Guia SET Proveedor='".$Proveedor."', sucursal='".$Sucursal."', VentaFinal='".$ValorMT3."', cantidad ='".$Cantidad."'WHERE iguia ='".$idGuia."' ";
 	    $query = mysqli_query($con,$sql);
 	    // if product has been added successfully
 	    if ($query) {
@@ -25,7 +25,7 @@
 		$Cantidad = mysqli_real_escape_string($con,(strip_tags($_POST["edit_cant"],ENT_QUOTES)));
 	
 		// UPDATE data into database
-	    $sql = "UPDATE guia SET VentaFinal='".$ValorMT3."', cantidad ='".$Cantidad."'WHERE iguia ='".$idGuia."' ";
+	    $sql = "UPDATE Guia SET VentaFinal='".$ValorMT3."', cantidad ='".$Cantidad."'WHERE iguia ='".$idGuia."' ";
 	    $query = mysqli_query($con,$sql);
 	    // if product has been added successfully
 	    if ($query) {

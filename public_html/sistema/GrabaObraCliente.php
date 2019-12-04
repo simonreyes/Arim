@@ -69,7 +69,7 @@
 	mysql_query("insert into clienteobras(nombrecliente, nombreobra, dirobra, contacto, fono, email)
 	VALUES ('$Nombre', '$Obra6', '$dir6', '$cont6', '$fono6', '$email6')", $conexion);
 	}
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");	
+	header ("Location: VistaGral.php");	
 	 
 	}
 ?>	

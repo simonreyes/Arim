@@ -8,7 +8,7 @@
 	
 
 	// DELETE FROM  database
-    $sql = "DELETE FROM  guia WHERE iguia='".$id_producto."'";
+    $sql = "DELETE FROM Guia WHERE iguia='".$id_producto."'";
     $query = mysqli_query($con,$sql);
     // if product has been added successfully
     if ($query) {

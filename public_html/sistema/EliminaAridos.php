@@ -17,7 +17,7 @@
 	mysql_query("delete from aridos WHERE idProveedor = '$Proveedor' and idAridos = '$Aridos' ", $conexion);
 	
 		
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");
+	header ("Location: VistaGral.php");
 	 
 	 }
 ?>	

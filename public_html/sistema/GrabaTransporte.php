@@ -99,7 +99,7 @@
 	}
 
 	
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");				
+	header ("Location: VistaGral.php");				
 	 
 	 
 	 }

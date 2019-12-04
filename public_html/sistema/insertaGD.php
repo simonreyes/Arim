@@ -80,7 +80,7 @@ $FonoClie = $row1['Fono'];
 $pdf=new FPDF();
 $pdf->AddPage();
 $pdf->SetFont('Helvetica','B',14);
-//$pdf->Image('http://www.aridosmoreno.cl/sistema/formatoGD.png' , 0 ,0, 210 , 280,'PNG');
+//$pdf->Image('formatoGD.png' , 0 ,0, 210 , 280,'PNG');
 
 if(isset($_POST["FechCotizacion"])){
 	$dia = date("d", strtotime($FechCotizacion));
@@ -249,7 +249,7 @@ $pdf->Cell(10, 8, number_format($Total,0), 0, 'C');
 
 $pdf->SetFont('Helvetica','B',10);
 $pdf->SetXY(10, 142);
-$pdf->Cell(10, 8, utf8_decode("Cofer:"), 0, 'C');
+$pdf->Cell(10, 8, utf8_decode("Chofer:"), 0, 'C');
 $pdf->SetXY(21, 142);
 $pdf->Cell(10, 8, utf8_decode($chofer), 0, 'C');
 

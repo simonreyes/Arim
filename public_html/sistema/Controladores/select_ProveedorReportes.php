@@ -12,10 +12,10 @@ if(!empty($_POST["FechaInicial"])){
     $FechaFinal = date('Ymd', $phpdate);
 
     // Fetch state data based on the specific country 
-    $query = "SELECT DISTINCT(p.Proveedor) as nombreprov, g.Proveedor as idProv FROM guia as g INNER JOIN proveedores as p ON g.Proveedor = p.idProveedor WHERE Fecha_Guia >= '".$FechaInicial."' AND Fecha_Guia <= '".$FechaFinal."' ORDER BY p.Proveedor";
+    $query = "SELECT DISTINCT(p.Proveedor) as nombreprov, g.Proveedor as idProv FROM Guia as g INNER JOIN proveedores as p ON g.Proveedor = p.idProveedor WHERE Fecha_Guia >= '".$FechaInicial."' AND Fecha_Guia <= '".$FechaFinal."' ORDER BY p.Proveedor";
     $query = mysqli_query($con, $query);
 
-    $count_queryTR = mysqli_query($con, "SELECT COUNT(p.Proveedor) as numrows FROM guia as g INNER JOIN proveedores as p ON g.Proveedor = p.idProveedor WHERE Fecha_Guia >= '".$FechaInicial."' AND Fecha_Guia <= '".$FechaFinal."'");
+    $count_queryTR = mysqli_query($con, "SELECT COUNT(p.Proveedor) as numrows FROM Guia as g INNER JOIN proveedores as p ON g.Proveedor = p.idProveedor WHERE Fecha_Guia >= '".$FechaInicial."' AND Fecha_Guia <= '".$FechaFinal."'");
     if ($rowTR = mysqli_fetch_array($count_queryTR)){$numrowsTR = $rowTR['numrows'];}
     else {echo mysqli_error($con);}
     

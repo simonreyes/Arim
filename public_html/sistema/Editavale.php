@@ -1,7 +1,7 @@
 <?php 
 define('HOST_DB', 'localhost'); 
-define('USER_DB', 'root'); 
-define('PASS_DB', ''); 
+define('USER_DB', 'nikovald'); 
+define('PASS_DB', 'arimoreno2016'); 
 define('NAME_DB', 'nikovald_aridos'); 
 function conectar()
 {global $conexion; 
@@ -198,7 +198,7 @@ dd{font-size:150%;}
 <div id ="block"></div>
    <div class="container">
     <br>
-   	<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>TRANSPORTES EDGARDO CRISTIAN MORENO SOLIS E.I.R.L </b></font></p>
+   	<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>ARIDOS Y TRANSPORTES EMS SPA </b></font></p>
         <h3 class="title">Modifica Vale&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

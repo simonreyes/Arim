@@ -18,7 +18,7 @@
 	
 	mysql_query("update aridos Set valor = '$Valor', sucursal = '$Sucursal' WHERE idProveedor = '$Proveedor' and idAridos = '$Aridos' ", $conexion);				 
 				 
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");
+	header ("Location: VistaGral.php");
 	 
 	 }
 ?>	

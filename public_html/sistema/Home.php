@@ -61,7 +61,7 @@
 			<ul class="nav">
 			</ul>
 			<br><br>
-			<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>TRANSPORTES EDGARDO CRISTIAN MORENO SOLIS E.I.R.L </b></font></p>
+			<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>ARIDOS Y TRANSPORTES EMS SPA </b></font></p>
 <form action="ConsultaUser.php" method="post">			
 <table align="center" border="0" cellpadding="1" cellspacing="1" style="width:800px;">
 	<tbody>
@@ -74,7 +74,7 @@
 		</tr>
 		<tr>
 			<td>&nbsp;</td>
-			<td colspan="1" rowspan="2" style="text-align: left;"><img alt="" src="http://www.aridosmoreno.cl/sistema/aridos.png" style="width: 150px; height: 150px;" /></td>
+			<td colspan="1" rowspan="2" style="text-align: left;"><img alt="" src="aridos.png" style="width: 150px; height: 150px;" /></td>
 			<td colspan="1" rowspan="2"><div align="center"><p style="font-size:20px;font-family:Arial, Helvetica, sans-serif;"><b>SISTEMA DE GESTIÓN Y CONTROL </b></td>
 			<td>&nbsp;</td>
 		</tr>

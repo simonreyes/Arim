@@ -12,12 +12,10 @@ if(!empty($_POST["FechaInicial"])){
     $FechaFinal = date('Ymd', $phpdate);
 
     // Fetch state data based on the specific country 
-    $query = "SELECT DISTINCT(g.Transp_Guia) as nombretransp FROM guia as g WHERE Fecha_Guia >= '".$FechaInicial."' AND Fecha_Guia <= '".$FechaFinal."' ORDER BY nombretransp";
-        var_dump($query);
+    $query = "SELECT DISTINCT(g.Transp_Guia) as nombretransp FROM Guia as g WHERE Fecha_Guia >= '".$FechaInicial."' AND Fecha_Guia <= '".$FechaFinal."' ORDER BY nombretransp";
     $query = mysqli_query($con, $query);
 
-    $queryc = "SELECT COUNT(*) as numrows FROM guia WHERE Fecha_Guia >= '".$FechaInicial."' AND Fecha_Guia <= '".$FechaFinal."'";
-    var_dump($queryc);
+    $queryc = "SELECT COUNT(*) as numrows FROM Guia WHERE Fecha_Guia >= '".$FechaInicial."' AND Fecha_Guia <= '".$FechaFinal."'";
     $count_queryTR = mysqli_query($con, $queryc);
     if ($rowTR = mysqli_fetch_array($count_queryTR)){$numrowsTR = $rowTR['numrows'];}
     else {echo mysqli_error($con);}
