@@ -6,8 +6,8 @@ class MySQL
   {
   	if(!isset($this->conexion))
 	{
-  		$this->conexion = (mysql_connect("localhost","nikovald","arimoreno2016")) or die(mysql_error());
-  		mysql_select_db("nikovald_aridos",$this->conexion) or die(mysql_error());
+  		$this->conexion = (mysql_connect("localhost","aridosem_tems","aritrans2020")) or die(mysql_error());
+  		mysql_select_db("aridosem_bd",$this->conexion) or die(mysql_error());
   	}
   }
 

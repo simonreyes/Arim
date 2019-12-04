@@ -5,9 +5,9 @@ $Vcontraseña = $_POST['contrasena'];
 $contador = 0;
 
 // Conectando, seleccionando la base de datos
-$link = mysql_connect('localhost', 'nikovald', 'arimoreno2016')
+$link = mysql_connect('localhost', 'aridosem_tems', 'aritrans2020')
 or die('No se pudo conectar: ' . mysql_error());
-mysql_select_db('nikovald_aridos') or die('No se pudo seleccionar la base de datos');
+mysql_select_db('aridosem_bd') or die('No se pudo seleccionar la base de datos');
 
 $queryDATOS3 = 'SELECT * 
 				FROM usuario

@@ -9,8 +9,8 @@
  */
 
 $server = 'localhost';
-$username = 'root';
-$password = '';
-$database_name = 'nikovald_aridos';
+$username = 'aridosem_tems';
+$password = 'aritrans2020';
+$database_name = 'aridosem_bd';
 
 ?>

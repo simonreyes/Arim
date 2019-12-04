@@ -9,8 +9,8 @@
 	$chofer = $_POST['chofer'];
 	$patente = $_POST['patente'];
 	
-	$link = mysql_connect('localhost', 'root', '') or die('No se pudo conectar: ' . mysql_error());
-	mysql_select_db('nikovald_aridos') or die('No se pudo seleccionar la base de datos');		
+	$link = mysql_connect('localhost', 'aridosem_tems', 'aritrans2020') or die('No se pudo conectar: ' . mysql_error());
+	mysql_select_db('aridosem_bd') or die('No se pudo seleccionar la base de datos');		
 	
 	$incLCM = 'UPDATE Guia SET Cantidad = "'.$cantidad. '" WHERE iguia = "' . $idguia . '" and Num_Guia = "' . $num_guia . '"';
 	$resultincLCM = mysql_query($incLCM) or die('Consulta fallida: ' . mysql_error());

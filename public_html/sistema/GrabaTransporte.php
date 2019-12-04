@@ -1,9 +1,9 @@
 <?php
 {
 	$host = "localhost";
-    $user = "nikovald";
-    $pass = "arimoreno2016";
-    $bd = "nikovald_aridos";		
+    $user = "aridosem_tems";
+    $pass = "aritrans2020";
+    $bd = "aridosem_bd";		
 
     $conexion = mysql_connect($host,$user,$pass) or die ("problemas al conectar el host");
     mysql_select_db($bd, $conexion) or die ("problemas al conectar la bd"); 
@@ -24,8 +24,8 @@
 	 VALUES ( '$Nombre', '$fono1', '$fono2', '$correo', '$direccion', '$ciudad', '$Banco', '$deposito', '$cuenta', '$obs')", $conexion);
 	}	
 	
-	$link = mysql_connect('localhost', 'nikovald', 'arimoreno2016') or die('No se pudo conectar: ' . mysql_error());
-	mysql_select_db('nikovald_aridos') or die('No se pudo seleccionar la base de datos');  
+	$link = mysql_connect('localhost', 'aridosem_tems', 'aritrans2020') or die('No se pudo conectar: ' . mysql_error());
+	mysql_select_db('aridosem_bd') or die('No se pudo seleccionar la base de datos');  
  
 	$queryDATOS2 = 'SELECT idnombre FROM transporte WHERE nombre = "'.$Nombre.'"';
 	$resultDATOS2 = mysql_query($queryDATOS2) or die('Consulta fallida: ' . mysql_error());

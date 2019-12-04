@@ -1,9 +1,9 @@
 <?php 
 
 define('HOST_DB', 'localhost'); 
-define('USER_DB', 'nikovald'); 
-define('PASS_DB', 'arimoreno2016'); 
-define('NAME_DB', 'nikovald_aridos'); 
+define('USER_DB', 'aridosem_tems'); 
+define('PASS_DB', 'aritrans2020'); 
+define('NAME_DB', 'aridosem_bd'); 
 
 function conectar()
 { global $conexion; 
@@ -56,9 +56,9 @@ $Id .= $fila['idCliente'];
 mysql_close($conexion); 
 } 
 
-$link = mysql_connect('localhost', 'nikovald', 'arimoreno2016')
+$link = mysql_connect('localhost', 'aridosem_tems', 'aritrans2020')
 or die('No se pudo conectar: ' . mysql_error());
-mysql_select_db('nikovald_aridos') or die('No se pudo seleccionar la base de datos'); 
+mysql_select_db('aridosem_bd') or die('No se pudo seleccionar la base de datos'); 
  
 $sql2 = "SELECT * FROM cliente where idCliente = '" .$Id. "'";  
 $resultado2 = mysql_query($sql2); 
@@ -268,8 +268,8 @@ $Id .= $row['idCliente'];
 	//$result = mysql_query("SELECT * FROM cotizacion ORDER BY id_User DESC");
 
 		
-	mysql_connect("localhost", "nikovald", "arimoreno2016") or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
-	mysql_select_db("nikovald_aridos") or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB); 
+	mysql_connect("localhost", "aridosem_tems", "aritrans2020") or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
+	mysql_select_db("aridosem_bd") or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB); 
 
 	$result="	SELECT *
 				from cotizacion c

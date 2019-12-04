@@ -6,9 +6,9 @@ class Conexion  // se declara una clase para hacer la conexion con la base de da
 	{
 		// se definen los datos del servidor de base de datos 
 		$conection['server']="localhost";  //host
-		$conection['user']="nikovald";         //  usuario
-		$conection['pass']="arimoreno2016";             //password
-		$conection['base']="nikovald_aridos";           //base de datos
+		$conection['user']="aridosem_tems";         //  usuario
+		$conection['pass']="aritrans2020";             //password
+		$conection['base']="aridosem_bd";           //base de datos
 		
 		// crea la conexion pasandole el servidor , usuario y clave
 		$conect= mysql_connect($conection['server'],$conection['user'],$conection['pass']);

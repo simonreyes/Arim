@@ -3,8 +3,8 @@
 	
 	$Proveedor = "";	    
 	
-	$link = mysql_connect('localhost', 'root', '') or die('No se pudo conectar: ' . mysql_error());
-	mysql_select_db('nikovald_aridos') or die('No se pudo seleccionar la base de datos');		
+	$link = mysql_connect('localhost', 'aridosem_tems', 'aritrans2020') or die('No se pudo conectar: ' . mysql_error());
+	mysql_select_db('aridosem_bd') or die('No se pudo seleccionar la base de datos');		
 	
 	
 	$queryDATOS2 = "SELECT * FROM cotizacion WHERE Folio  =  'CT001'";

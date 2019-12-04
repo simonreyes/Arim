@@ -4,9 +4,9 @@
 // llama a pdf.php para cerrar y crear la cotización
 
 define('HOST_DB', 'localhost'); 
-define('USER_DB', 'root'); 
-define('PASS_DB', ''); 
-define('NAME_DB', 'nikovald_aridos'); 
+define('USER_DB', 'aridosem_tems'); 
+define('PASS_DB', 'aritrans2020'); 
+define('NAME_DB', 'aridosem_bd'); 
 
 function conectar()
 { global $conexion; 
@@ -68,9 +68,9 @@ mysql_close($conexion);
 }
 
 
-$link = mysql_connect('localhost', 'root', '')
+$link = mysql_connect('localhost', 'aridosem_tems', 'aritrans2020')
 or die('No se pudo conectar: ' . mysql_error());
-mysql_select_db('nikovald_aridos') or die('No se pudo seleccionar la base de datos'); 
+mysql_select_db('aridosem_bd') or die('No se pudo seleccionar la base de datos'); 
  
 $sql2 = "SELECT numero FROM folios where letra = 'CT00'";  
 $resultado2 = mysql_query($sql2); 
@@ -295,8 +295,8 @@ $folio = "CT00" . $numero;
 	//fetching data in descending order (lastest entry first)
 	//$result = mysql_query("SELECT * FROM cotizacion ORDER BY id_User DESC");
 
-	mysql_connect("localhost", "root", "") or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
-	mysql_select_db("nikovald_aridos") or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB); 
+	mysql_connect("localhost", "aridosem_tems", "aritrans2020") or die ('NO SE HA PODIDO CONECTAR AL MOTOR DE LA BASE DE DATOS'); 
+	mysql_select_db("aridosem_bd") or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB); 
 
 	$result="	SELECT *
 				from cotizacion c

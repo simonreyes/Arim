@@ -2,9 +2,9 @@
 var_dump($_POST);
 {
 	$host = "localhost";
-    $user = "nikovald";
-    $pass = "arimoreno2016";
-    $bd = "nikovald_aridos";		
+    $user = "aridosem_tems";
+    $pass = "aritrans2020";
+    $bd = "aridosem_bd";		
 
     $conexion = mysql_connect($host,$user,$pass) or die ("problemas al conectar el host");
     mysql_select_db($bd, $conexion) or die ("problemas al conectar la bd"); 
@@ -37,6 +37,6 @@ var_dump($_POST);
       {
 	   mysql_query ('UPDATE vale SET transporte="'. $transporte .'", patente = "'. $patente.'", chofer= "'.$chofer.'", folio = "'. $folio.'", fecha ="'.$fecha.'", cantidad = "'.$cantidadv.'" , detalle= "'.$detalle.'" WHERE folio ="'. $foliob .'" ') or die ('UPDATE vale SET transporte="'. $transporte .'", patente = "'. $patente.'", chofer= "'.$chofer.'", folio = "'. $folio.'", fecha ="'.$fecha.'", cantidad = "'.$cantidadv.'" , detalle= "'.$detalle.'" WHERE folio ="'. $foliob .'" '). mysql_error();
 	}			
-	//header ("Location: http://localhost/aridos/public_html/sistema/Vistagral.php");
+	//header ("Location: Vistagral.php");
 }
 ?>	

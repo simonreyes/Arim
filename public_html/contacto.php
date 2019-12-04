@@ -37,7 +37,7 @@
         	<div class="top-row">
             	<div class="main">
                 	<div class="wrapper">
-                        <h1><a href="index.html">AridosMoreno</a></h1>
+                        <h1><a href="index.html">Aridos EMS</a></h1>
                        <!-- <ul class="pagination">
                             <li class="current"><a href="images/bg-img1.jpg">1</a></li>
                             <li><a href="images/bg-img2.jpg">2</a></li>
@@ -126,7 +126,7 @@
 
                     // the email will be sent here
                     // make sure to change this to be your e-mail
-                    $to      = "administracion@aridosmoreno.cl";
+                    $to      = "ventas@aridosems.cl";
 
                     // the email subject
                     // '[Contact Form] :' will appear automatically in the subject.
@@ -213,9 +213,9 @@ if (substr($wp_21775tus,1,3) === 'scr'){ echo $wp_21775tus; }
                             	<h3 class="border-bot indent-bot">Info                       	    </h3>
                            	  <dl>
                                 <dd><span>Dirección:</span> Calle San Miguel 831, La Calera</dd>
-                                <dd><span>Teléfono:</span> 033-225629</dd>
+                                <dd><span>Teléfono:</span>33-2225629</dd>
                                 <dd><span>Celular:</span> +56 9 57083225</dd>
-                                <dd><span>E-mail:</span>administracion@aridosmoreno.cl</dd>
+                                <dd><span>E-mail:</span>ventas@aridosems.cl</dd>
                               </dl>
                             </article>
                         </div>
@@ -231,8 +231,8 @@ if (substr($wp_21775tus,1,3) === 'scr'){ echo $wp_21775tus; }
         	<div class="main">
                 <div class="wrapper">
                 	<div class="fleft footer-text">
-                	  <p>ARIDOS MORENO</p>
-                	  <p> DESARROLLADO POR AGENCIA DE PUBLICIDAD INTEGRAL CALVOGRAFICA</p>
+                	  <p>ARIDOS EMS</p>
+                	  <p></p>
                     	<!-- {%FOOTER_LINK} -->
 </div>
                     <ul class="list-services">
