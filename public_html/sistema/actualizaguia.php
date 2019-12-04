@@ -25,7 +25,7 @@
 	mysql_query("update cotizacion Set Status = 'Finalizada' WHERE Folio = '".$num_cot."' ", $conexion);										
 
 										
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");										
+	header ("Location: VistaGral.php");										
 	 
 	 }
 ?>	

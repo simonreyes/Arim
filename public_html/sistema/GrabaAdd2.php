@@ -92,6 +92,6 @@
 		
 	}
 				
-	header ("Location: http://www.aridosmoreno.cl/sistema/EditaCotizacion2.php?Vidcli=".$cliente."&Vfolio=".$folio."");	
+	header ("Location: EditaCotizacion2.php?Vidcli=".$cliente."&Vfolio=".$folio."");	
 	 }
 ?>	

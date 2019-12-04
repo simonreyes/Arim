@@ -20,7 +20,7 @@
 	 
 	 mysql_query("delete from cliente WHERE IDCLIENTE = '$Id' ", $conexion);
 	 
-	 header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");	
+	 header ("Location: VistaGral.php");	
 	 
 	 }
 ?>	

@@ -21,9 +21,9 @@ $contador = $contador + 1;
 }			
 
  if ($contador == 1 ){
- header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php?VPerfil=".$Perfil."");
+ header ("Location: VistaGral.php?VPerfil=".$Perfil."");
  }else{
- header ("Location: http://www.aridosmoreno.cl/sistema/Home.php");	
+ header ("Location: Home.php");	
  }
 
 ?>

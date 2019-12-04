@@ -38,7 +38,7 @@
 		/*mysql_query("delete from facturas WHERE nombre_emp = '$nomemp' and num_fact = '$factura'", $conexion); */
 	}									
 	
-	//header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");				
+	//header ("Location: VistaGral.php");				
 	 
 	 }
 ?>

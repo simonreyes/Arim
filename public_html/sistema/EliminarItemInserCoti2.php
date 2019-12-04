@@ -15,7 +15,7 @@
 	 
 	mysql_query("delete from cotizacion WHERE id_user = '$idCoti' ", $conexion);
 	 
-	header ("Location: http://www.aridosmoreno.cl/sistema/EditaCotizacion2.php?Vidcli=$idCliente&Vfolio=$Folio");	
+	header ("Location: EditaCotizacion2.php?Vidcli=$idCliente&Vfolio=$Folio");	
 	 
 	 }
 ?>	

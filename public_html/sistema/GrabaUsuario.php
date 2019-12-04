@@ -31,7 +31,7 @@
 				'$Perfil',
 				'$Glosa')", $conexion);
 				
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaMante.php");	
+	header ("Location: VistaMante.php");	
 
 	 }
 ?>	

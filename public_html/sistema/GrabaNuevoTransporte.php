@@ -20,7 +20,7 @@
 	VALUES ( '$Nombre', '$mt3', '$patente', '$chofer', '$rut', '$fono')", $conexion);
 	}
 	
-		header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");				
+		header ("Location: VistaGral.php");				
 	 
 	 }
 ?>	

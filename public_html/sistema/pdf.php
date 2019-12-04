@@ -127,13 +127,13 @@ $pdf->Cell(10, 8, utf8_decode($Vfp), 0, 'C');
 
 
 $pdf->SetXY(41, 150);
-$pdf->Cell(10, 8, utf8_decode('Banco de Chile'), 0, 'C');
+$pdf->Cell(10, 8, utf8_decode('Banco:'), 0, 'C');
 $pdf->SetXY(41, 155);
-$pdf->Cell(10, 8, utf8_decode('Cuenta Corriente N° 139-02620-07'), 0, 'C');
+$pdf->Cell(10, 8, utf8_decode('Cuenta Corriente: N°'), 0, 'C');
 $pdf->SetXY(41, 160);
-$pdf->Cell(10, 8, utf8_decode('Transportes Edgardo Moreno ERIL'), 0, 'C');
+$pdf->Cell(10, 8, utf8_decode('ARIDOS Y TRANSPORTES EMS SPA'), 0, 'C');
 $pdf->SetXY(41, 165);
-$pdf->Cell(10, 8, utf8_decode('R.U.T. 76.177.124-8'), 0, 'C');
+$pdf->Cell(10, 8, utf8_decode('R.U.T. 77.082.185-1'), 0, 'C');
 
 $pdf->SetXY(41, 188);
 $pdf->Cell(10, 8, utf8_decode(''), 0, 'C');

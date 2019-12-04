@@ -41,7 +41,7 @@
 				
 				
 				
-	header ("Location: http://www.aridosmoreno.cl/sistema/Cotizacion2.php?Vidcli=$VidCliente&Vfolio=$folio");	
+	header ("Location: Cotizacion2.php?Vidcli=$VidCliente&Vfolio=$folio");	
 	
 	 
 	 

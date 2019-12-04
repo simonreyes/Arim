@@ -101,7 +101,7 @@ mysql_select_db(NAME_DB) or die ('NO SE ENCUENTRA LA BASE DE DATOS ' . NAME_DB);
 	
 	}
 	
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");				
+	header ("Location: VistaGral.php");				
 	 
 	 }
 ?>	

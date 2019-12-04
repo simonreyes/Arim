@@ -87,7 +87,7 @@
 	$pdf=new FPDF();
 	$pdf->AddPage();
 	$pdf->SetFont('Arial','B',14);
-	//$pdf->Image('http://www.aridosmoreno.cl/sistema/formatoGD.png' , 0 ,0, 210 , 280,'PNG');
+	//$pdf->Image('formatoGD.png' , 0 ,0, 210 , 280,'PNG');
 
 	if(isset($rowGD["Fecha_Guia"])){
 		$dia = date("d", strtotime($rowGD["Fecha_Guia"]));

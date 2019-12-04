@@ -47,7 +47,7 @@
 	mysql_query("delete from clienteobras WHERE NOMBRECLIENTE = '$idcliente' AND IDOBRA = '$idobra' ", $conexion);
 	}									
 	
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");				
+	header ("Location: VistaGral.php");				
 	 
 	 }
 ?>

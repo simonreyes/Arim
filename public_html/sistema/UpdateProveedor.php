@@ -33,7 +33,7 @@
 										      CORREO = '$correo'
 										      WHERE IDPROVEEDOR = '$Id' AND IDCONTACTO = '$IdContacto' ", $conexion);										
 										
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");											
+	header ("Location: VistaGral.php");											
 	
 	 }
 ?>	

@@ -24,7 +24,7 @@
 										PERFIL = '$Perfil'
 										WHERE idUser = '$Id' ", $conexion);
 										
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaMante.php");										
+	header ("Location: VistaMante.php");										
 	 
 	 }
 ?>	

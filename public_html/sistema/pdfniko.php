@@ -18,7 +18,7 @@
 	
 	$pdf=new FPDF();
 	$pdf->AddPage();
-	$pdf->Image('http://www.aridosmoreno.cl/sistema/FormatoC.png' , 0 ,0, 210 , 280,'PNG');  
+	$pdf->Image('FormatoC.png' , 0 ,0, 210 , 280,'PNG');  
 
 	$pdf->SetFont('Arial','B',16);   
 	$pdf->Cell(40,10,$Proveedor);	

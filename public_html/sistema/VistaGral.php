@@ -56,9 +56,9 @@
 						</span>
 					</a>
 					<div class="sdt_box">
-					    	<a href="http://www.aridosmoreno.cl/sistema/Cotizacion.php">Ingresar</a>
-						<a href="http://www.aridosmoreno.cl/sistema/EditaCotizacion.php">Modificar</a>
-						<a href="http://www.aridosmoreno.cl/sistema/EliminaCoti.php">Eliminar</a>
+					    	<a href="Cotizacion.php">Ingresar</a>
+						<a href="EditaCotizacion.php">Modificar</a>
+						<a href="EliminaCoti.php">Eliminar</a>
 					</div>
 				</li>
 				<li>
@@ -71,11 +71,11 @@
 						</span>
 					</a>
 					<div class="sdt_box">
-							<a href="http://www.aridosmoreno.cl/sistema/GuiaDespacho.php">Ingresar</a>
-							<a href="http://www.aridosmoreno.cl/sistema/EditarGuiaDespacho.php">Modificar</a>
-							<a href="http://www.aridosmoreno.cl/sistema/ActualizarGuiaDespacho.php">Actualizar</a>
-							<a href="http://www.aridosmoreno.cl/sistema/AnulaGuiaDespacho.php">Anular</a>
-							<a href="http://www.aridosmoreno.cl/sistema/ConsultarGuiaDespacho.php">Consultar</a>
+							<a href="GuiaDespacho.php">Ingresar</a>
+							<a href="EditarGuiaDespacho.php">Modificar</a>
+							<a href="ActualizarGuiaDespacho.php">Actualizar</a>
+							<a href="AnulaGuiaDespacho.php">Anular</a>
+							<a href="ConsultarGuiaDespacho.php">Consultar</a>
 					</div>
 				</li>
 				<li>
@@ -89,10 +89,10 @@
 					</a>
 					<div class="sdt_box">
 							
-							<a href="http://www.aridosmoreno.cl/sistema/FacturaEmitidas.php">Factura Emitida</a>
-							<a href="http://www.aridosmoreno.cl/sistema/ActFacturaEmitida.php">Act Elim Factura E</a>
-							<a href="http://www.aridosmoreno.cl/sistema/FacturaRecibida.php">Ingresar Factura R</a>
-							<a href="http://www.aridosmoreno.cl/sistema/ActFacturaRecibida.php">Act Elim Factura R</a>
+							<a href="FacturaEmitidas.php">Factura Emitida</a>
+							<a href="ActFacturaEmitida.php">Act Elim Factura E</a>
+							<a href="FacturaRecibida.php">Ingresar Factura R</a>
+							<a href="ActFacturaRecibida.php">Act Elim Factura R</a>
 												</div>
 				</li>
 				<li>
@@ -105,11 +105,11 @@
 						</span>
 					</a>
 					<div class="sdt_box">
-							<a href="http://www.aridosmoreno.cl/sistema/ReporteCotiFolio.php">Cotización</a>
-							<a href="http://www.aridosmoreno.cl/sistema/ReporteTranspFechas.php">Transporte</a>
-							<a href="http://www.aridosmoreno.cl/sistema/ReporteGuiasFechas.php">Venta Aridos</a>
-							<a href="http://www.aridosmoreno.cl/sistema/ReporteComision.php">Comisiones</a>	
-							<a href="http://www.aridosmoreno.cl/sistema/ReporteProveedor.php">Proveedores</a>								
+							<a href="ReporteCotiFolio.php">Cotización</a>
+							<a href="ReporteTranspFechas.php">Transporte</a>
+							<a href="ReporteGuiasFechas.php">Venta Aridos</a>
+							<a href="ReporteComision.php">Comisiones</a>	
+							<a href="ReporteProveedor.php">Proveedores</a>								
 					</div>
 				</li>
 				<li>
@@ -122,14 +122,14 @@
 						</span>
 					</a>
 					<div class="sdt_box">
-							<a href="http://www.aridosmoreno.cl/sistema/InformeMensual.php">General Moreno</a>
-							<a href="http://www.aridosmoreno.cl/sistema/InfFactCliente.php">Facturas Emitidas</a>
-							<a href="http://www.aridosmoreno.cl/sistema/InfFactProv.php">Facturas Recibidas</a>
-							<a href="http://www.aridosmoreno.cl/sistema/InfFactProvClie.php">Facturas Recibidas y Emitidas</a>
+							<a href="InformeMensual.php">General</a>
+							<a href="InfFactCliente.php">Facturas Emitidas</a>
+							<a href="InfFactProv.php">Facturas Recibidas</a>
+							<a href="InfFactProvClie.php">Facturas Recibidas y Emitidas</a>
 					</div>
 				</li>
 				<li>
-					<a href="http://www.aridosmoreno.cl/sistema/VIstaMante.php">
+					<a href="VIstaMante.php">
 						<img src="images/9.jpg" alt=""/>
 						<span class="sdt_active"></span>
 						<span class="sdt_wrap">
@@ -151,17 +151,17 @@
 						</span>
 					</a>
 					<div class="sdt_box">
-							<a href="http://localhost/aridos/public_html/sistema/Ingvale.php">Ingresar</a>
-							<a href="http://localhost/aridos/public_html/sistema/Editavale.php">Modificar</a>
-							<a href="http://localhost/aridos/public_html/sistema/Eliminavale.php">Eliminar</a>
-							<a href="http://localhost/aridos/public_html/sistema/ReporteVale.php">Reporte</a>
+							<a href="Ingvale.php">Ingresar</a>
+							<a href="Editavale.php">Modificar</a>
+							<a href="Eliminavale.php">Eliminar</a>
+							<a href="ReporteVale.php">Reporte</a>
 					</div>
 				</li>
 			</ul>
 		</div>
         <div>
             <span class="reference">
-                <a href="#">Creado por ABSIC || 2016</a>
+                <a href="#">Actualizado 2019</a>
             </span>
 		</div>
 

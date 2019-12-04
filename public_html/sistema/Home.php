@@ -74,7 +74,7 @@
 		</tr>
 		<tr>
 			<td>&nbsp;</td>
-			<td colspan="1" rowspan="2" style="text-align: left;"><img alt="" src="http://www.aridosmoreno.cl/sistema/aridos.png" style="width: 150px; height: 150px;" /></td>
+			<td colspan="1" rowspan="2" style="text-align: left;"><img alt="" src="aridos.png" style="width: 150px; height: 150px;" /></td>
 			<td colspan="1" rowspan="2"><div align="center"><p style="font-size:20px;font-family:Arial, Helvetica, sans-serif;"><b>SISTEMA DE GESTIÓN Y CONTROL </b></td>
 			<td>&nbsp;</td>
 		</tr>

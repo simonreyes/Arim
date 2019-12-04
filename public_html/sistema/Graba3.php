@@ -15,7 +15,7 @@
 	$incLCM = 'UPDATE Guia SET Cantidad = "'.$cantidad. '" WHERE iguia = "' . $idguia . '" and Num_Guia = "' . $num_guia . '"';
 	$resultincLCM = mysql_query($incLCM) or die('Consulta fallida: ' . mysql_error());
 	
-	header ("Location: http://www.aridosmoreno.cl/sistema/EditarGuiaDespacho2.php?idguia=".$idguia."&num_guia=".$num_guia."");	
+	header ("Location: EditarGuiaDespacho2.php?idguia=".$idguia."&num_guia=".$num_guia."");	
 	
 }
 ?>	

@@ -16,7 +16,7 @@
 	 mysql_query("insert into aridos (	idProveedor, glosa, valor, sucursal)
             	 VALUES ('$Proveedor', '$Nombre', '$Valor', '$Sucursal')", $conexion);
 				
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");	
+	header ("Location: VistaGral.php");	
 	 
 	 }
 ?>	

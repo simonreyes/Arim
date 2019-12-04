@@ -19,7 +19,7 @@
 	 
 	 mysql_query("delete from usuario WHERE idUser = '$Id' ", $conexion);
 	 
-	 header ("Location: http://www.aridosmoreno.cl/sistema/VIstaMante.php");		
+	 header ("Location: VIstaMante.php");		
 	 
 	 }
 ?>	

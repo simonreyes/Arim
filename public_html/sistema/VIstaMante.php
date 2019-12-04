@@ -45,7 +45,7 @@
 			<p style="font-size:28px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>ARIDOS Y TRANSPORTES EMS SPA </b></font></p>
 			<p style="font-size:30px;font-family:Arial, Helvetica, sans-serif;"><font color="Blue"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Menú Mantenedores </b></font></p>
-			<a href="http://www.aridosmoreno.cl/sistema/VistaGral.php"><img src="http://www.aridosmoreno.cl/sistema/volver.png"style="width: 100px; height: 30px;"></a>
+			<a href="VistaGral.php"><img src="volver.png"style="width: 100px; height: 30px;"></a>
 			<ul id="sdt_menu" class="sdt_menu">
 				<li>
 					<a href="#">
@@ -57,11 +57,11 @@
 						</span>
 					</a>
 					<div class="sdt_box">
-							<a href="http://www.aridosmoreno.cl/sistema/Cliente.php">Ingresar</a>
-							<a href="http://www.aridosmoreno.cl/sistema/EditaCliente.php">Editar</a>
-							<a href="http://www.aridosmoreno.cl/sistema/EliminaCliente.php">Eliminar</a>
-							<a href="http://www.aridosmoreno.cl/sistema/ObraCliente.php">Obras Cliente</a>
-							<a href="http://www.aridosmoreno.cl/sistema/EditarObra.php">Editar Obras</a>
+							<a href="Cliente.php">Ingresar</a>
+							<a href="EditaCliente.php">Editar</a>
+							<a href="EliminaCliente.php">Eliminar</a>
+							<a href="ObraCliente.php">Obras Cliente</a>
+							<a href="EditarObra.php">Editar Obras</a>
 					</div>
 				</li>
 				<li>
@@ -74,9 +74,9 @@
 						</span>
 					</a>
 					<div class="sdt_box">
-							<a href="http://www.aridosmoreno.cl/sistema/Aridos.php">Ingresar</a>
-							<a href="http://www.aridosmoreno.cl/sistema/ModificaAridos.php">Modificar</a>
-							<a href="http://www.aridosmoreno.cl/sistema/EliminarAridos.php">Eliminar</a>
+							<a href="Aridos.php">Ingresar</a>
+							<a href="ModificaAridos.php">Modificar</a>
+							<a href="EliminarAridos.php">Eliminar</a>
 					</div>
 				</li>
 				<li>
@@ -89,8 +89,8 @@
 						</span>						
 					</a>
 					<div class="sdt_box">
-							<a href="http://www.aridosmoreno.cl/sistema/Proveedor.php">Ingresar</a>
-							<a href="http://www.aridosmoreno.cl/sistema/EditaProveedor.php">Editar</a>
+							<a href="Proveedor.php">Ingresar</a>
+							<a href="EditaProveedor.php">Editar</a>
 							<a href="#"></a>
 					</div>
 				</li>
@@ -104,10 +104,10 @@
 						</span>						
 					</a>
 					<div class="sdt_box">
-							<a href="http://www.aridosmoreno.cl/sistema/Transporte.php">Ingresar Emp. y Trans.</a>
-							<a href="http://www.aridosmoreno.cl/sistema/EditaTransporte.php">Editar Trans.</a>
-							<a href="http://www.aridosmoreno.cl/sistema/EliminaTransporte.php">Eliminar Trans.</a>
-							<a href="http://www.aridosmoreno.cl/sistema/NuevoTransporte.php">Nuevo Trans.</a>
+							<a href="Transporte.php">Ingresar Emp. y Trans.</a>
+							<a href="EditaTransporte.php">Editar Trans.</a>
+							<a href="EliminaTransporte.php">Eliminar Trans.</a>
+							<a href="NuevoTransporte.php">Nuevo Trans.</a>
 					</div>
 				</li>
 				<li>
@@ -120,9 +120,9 @@
 						</span>						
 					</a>
 					<div class="sdt_box">
-							<a href="http://www.aridosmoreno.cl/sistema/Usuario.php">Crea Usuario</a>
-							<a href="http://www.aridosmoreno.cl/sistema/EditaUsuario.php"> Edita Usuario</a>
-							<a href="http://www.aridosmoreno.cl/sistema/EliminaUsuario.php">Elimina Usuario</a>
+							<a href="Usuario.php">Crea Usuario</a>
+							<a href="EditaUsuario.php"> Edita Usuario</a>
+							<a href="EliminaUsuario.php">Elimina Usuario</a>
 					</div>
 				</li>
 			
@@ -130,7 +130,7 @@
 		</div>
         <div>
             <span class="reference">
-                <a href="#">Creado por ABSIC || 2016</a>
+                <a href="#">Actualizado || 2019</a>
             </span>
 		</div>
 

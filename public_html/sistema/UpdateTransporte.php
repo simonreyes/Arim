@@ -22,7 +22,7 @@
 	VALUES ( '$empresa', '$mt3', '$patente', '$chofer', '$rut', '$fono')",$conexion) or die (mysql_error() . "error insert into transchofer ('nombretrans','mt3','patente','chofer','rut','fono') values 
 	 									  ('$empresa', '".$patente."', '".$chofer."', '".$rut."', '".$fono."')");	
 
-	header ("Location: http://www.aridosmoreno.cl/sistema/VistaGral.php");	
+	header ("Location: VistaGral.php");	
 	
 	 }
 ?>	
