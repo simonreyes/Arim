@@ -5,20 +5,8 @@
 $action = (isset($_REQUEST['action'])&& $_REQUEST['action'] !=NULL)?$_REQUEST['action']:'';
 if($action == 'ajax'){
 	$query = mysqli_real_escape_string($con,(strip_tags($_REQUEST['query'], ENT_QUOTES)));
+	$valorbuscado = "GD00".$query;
 
-	if($query < 10){
-		$valorbuscado = "GD00000".$query;
-	}elseif ($query < 100) {
-		$valorbuscado = "GD0000".$query;
-	}elseif ($query < 1000) {
-		$valorbuscado = "GD000".$query;
-	}elseif ($query < 10000) {
-		$valorbuscado = "GD00".$query;
-	}elseif ($query < 100000) {
-		$valorbuscado = "GD0".$query;
-	}else{
-		$valorbuscado = "GD".$query;
-	}
 
 	$tables="Guia";
 	$campos="*";

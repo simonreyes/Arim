@@ -11,20 +11,7 @@
 		$date = str_replace('/', '-', $FechaGuia);
 		$phpdate = strtotime($date);
 		$mysqldate = date('Ymd', $phpdate);
-
-		if($idGuia < 10){
-			$valorbuscado = "GD00000".$idGuia;
-		}elseif ($idGuia < 100) {
-			$valorbuscado = "GD0000".$idGuia;
-		}elseif ($idGuia < 1000) {
-			$valorbuscado = "GD000".$idGuia;
-		}elseif ($idGuia < 10000) {
-			$valorbuscado = "GD00".$idGuia;
-		}elseif ($idGuia < 100000) {
-			$valorbuscado = "GD0".$idGuia;
-		}else{
-			$valorbuscado = "GD".$idGuia;
-		}
+		$valorbuscado = "GD00".$idGuia;
 				
 		// UPDATE data into database
 	    $sql = "UPDATE Guia SET Fecha_Guia='".$mysqldate."' WHERE Num_Guia='".$valorbuscado."'";
