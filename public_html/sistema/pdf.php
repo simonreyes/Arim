@@ -3,7 +3,11 @@
 $Vfolio = $_POST['folio'];
 $Vid = $_POST['id'];
 $Vfp = $_POST['fp'];
-$Vobra = $_POST['obra'];
+if(isset($_POST['obra'])){
+	$Vobra = $_POST['obra'];
+}else{
+	$Vobra = "";
+}
 
 /* $Vfolio = 'CT0011';
 $Vid = '3';

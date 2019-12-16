@@ -250,12 +250,12 @@ $pdf->Cell(10, 8, number_format($Total,0), 0, 'C');
 $pdf->SetFont('Helvetica','B',10);
 $pdf->SetXY(10, 142);
 $pdf->Cell(10, 8, utf8_decode("Chofer:"), 0, 'C');
-$pdf->SetXY(21, 142);
+$pdf->SetXY(25, 142);
 $pdf->Cell(10, 8, utf8_decode($chofer), 0, 'C');
 
-$pdf->SetXY(55, 142);
+$pdf->SetXY(65, 142);
 $pdf->Cell(10, 8, utf8_decode("Patente Camión:"), 0, 'C');
-$pdf->SetXY(87, 142);
+$pdf->SetXY(97, 142);
 $pdf->Cell(10, 8, utf8_decode($patente), 0, 'C');
 
 
