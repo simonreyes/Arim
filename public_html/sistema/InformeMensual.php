@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Informe Mensual</title>
+<title>Informe Mensual de Guias de Despacho</title>
 <!-- Fuentes -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -65,7 +65,7 @@
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6">
-						<h2>Infome<b> Mensual</b></h2>
+						<h2>Infome<b> Mensual - Guias de Despacho</b></h2>
 					</div>
                 </div>
             </div>

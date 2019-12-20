@@ -102,12 +102,5 @@
 			<div class='outer_div'></div><!-- Carga de datos ajax aqui -->
         </div>
     </div>
-	<!-- Add Modal HTML -->
-	<?php include("Modal/modal_add_prov.php");?>
-	<!-- Edit Modal HTML -->
-	<?php include("Modal/modal_edit_prov.php");?>
-	<?php include("Modal/modal_edit_transp.php");?>
-	<!-- Delete Modal HTML -->
-	<?php include("Modal/modal_delete_prov.php");?>
 </body>
 </html>

@@ -173,6 +173,31 @@ function cargaInforme(){
     }
 };
 
+function cargaListaCotizaciones(){
+	var FechaInicial = $("#FechaInicial").val();
+	var FechaFinal = $("#FechaFinal").val();
+	var parametros = {"action":"ajax","FechaInicial":FechaInicial, "FechaFinal":FechaFinal};
+	$("#loader").fadeIn('slow');
+	if(FechaFinal){
+        $.ajax({
+            type:'POST',
+            url:'Controladores/listar_Cotizaciones.php',
+            data: parametros,
+            beforeSend: function(objeto){
+				$("#loader").html("Cargando...");
+	  		},
+            success:function(data){
+            	$(".outer_div").html(data).fadeIn('slow');
+				$("#loader").html("");;
+				activaDataTables();
+         	}
+        }); 
+    }else{
+        $('#selectProveedor').html('<option value="">Selecciona Fechas Primero</option>');
+    }
+};
+
+
 
 function activaCalendario(){
 	$("#FechaGuia").datepicker({
